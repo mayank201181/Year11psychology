@@ -201,8 +201,8 @@ function BystanderCostRewardSimulator() {
                     cx={bx}
                     cy={by}
                     r={9}
-                    fill={idx === 0 ? "#2563eb" : "#e2e8f0"}
-                    stroke="#1e293b"
+                    fill={idx === 0 ? "#2563eb" : "#cbd5e1"}
+                    className="stroke-ink"
                     strokeWidth={1.2}
                   />
                 </g>
@@ -213,7 +213,7 @@ function BystanderCostRewardSimulator() {
               <text x={0} y={10} fontSize={9.5} fontWeight="bold" className="fill-ink-2">
                 Individual Help ({indivPct}%)
               </text>
-              <rect x={0} y={16} width={135} height={14} rx={4} fill="#e2e8f0" />
+              <rect x={0} y={16} width={135} height={14} rx={4} className="fill-surface-2" />
               <rect
                 x={0}
                 y={16}
@@ -226,13 +226,13 @@ function BystanderCostRewardSimulator() {
               <text x={0} y={50} fontSize={9.5} fontWeight="bold" className="fill-ink-2">
                 Group Help ({groupPct}%)
               </text>
-              <rect x={0} y={56} width={135} height={14} rx={4} fill="#e2e8f0" />
+              <rect x={0} y={56} width={135} height={14} rx={4} className="fill-surface-2" />
               <rect x={0} y={56} width={Math.round(1.35 * groupPct)} height={14} rx={4} fill="#0284c7" />
 
               <text x={0} y={90} fontSize={9.5} fontWeight="bold" className="fill-ink-2">
                 Personal Duty ({responsibilityShare}%)
               </text>
-              <rect x={0} y={96} width={135} height={14} rx={4} fill="#e2e8f0" />
+              <rect x={0} y={96} width={135} height={14} rx={4} className="fill-surface-2" />
               <rect x={0} y={96} width={Math.round(1.35 * responsibilityShare)} height={14} rx={4} fill="#7c3aed" />
             </g>
           </svg>

@@ -254,7 +254,7 @@ export const mcqPapers: Paper[] = [
         kind: "mcq",
         id: "motivation-and-needs-m1-q12",
         question:
-          "What did **Merchant, Ford & Dianoux (2013, Study 3)** discover when comparing nostalgic versus non-nostalgic charity print advertisements?",
+          "What did **Merchant, LaTour, Ford & LaTour (2013, Study 3)** discover when comparing nostalgic versus non-nostalgic charity print advertisements?",
         options: [
           "Nostalgic adverts confused viewers and cut charitable donations in half",
           "Nostalgic adverts only worked when paired with a classroom token economy",

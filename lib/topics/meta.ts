@@ -76,7 +76,7 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Topic 2: Sleep & Dreams",
     strand: "Paper 1: Cognition, Behaviour & Experiments",
     icon: "🌙",
-    curriculum: "CIE 0266 Paper 1 — NREM & REM Sleep Stages, Ultradian & Circadian Rhythms (SCN & Melatonin), Restoration vs Evolutionary Theories, Insomnia & Sleep Hygiene, Freud vs Activation-Synthesis (Hobson & McCarley; Iorio et al.)",
+    curriculum: "CIE 0266 Paper 1 — NREM & REM Sleep Stages, Ultradian & Circadian Rhythms (SCN & Melatonin), Restoration (Robinson et al. 2018) vs Evolutionary Theories, Insomnia & Sleep Hygiene, Freud (Iorio et al. 2020) vs Activation-Synthesis (Hobson & McCarley; Williams et al. 1992)",
     sections: [
       {
         id: "sleep-stages-eeg",
@@ -110,7 +110,7 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Topic 3: Prosocial Behaviour",
     strand: "Paper 1: Cognition, Behaviour & Experiments",
     icon: "🤝",
-    curriculum: "CIE 0266 Paper 1 — Bystander Apathy & Intervention (Latané & Darley), Cost-Reward Model (Piliavin; Levine et al.), Biological/Kin Selection (Rushton et al.) vs Empathy-Altruism & Social Learning, Media & Parental Influences (Prot et al.)",
+    curriculum: "CIE 0266 Paper 1 — Bystander Apathy & Intervention (Latané & Darley), Cost-Reward Model (Piliavin; Levine et al. 2005 & 2001), Biological/Kin Selection (Rushton 2004 & 1986) vs Empathy-Altruism & Social Learning, Media & Parental Influences (Prot et al. 2014)",
     sections: [
       {
         id: "bystander-apathy",

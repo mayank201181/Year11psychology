@@ -71,7 +71,6 @@ function LanguageStageWugLab() {
           ? "Canonical babbling ('bababa, mamama')"
           : "Variegated babbling ('bamido?') + pointing";
   let structureNote = "Phonemes & prosody tuning; zero lexical morphemes yet.";
-  let irregularAcc = 0;
 
   if (months >= 12 && months < 18) {
     stageName = "2. Holophrastic (One-Word) Stage";
@@ -79,7 +78,6 @@ function LanguageStageWugLab() {
     mlu = "1.0 word (~1 morpheme)";
     sampleUtt = "'Juice!' · 'All gone!' · 'Doggy!' (overextended to cats)";
     structureNote = "1 word = whole communicative sentence; semantic over/underextension.";
-    irregularAcc = 45;
   } else if (months >= 18 && months < 30) {
     stageName = months < 24 ? "3a. Two-Word Stage" : "3b. Telegraphic Stage";
     ageBand = "18–30 months";
@@ -90,7 +88,6 @@ function LanguageStageWugLab() {
         : "'Daddy go work now' · 'Doggy eat biscuit garden'";
     structureNote =
       "Content nouns/verbs in strict SVO order; omits functors ('the', 'is', 'in'); early irregulars ('went') echoed by rote.";
-    irregularAcc = 86;
   } else if (months >= 30) {
     stageName = "4. Multi-Word (Post-Telegraphic) Stage";
     ageBand = "30–48+ months";
@@ -102,7 +99,6 @@ function LanguageStageWugLab() {
     structureNote = inDip
       ? "Auxiliaries + bound suffixes (-ed, -s) surge → Grammatical overregularisation dip!"
       : "Full recursive syntax, WH-questions, passives & irregular exceptions mastered.";
-    irregularAcc = inDip ? 52 : 94;
   }
 
   if (envMode === "passive" && months >= 9) {
@@ -116,6 +112,15 @@ function LanguageStageWugLab() {
 
   const wug = WUG_CASES[wugKey];
   const xPos = 40 + (months / 48) * 280;
+  const smoothBlend = (a: number, b: number, t: number) => a + (b - a) * (0.5 - 0.5 * Math.cos(Math.PI * t));
+  const dotY =
+    months < 12
+      ? 150
+      : months <= 26
+        ? smoothBlend(135, 74, (months - 12) / 14)
+        : months <= 37
+          ? smoothBlend(74, 134, (months - 26) / 11)
+          : smoothBlend(134, 66, (months - 37) / 11);
 
   return (
     <WidgetFrame
@@ -220,7 +225,7 @@ function LanguageStageWugLab() {
                 strokeWidth="2"
                 strokeDasharray="3 3"
               />
-              <circle cx={xPos} cy={months < 12 ? 150 : 152 - irregularAcc * 0.88} r="5" fill="#0284c7" />
+              <circle cx={xPos} cy={dotY} r="5" fill="#0284c7" />
               <text x="180" y="172" fontSize="9" textAnchor="middle" className="fill-ink-2">
                 Age scrubber ({months}m) · Purple curve = Irregular accuracy (&apos;went&apos; → &apos;goed&apos; → &apos;went&apos;)
               </text>

@@ -146,7 +146,7 @@ export function TopicsBrowser({ summaries }: { summaries: TopicSummary[] }) {
             autoComplete="off"
             spellCheck={false}
             className="input pl-10 pr-12"
-            placeholder="Search, e.g. “percentages” or “bearings”"
+            placeholder="Search, e.g. “Murdock”, “REM”, “bystander” or “counterbalancing”"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => {
@@ -162,7 +162,7 @@ export function TopicsBrowser({ summaries }: { summaries: TopicSummary[] }) {
           </span>
         </div>
 
-        <div role="group" aria-label="Filter by strand" className="nav-scroll -mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
+        <div role="group" aria-label="Filter by strand" className="flex flex-wrap gap-2 pb-1">
           {chips.map((s) => {
             const on = strand === s;
             const st = s === ALL ? null : strandStyle(s);
@@ -172,13 +172,13 @@ export function TopicsBrowser({ summaries }: { summaries: TopicSummary[] }) {
                 type="button"
                 aria-pressed={on}
                 onClick={() => chooseStrand(s)}
-                className={`inline-flex min-h-10 shrink-0 items-center gap-2 rounded-full border px-3.5 text-sm font-bold transition-colors ${
+                className={`relative inline-flex min-h-10 max-w-full items-center gap-2 rounded-2xl border px-3.5 py-1.5 text-left text-sm font-bold leading-snug transition-colors sm:rounded-full ${
                   on ? "border-transparent bg-brand text-brand-ink" : "border-line bg-surface text-ink hover:bg-surface-2"
                 }`}
               >
-                {st ? <span aria-hidden className={`h-2.5 w-2.5 rounded-full ${st.bg} ${on ? "ring-2 ring-brand-ink/70" : ""}`} /> : null}
-                {s === ALL ? "All" : s}
-                <span className={`tabular-nums ${on ? "opacity-80" : "text-ink-2"}`}>
+                {st ? <span aria-hidden className={`h-2.5 w-2.5 shrink-0 rounded-full ${st.bg} ${on ? "ring-2 ring-brand-ink/70" : ""}`} /> : null}
+                <span>{s === ALL ? "All" : s}</span>
+                <span className={`shrink-0 tabular-nums ${on ? "opacity-80" : "text-ink-2"}`}>
                   <span className="sr-only">, </span>
                   {counts[s] ?? 0}
                   <span className="sr-only"> topics</span>

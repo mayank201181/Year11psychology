@@ -33,7 +33,7 @@ const MARK_SAVERS = [
     tag: "Paper 1 · Hypotheses",
     title: "Operationalising IV & DV",
     wrong: "“Caffeine improves memory.” (0 marks — neither variable is operationalised or measurable!)",
-    right: "“Participants who drink 150 mg of caffeine will recall more words out of 20 from a printed word list than participants who drink 150 ml of plain water.”",
+    right: "“Participants who drink 250 ml of coffee containing 150 mg of caffeine will recall more words out of 20 from a printed word list than participants who drink 250 ml of decaffeinated placebo coffee (0 mg caffeine).”",
     why: "CIE 0266 mark schemes require exact units/conditions for BOTH levels of the IV and the exact quantitative measure of the DV.",
   },
   {

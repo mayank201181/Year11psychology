@@ -307,11 +307,11 @@ export function ShortsHub({
               </button>
             ))}
           </div>
-          <div className="flex gap-1.5 overflow-x-auto pb-1">
+          <div className="flex flex-wrap gap-1.5 pb-1">
             <button
               type="button"
               onClick={() => setSelectedTopicFilter("All")}
-              className={`shrink-0 rounded-lg px-2.5 py-1 text-xs font-bold ${
+              className={`rounded-lg px-2.5 py-1 text-xs font-bold ${
                 selectedTopicFilter === "All" ? "bg-brand-soft text-brand" : "bg-surface text-ink-2 hover:bg-surface-2"
               }`}
             >
@@ -322,7 +322,7 @@ export function ShortsHub({
                 key={tp.id}
                 type="button"
                 onClick={() => setSelectedTopicFilter(tp.id)}
-                className={`shrink-0 rounded-lg px-2.5 py-1 text-xs font-bold ${
+                className={`rounded-lg px-2.5 py-1 text-xs font-bold ${
                   selectedTopicFilter === tp.id ? "bg-brand-soft text-brand" : "bg-surface text-ink-2 hover:bg-surface-2"
                 }`}
               >
@@ -335,7 +335,7 @@ export function ShortsHub({
 
       <div className="grid items-start gap-5 lg:grid-cols-[400px_1fr]">
         {/* Vertical 9:16 Phone-Framed Shorts Player */}
-        <div className="mx-auto w-full max-w-[390px]">
+        <div className="mx-auto w-full min-w-0 max-w-[390px]">
           <div
             onTouchStart={onTouchStart}
             onTouchEnd={onTouchEnd}
@@ -413,19 +413,19 @@ export function ShortsHub({
               </div>
 
               {/* Action Bar */}
-              <div className="flex items-center justify-between gap-1.5">
+              <div className="flex flex-wrap items-center justify-between gap-1.5">
                 <button
                   type="button"
                   disabled={!prevClip}
                   onClick={() => prevClip && selectClip(prevClip, true)}
-                  className="rounded-xl bg-white/15 px-3 py-2 text-xs font-extrabold text-white enabled:hover:bg-white/25 disabled:opacity-35"
+                  className="rounded-xl bg-white/15 px-2.5 py-2 text-xs font-extrabold text-white enabled:hover:bg-white/25 disabled:opacity-35 sm:px-3"
                 >
                   ↑ Prev
                 </button>
                 <button
                   type="button"
                   onClick={togglePlay}
-                  className="rounded-xl bg-sky-500 px-4 py-2 text-xs font-extrabold text-slate-950 hover:bg-sky-400"
+                  className="rounded-xl bg-sky-500 px-3.5 py-2 text-xs font-extrabold text-slate-950 hover:bg-sky-400 sm:px-4"
                 >
                   {playing ? "⏸ Pause" : "▶ Play"}
                 </button>
@@ -433,7 +433,7 @@ export function ShortsHub({
                   type="button"
                   disabled={!nextClip}
                   onClick={() => nextClip && selectClip(nextClip, true)}
-                  className="rounded-xl bg-white/15 px-3 py-2 text-xs font-extrabold text-white enabled:hover:bg-white/25 disabled:opacity-35"
+                  className="rounded-xl bg-white/15 px-2.5 py-2 text-xs font-extrabold text-white enabled:hover:bg-white/25 disabled:opacity-35 sm:px-3"
                 >
                   ↓ Next
                 </button>
@@ -441,14 +441,14 @@ export function ShortsHub({
                   <button
                     type="button"
                     onClick={onPractise}
-                    className="rounded-xl bg-emerald-500 px-3 py-2 text-xs font-extrabold text-slate-950 hover:bg-emerald-400"
+                    className="rounded-xl bg-emerald-500 px-2.5 py-2 text-xs font-extrabold text-slate-950 hover:bg-emerald-400 sm:px-3"
                   >
                     ✏️ Practise
                   </button>
                 ) : (
                   <Link
                     href={`/topic/${current.topicId}?tab=practise`}
-                    className="rounded-xl bg-emerald-500 px-3 py-2 text-xs font-extrabold text-slate-950 hover:bg-emerald-400"
+                    className="rounded-xl bg-emerald-500 px-2.5 py-2 text-xs font-extrabold text-slate-950 hover:bg-emerald-400 sm:px-3"
                   >
                     ✏️ Practise
                   </Link>
@@ -459,7 +459,7 @@ export function ShortsHub({
         </div>
 
         {/* Playlist Grid of Concept Shorts */}
-        <div className="space-y-2.5">
+        <div className="min-w-0 space-y-2.5">
           <div className="flex items-center justify-between">
             <h3 className="text-base font-extrabold">
               {topicId ? "All Concept Shorts in This Topic" : `Shorts Reel (${pool.length})`}

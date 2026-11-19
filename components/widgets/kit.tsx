@@ -140,9 +140,9 @@ export function Segmented<T extends string>({
 export function Readout({ label, value, tone = "brand" }: { label: ReactNode; value: ReactNode; tone?: "brand" | "good" | "bad" | "ink" }) {
   const color = tone === "good" ? "text-good" : tone === "bad" ? "text-bad" : tone === "ink" ? "text-ink" : "text-brand";
   return (
-    <div className="rounded-xl border border-line bg-surface px-3 py-2">
+    <div className="min-w-0 rounded-xl border border-line bg-surface px-3 py-2">
       <div className="text-xs font-bold uppercase tracking-wide text-ink-2">{label}</div>
-      <div className={`text-xl font-extrabold tabular-nums ${color}`}>{value}</div>
+      <div className={`break-words text-base font-extrabold leading-snug tabular-nums sm:text-xl ${color}`}>{value}</div>
     </div>
   );
 }

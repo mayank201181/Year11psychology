@@ -118,13 +118,17 @@ export function CramSheet({
 
   const selectStrand = (strand: string) => {
     const strandIds = packs.filter((p) => p.strand === strand).map((p) => p.id);
-    const allIn = strandIds.every((id) => selectedIds.has(id));
-    if (allIn && selectedIds.size > strandIds.length) {
-      const next = new Set(selectedIds);
-      strandIds.forEach((id) => next.delete(id));
-      updateSelection(next);
+    // In CIE 0266, Paper 1 tests Topics 1–3 + experimental research methods,
+    // and Paper 2 tests Topics 4–6 + non-experimental research methods — include research-methods in Paper 1 preset too!
+    const hasRM = packs.some((p) => p.id === "research-methods");
+    const presetIds = hasRM && strand.startsWith("Paper 1") && !strandIds.includes("research-methods")
+      ? [...strandIds, "research-methods"]
+      : strandIds;
+    const allIn = presetIds.every((id) => selectedIds.has(id));
+    if (allIn && selectedIds.size === presetIds.length) {
+      updateSelection(new Set(allIds));
     } else {
-      updateSelection(new Set(strandIds));
+      updateSelection(new Set(presetIds));
     }
   };
 
@@ -217,7 +221,11 @@ export function CramSheet({
                     onClick={() => selectStrand(st)}
                     className="rounded-lg bg-surface px-2.5 py-1 text-xs font-bold text-brand hover:bg-brand-soft"
                   >
-                    Only {st.split(":")[0]}
+                    {st.startsWith("Paper 1")
+                      ? "Paper 1 (+ Exp. Methods)"
+                      : st.startsWith("Paper 2")
+                        ? "Paper 2 (+ Non-Exp. Methods)"
+                        : `Only ${st.split(":")[0]}`}
                   </button>
                 ))}
               </div>
@@ -230,8 +238,9 @@ export function CramSheet({
                   <button
                     key={p.id}
                     type="button"
+                    aria-pressed={active}
                     onClick={() => toggleTopic(p.id)}
-                    className={`flex items-center gap-1.5 rounded-xl border px-3 py-1.5 text-xs font-bold transition-all ${
+                    className={`flex items-center gap-1.5 rounded-xl border px-3 py-1.5 text-left text-xs font-bold transition-all ${
                       active
                         ? "border-brand bg-brand text-white shadow-sm"
                         : "border-line bg-surface text-ink-2 hover:border-brand/50 hover:text-ink"
@@ -262,6 +271,7 @@ export function CramSheet({
                 <button
                   key={id}
                   type="button"
+                  aria-pressed={sectionFilter === id}
                   onClick={() => setSectionFilter(id)}
                   className={`rounded-full px-3 py-1.5 text-xs font-bold transition-colors ${
                     sectionFilter === id ? "bg-brand text-white" : "bg-surface-2 text-ink-2 hover:text-ink"
@@ -303,8 +313,24 @@ export function CramSheet({
 
       {/* Per-Topic Cram Cards */}
       <div className="space-y-8">
+        {visiblePacks.length === 0 ? (
+          <div className="card space-y-2 p-6 text-center">
+            <p className="font-extrabold">No exam notes match &ldquo;{query.trim()}&rdquo; in your selected topics.</p>
+            <p className="text-sm text-ink-2">Try another keyword or select all 7 topics to search the full CIE 0266 syllabus.</p>
+            <div className="flex flex-wrap justify-center gap-2 pt-2">
+              <button type="button" onClick={() => setQuery("")} className="btn btn-secondary btn-sm">
+                Clear filter
+              </button>
+              {!singleTopicMode && selectedIds.size < packs.length ? (
+                <button type="button" onClick={() => updateSelection(new Set(allIds))} className="btn btn-primary btn-sm">
+                  Select all {packs.length} topics
+                </button>
+              ) : null}
+            </div>
+          </div>
+        ) : null}
         {visiblePacks.map((pack) => (
-          <article key={pack.id} className="card space-y-6 overflow-hidden p-5 sm:p-6">
+          <article key={pack.id} className="card space-y-6 overflow-hidden p-5 sm:p-6 print:overflow-visible print:shadow-none">
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line pb-4">
               <div className="flex items-center gap-3">
                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-soft text-2xl" aria-hidden>

@@ -15,10 +15,10 @@ function IllusionMeasurerWidget() {
   const xStart = 150;
   const xEnd = xStart + shaftLength; // 330
 
-  // Perceived percentage distortion (empirical psychophysical curve for textbook illustration)
+  // Perceived percentage distortion (empirical psychophysical curve peaking ~25–35° and dropping to 0% at 90°)
   const perceivedDistortionPct =
     mode === "muller-lyer"
-      ? Math.round(24 * Math.cos(((finAngle - 25) * Math.PI) / 140) * (finAngle > 2 ? 1 : 0))
+      ? Math.max(0, Math.round(24 * Math.cos(((finAngle - 25) * Math.PI) / 130) * (finAngle > 2 ? 1 : 0)))
       : Math.round((railTilt / 95) * 22);
 
   const finLen = 30;
@@ -131,7 +131,7 @@ function IllusionMeasurerWidget() {
                 y1={24}
                 x2={80}
                 y2={196}
-                stroke="#475569"
+                className="stroke-ink-2"
                 strokeWidth={3}
               />
               <line
@@ -139,7 +139,7 @@ function IllusionMeasurerWidget() {
                 y1={24}
                 x2={400}
                 y2={196}
-                stroke="#475569"
+                className="stroke-ink-2"
                 strokeWidth={3}
               />
               {[42, 66, 94, 126, 162, 188].map((yPos, idx) => {
@@ -153,7 +153,7 @@ function IllusionMeasurerWidget() {
                     y1={yPos}
                     x2={rightX}
                     y2={yPos}
-                    stroke="#cbd5e1"
+                    className="stroke-line"
                     strokeWidth={1.5 + t * 1.5}
                   />
                 );
@@ -169,14 +169,14 @@ function IllusionMeasurerWidget() {
               <polyline
                 points={`${xStart - dx},${68 - dy} ${xStart},68 ${xStart - dx},${68 + dy}`}
                 fill="none"
-                stroke="#1e293b"
+                className="stroke-ink"
                 strokeWidth={3}
                 strokeLinecap="round"
               />
               <polyline
                 points={`${xEnd + dx},${68 - dy} ${xEnd},68 ${xEnd + dx},${68 + dy}`}
                 fill="none"
-                stroke="#1e293b"
+                className="stroke-ink"
                 strokeWidth={3}
                 strokeLinecap="round"
               />
@@ -186,14 +186,14 @@ function IllusionMeasurerWidget() {
               <polyline
                 points={`${xStart + dx},${148 - dy} ${xStart},148 ${xStart + dx},${148 + dy}`}
                 fill="none"
-                stroke="#1e293b"
+                className="stroke-ink"
                 strokeWidth={3}
                 strokeLinecap="round"
               />
               <polyline
                 points={`${xEnd - dx},${148 - dy} ${xEnd},148 ${xEnd - dx},${148 + dy}`}
                 fill="none"
-                stroke="#1e293b"
+                className="stroke-ink"
                 strokeWidth={3}
                 strokeLinecap="round"
               />

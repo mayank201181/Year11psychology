@@ -37,7 +37,7 @@ export function WatchHub({ topics }: { topics: WatchTopicItem[] }) {
               Mind Games: CIE 0266 Psychology TV &amp; Watch Hub
             </h1>
             <p className="text-sm text-ink-2 sm:text-base">
-              Binge-watch <strong>Vani, Dr. Synapse &amp; Examiner Chen</strong> turning every Cambridge IGCSE Psychology (`0266`) topic into a narrated animated comedy episode — with Neuro-Board diagrams, mark-scheme traps, and 3 interactive pause challenges per topic!
+              Binge-watch <strong>Vani, Dr. Synapse &amp; Examiner Chen</strong> turning every Cambridge IGCSE Psychology (0266) topic into a narrated animated comedy episode — with Neuro-Board diagrams, mark-scheme traps, and 3 interactive pause challenges per topic!
             </p>
             <div className="flex flex-wrap gap-2 pt-1">
               <Link href="/episodes" className="btn btn-primary">

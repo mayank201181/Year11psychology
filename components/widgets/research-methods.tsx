@@ -27,8 +27,8 @@ const STUDIES: Record<
   caffeine: {
     label: "☕ Caffeine & Memory",
     vagueHyp: "Drinking coffee will improve participants' memory compared with not drinking coffee.",
-    ivCondA: "drink 150 mg of caffeinated coffee",
-    ivCondB: "drink 150 ml of decaffeinated placebo coffee",
+    ivCondA: "drink 250 ml of coffee containing 150 mg of caffeine",
+    ivCondB: "drink 250 ml of decaffeinated placebo coffee (0 mg caffeine)",
     dvUnit: "the number of words accurately recalled out of 20 in 60 seconds",
     dirPrediction: "recall significantly more words out of 20 in 60 seconds",
     matchedVar: "baseline digit-span memory score",
@@ -47,8 +47,8 @@ const STUDIES: Record<
     vagueHyp: "People are less helpful when lots of bystanders are around.",
     ivCondA: "witness a staged folder drop while waiting alone in a corridor",
     ivCondB: "witness a staged folder drop alongside 4 passive confederates",
-    dvUnit: "whether the participant bends down to pick up a folder within 20 seconds",
-    dirPrediction: "take significantly fewer seconds to initiate helping",
+    dvUnit: "latency (in seconds) taken to bend down and help pick up the dropped folder",
+    dirPrediction: "take significantly fewer seconds to bend down and help pick up the dropped folder",
     matchedVar: "pre-tested dispositional empathy score",
   },
   music: {
@@ -226,7 +226,7 @@ function HypothesisDesignStudio() {
                   : "All 40 Participants: Condition A FIRST (Morning)"}
           </text>
           <text x="400" y="51" fontSize="9.5" textAnchor="middle" fill="#1d4ed8">
-            Measure DV: {s.dvUnit.slice(0, 52)}
+            Measure DV: {s.dvUnit.length > 52 ? `${s.dvUnit.slice(0, 51)}…` : s.dvUnit}
           </text>
 
           <rect
@@ -535,12 +535,12 @@ function StatsScatterLab() {
             <line x1="65" y1="178" x2="500" y2="178" className="stroke-ink" strokeWidth="2" />
             <line x1="65" y1="178" x2="65" y2="24" className="stroke-ink" strokeWidth="2" />
             {bins.map((b, i) => {
-              const h = (b.count / n) * 180;
+              const h = (b.count / n) * 135;
               const bx = 95 + i * 92;
               return (
                 <g key={b.label}>
                   <rect x={bx} y={178 - h} width={92} height={h} fill="#fdba74" stroke="#c2410c" strokeWidth="1.5" />
-                  <text x={bx + 46} y={Math.min(170, 172 - h)} fontSize="11" fontWeight="bold" textAnchor="middle" className="fill-ink">
+                  <text x={bx + 46} y={Math.max(34, Math.min(170, 172 - h))} fontSize="11" fontWeight="bold" textAnchor="middle" className="fill-ink">
                     f = {b.count}
                   </text>
                   <text x={bx + 46} y="195" fontSize="10" textAnchor="middle" className="fill-ink-2">

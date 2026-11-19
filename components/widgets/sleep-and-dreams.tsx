@@ -277,12 +277,21 @@ function CircadianMelatoninExplorer() {
 
   const onsetClock = (((21.5 + effectiveShift) % 24) + 24) % 24;
   const fmtClock = (hr24: number) => {
-    const hWhole = Math.floor(hr24);
-    const mins = Math.round((hr24 - hWhole) * 60) % 60;
-    const suffix = hWhole >= 12 && hWhole < 24 ? "pm" : "am";
+    const totalMins = ((Math.round(hr24 * 60) % 1440) + 1440) % 1440;
+    const hWhole = Math.floor(totalMins / 60);
+    const mins = totalMins % 60;
+    const suffix = hWhole >= 12 ? "pm" : "am";
     const h12 = hWhole % 12 === 0 ? 12 : hWhole % 12;
     return `${h12}:${String(mins).padStart(2, "0")} ${suffix}`;
   };
+  const scnStatus =
+    Math.abs(effectiveShift) <= 1
+      ? "Entrained"
+      : effectiveShift < -1
+        ? "Phase-Ahead"
+        : jetLagShift > 0
+          ? "Phase-Lagging"
+          : "Screen-Delayed";
 
   return (
     <WidgetFrame
@@ -350,12 +359,12 @@ function CircadianMelatoninExplorer() {
         </svg>
       </div>
 
-      <div className="mt-3 grid grid-cols-3 gap-2">
+      <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-3">
         <Readout label="Melatonin Surge" value={fmtClock(onsetClock)} tone={Math.abs(effectiveShift) > 2 ? "bad" : "good"} />
         <Readout label="Peak Hormone" value={`${Math.round(peakSuppression * 100)}%`} tone={screenMode === "bluelight" ? "bad" : "brand"} />
         <Readout
           label="SCN Status"
-          value={Math.abs(effectiveShift) <= 1 ? "Entrained" : jetLagShift > 0 ? "Phase-Lagging" : "Delayed"}
+          value={scnStatus}
           tone={Math.abs(effectiveShift) <= 1 ? "good" : "bad"}
         />
       </div>

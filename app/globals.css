@@ -298,6 +298,25 @@ body {
 input[type="range"] { accent-color: var(--brand); width: 100%; }
 
 @media print {
+  :root,
+  :root[data-theme="dark"] {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f8fafc;
+    --ink: #0f172a;
+    --ink-2: #334155;
+    --line: #cbd5e1;
+    --brand: #0e7490;
+    --brand-soft: #e0f2fe;
+    --good: #15803d;
+    --good-soft: #f0fdf4;
+    --bad: #c2410c;
+    --bad-soft: #fff7ed;
+    --shadow: none;
+    color-scheme: light;
+  }
   .no-print { display: none !important; }
-  body { background: #fff; }
+  body { background: #ffffff !important; color: #0f172a !important; }
+  main { padding-bottom: 0 !important; max-width: none !important; }
+  .card { box-shadow: none !important; overflow: visible !important; }
 }
