@@ -379,7 +379,7 @@ function setKitchen(t) {
   ctx.fillStyle = '#b45309'; ctx.fillRect(0, 470, 980, 20); ctx.fillStyle = '#fbbf24'; ctx.fillRect(0, 490, 980, 160);
   for (let i = 0; i < 6; i++) { ctx.strokeStyle = '#d97706'; ctx.lineWidth = 3; ctx.strokeRect(20 + i * 160, 505, 140, 130); }
   // the drawer (open) at 820
-  ctx.fillStyle = '#92400e'; rr(740, 490, 170, 50, 6); ctx.fill(); ctx.fillStyle = '#fde68a'; rr(750, 496, 150, 22, 4); ctx.fill(); text('JUNK DRAWER', 825, 507, 12, '#92400e');
+  ctx.fillStyle = '#92400e'; rr(740, 490, 170, 50, 6); ctx.fill(); ctx.fillStyle = '#fde68a'; rr(785, 508, 80, 10, 5); ctx.fill();
   ctx.fillStyle = '#6b7280'; ctx.fillRect(0, 650, W, 70);
   // kettle and plant
   ctx.fillStyle = '#ef4444'; rr(120, 400, 70, 70, 20); ctx.fill(); ctx.fillStyle = '#16a34a'; ell(300, 420, 30, 40); ctx.fill(); ctx.fillStyle = '#92400e'; rr(280, 440, 40, 32, 4); ctx.fill();
@@ -387,12 +387,12 @@ function setKitchen(t) {
 function setMall(t) {
   const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#fff1f2'); g.addColorStop(1, '#ffe4e6'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
   // storefront
-  ctx.fillStyle = '#7e22ce'; ctx.fillRect(80, 30, 1120, 110);
-  text('👑 CUSHION KINGDOM 👑', 640, 86, 58, '#fde047', { stroke: '#4c1d95', sw: 8 });
+  ctx.fillStyle = '#7e22ce'; ctx.fillRect(80, 0, 1120, 82);
+  text('👑 CUSHION KINGDOM 👑', 640, 44, 44, '#fde047', { stroke: '#4c1d95', sw: 6 });
   // banners
-  const sw = Math.sin(t * 2) * 0.03;
-  ctx.save(); ctx.translate(320, 170); ctx.rotate(-0.05 + sw); ctx.fillStyle = '#dc2626'; rr(-170, 0, 340, 120, 12); ctx.fill(); text('30% OFF', 0, 42, 52, '#fff'); text('EVERYTHING*', 0, 92, 26, '#fde047'); ctx.restore();
-  ctx.save(); ctx.translate(960, 170); ctx.rotate(0.05 - sw); ctx.fillStyle = '#f97316'; rr(-190, 0, 380, 120, 12); ctx.fill(); text('+ EXTRA 20% OFF!', 0, 42, 40, '#fff'); text('*maths not included', 0, 92, 22, '#fff7ed'); ctx.restore();
+  const sw = Math.sin(t * 2) * 0.025;
+  ctx.save(); ctx.translate(320, 102); ctx.rotate(-0.04 + sw); ctx.fillStyle = '#dc2626'; rr(-155, 0, 310, 96, 12); ctx.fill(); text('30% OFF', 0, 36, 40, '#fff'); text('EVERYTHING*', 0, 74, 22, '#fde047'); ctx.restore();
+  ctx.save(); ctx.translate(960, 102); ctx.rotate(0.04 - sw); ctx.fillStyle = '#f97316'; rr(-175, 0, 350, 96, 12); ctx.fill(); text('+ EXTRA 20% OFF!', 0, 36, 34, '#fff'); text('*terms apply', 0, 74, 20, '#fff7ed'); ctx.restore();
   // shelves of cushions
   for (let s = 0; s < 2; s++) { const sx = s ? 900 : 60; ctx.fillStyle = '#d6d3d1'; ctx.fillRect(sx, 330, 320, 12); ctx.fillRect(sx, 430, 320, 12);
     for (let i = 0; i < 5; i++) { cushion(sx + 35 + i * 62, 300, 60, 52, CUSH[(i + s * 5) % 14], 0); cushion(sx + 35 + i * 62, 400, 60, 52, CUSH[(i + s * 5 + 3) % 14], 0); } }
@@ -402,18 +402,25 @@ function setMall(t) {
   for (let y = 540; y < 720; y += 40) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
 }
 function setCheckout(t) {
-  setMall(t);
-  ctx.fillStyle = 'rgba(255,241,242,0.9)'; ctx.fillRect(0, 150, W, 380);
-  ctx.fillStyle = '#1f2937'; rr(860, 170, 320, 60, 8); ctx.fill(); text('CHECKOUT', 1020, 200, 30, '#fde047');
-  ctx.fillStyle = '#fff'; rr(80, 190, 300, 110, 10); ctx.fill(); strokeC('#e11d48', 4); text('ALL PRICES', 230, 225, 22, '#e11d48'); text('+ 9% GST', 230, 258, 30, '#e11d48'); text('(obviously)', 230, 286, 16, '#9f1239');
+  const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#fff1f2'); g.addColorStop(1, '#ffe4e6'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = 'rgba(126,34,206,0.06)'; for (let x = 0; x < W; x += 120) ctx.fillRect(x, 0, 60, 520);
+  ctx.save(); ctx.globalAlpha = 0.25;
+  for (let s = 0; s < 2; s++) { const sx = s ? 900 : 60; ctx.fillStyle = '#d6d3d1'; ctx.fillRect(sx, 340, 320, 10); ctx.fillRect(sx, 430, 320, 10);
+    for (let i = 0; i < 5; i++) { cushion(sx + 35 + i * 62, 312, 56, 48, CUSH[(i + s * 5) % 14], 0); cushion(sx + 35 + i * 62, 402, 56, 48, CUSH[(i + s * 5 + 3) % 14], 0); } }
+  ctx.restore();
+  ctx.fillStyle = '#f5f5f4'; ctx.fillRect(0, 520, W, 200);
+  ctx.strokeStyle = '#e7e5e4'; ctx.lineWidth = 2; for (let x = -200; x < W + 200; x += 90) { ctx.beginPath(); ctx.moveTo(x, 520); ctx.lineTo(x + (x - 640) * 0.5, 720); ctx.stroke(); }
+  for (let y = 540; y < 720; y += 40) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+  ctx.fillStyle = '#1f2937'; rr(820, 112, 290, 58, 10); ctx.fill(); text('CHECKOUT', 965, 141, 30, '#fde047');
+  ctx.fillStyle = '#fff'; rr(110, 104, 280, 92, 10); ctx.fill(); strokeC('#e11d48', 4); text('ALL PRICES', 250, 134, 22, '#e11d48'); text('+ 9% GST', 250, 168, 28, '#e11d48');
 }
 function setClassroom(t) {
   ctx.fillStyle = '#fef9c3'; ctx.fillRect(0, 0, W, H);
   ctx.fillStyle = '#e2e8f0'; ctx.fillRect(0, 470, W, 250);
   ctx.fillStyle = '#94a3b8'; ctx.fillRect(0, 462, W, 10);
   ctx.fillStyle = '#7c2d12'; rr(60, 70, 520, 300, 8); ctx.fill(); ctx.fillStyle = '#f8fafc'; rr(72, 82, 496, 276, 4); ctx.fill();
-  ctx.font = '400 30px Hand'; ctx.textAlign = 'left'; ctx.fillStyle = '#1e3a8a'; ctx.fillText('Today: no calculators :(', 92, 130);
-  ctx.fillStyle = '#dc2626'; ctx.fillText('Homework due FRIDAY', 92, 180); ctx.fillStyle = '#16a34a'; ctx.fillText('Show your working!', 92, 230);
+  ctx.font = '400 30px Hand'; ctx.textAlign = 'left'; ctx.fillStyle = '#1e3a8a'; ctx.fillText('CIE 0266 Psychology', 92, 130);
+  ctx.fillStyle = '#dc2626'; ctx.fillText('Operationalise IV & DV!', 92, 180); ctx.fillStyle = '#16a34a'; ctx.fillText('GRAVE & DRIP Evaluation!', 92, 230);
   ctx.fillStyle = '#334155'; ctx.fillRect(80, 360, 480, 8);
   circ(820, 140, 54); fillC('#fff'); strokeC('#1f2937', 6); ctx.beginPath(); ctx.moveTo(820, 140); ctx.lineTo(820, 104); ctx.moveTo(820, 140); ctx.lineTo(846, 150); strokeC('#1f2937', 5);
   ctx.fillStyle = '#bae6fd'; rr(960, 80, 260, 200, 8); ctx.fill(); ctx.fillStyle = '#fff'; ctx.fillRect(1086, 80, 8, 200); ctx.fillRect(960, 176, 260, 8);
@@ -638,47 +645,69 @@ function drawSet(id, t) {
 
 // ---------- overlays ----------
 const SVG_IMG = new Map();
+const BOARD_W = 740, BOARD_MARGIN = 24, BOARD_Y = 18;
+function boardRect(side) {
+  return { x: side === 'left' ? BOARD_MARGIN : W - BOARD_W - BOARD_MARGIN, y: BOARD_Y, w: BOARD_W };
+}
 function drawBoard(entries, t, side) {
   const all = entries.filter(l => t >= l.t); if (!all.length) return;
-  const vis = all.filter(l => l.text !== undefined); const dg = all.filter(l => l.svg).pop();
-  const img = dg ? SVG_IMG.get(dg.svg) : null; const dh = img ? Math.min(280, img.height * 520 / img.width) : 0;
-  const w = 560, lh = 50, h = 60 + vis.length * lh + (img ? dh + 18 : 0) + 14, x = side === 'left' ? 30 : W - w - 30, y = 36;
+  const visAll = all.filter(l => l.text !== undefined);
+  const dg = all.filter(l => l.svg).pop();
+  const img = dg ? SVG_IMG.get(dg.svg) : null;
+  const vis = img ? visAll.slice(-3) : visAll.slice(-5);
+  const dw = BOARD_W - 40;
+  const lh = 40;
+  const headerH = 54;
+  const dh = img ? Math.min(324, Math.round(img.height * dw / img.width)) : 0;
+  const h = headerH + vis.length * lh + (img ? dh + 18 : 0) + 14;
+  const { x, y, w } = boardRect(side);
   const k = ease((t - all[0].t) / 0.35);
   ctx.save(); ctx.globalAlpha = k; ctx.translate(0, (1 - k) * -20);
-  ctx.shadowColor = 'rgba(0,0,0,0.35)'; ctx.shadowBlur = 20;
-  ctx.fillStyle = 'rgba(24,18,46,0.94)'; rr(x, y, w, h, 18); ctx.fill(); ctx.shadowBlur = 0;
+  ctx.shadowColor = 'rgba(0,0,0,0.38)'; ctx.shadowBlur = 22;
+  ctx.fillStyle = 'rgba(20,14,42,0.96)'; rr(x, y, w, h, 18); ctx.fill(); ctx.shadowBlur = 0;
   ctx.strokeStyle = '#a78bfa'; ctx.lineWidth = 4; rr(x, y, w, h, 18); ctx.stroke();
-  text("DR SYNAPSE'S NEURO-BOARD", x + 22, y + 26, 17, '#c4b5fd', { align: 'left', weight: 700 });
-  for (let i = 0; i < 9; i++) { circ(x + w - 30 - i * 16, y + 26, 4); fillC(i % 2 ? '#c084fc' : '#a78bfa'); }
+  text("DR SYNAPSE'S NEURO-BOARD", x + 22, y + 30, 28, '#c4b5fd', { align: 'left', weight: 700 });
+  for (let i = 0; i < 6; i++) { circ(x + w - 26 - i * 16, y + 30, 4.5); fillC(i % 2 ? '#c084fc' : '#a78bfa'); }
   vis.forEach((l, i) => {
     const kk = clamp((t - l.t) / 0.7, 0, 1);
     const isNew = t - l.t < 1.6 && i === vis.length - 1;
-    ctx.save(); rr(x + 10, y + 50 + i * lh, (w - 20) * kk, lh, 6); ctx.clip();
-    if (isNew) { ctx.fillStyle = 'rgba(250,204,21,0.12)'; ctx.fillRect(x + 10, y + 50 + i * lh, w - 20, lh); }
-    let size = 34; ctx.font = `400 ${size}px Hand`; while (ctx.measureText(l.text).width > w - 44 && size > 20) { size--; ctx.font = `400 ${size}px Hand`; }
-    const col = /✔/.test(l.text) ? '#86efac' : /✘|\?\?\?|NOT/.test(l.text) ? '#fca5a5' : '#f8fafc';
-    text(l.text, x + 22, y + 75 + i * lh, size, col, { align: 'left', font: 'Hand', weight: 400 });
+    const rowY = y + headerH + i * lh;
+    ctx.save(); rr(x + 12, rowY, (w - 24) * kk, lh, 6); ctx.clip();
+    if (isNew) { ctx.fillStyle = 'rgba(250,204,21,0.14)'; ctx.fillRect(x + 12, rowY, w - 24, lh); }
+    let size = 32; ctx.font = `400 ${size}px Hand`; while (ctx.measureText(l.text).width > w - 44 && size > 28) { size--; ctx.font = `400 ${size}px Hand`; }
+    const col = /✔|✓/.test(l.text) ? '#86efac' : /✘|✗|\?\?\?|NOT/.test(l.text) ? '#fca5a5' : '#f8fafc';
+    text(l.text, x + 22, rowY + lh / 2 + 1, size, col, { align: 'left', font: 'Hand', weight: 400 });
     ctx.restore();
   });
-  if (img) { ctx.globalAlpha = k * ease((t - dg.t) / 0.5); ctx.drawImage(img, x + 20, y + 56 + vis.length * lh + 8, 520, dh); ctx.globalAlpha = k; }
+  if (img) { ctx.globalAlpha = k * ease((t - dg.t) / 0.5); ctx.drawImage(img, x + 20, y + headerH + vis.length * lh + 8, dw, dh); ctx.globalAlpha = k; }
   ctx.restore();
 }
 function drawSubs(seg, t) {
   if (!seg.subs || !seg.subs.length || t < seg.subs[0].t - 0.1) return;
   let cur = seg.subs[0]; for (const s of seg.subs) if (t >= s.t) cur = s;
   const name = CH[seg.who].name + (seg.offstage ? ' (from the junk drawer)' : '');
-  const lines = wrap(cur.text, 1020, 30);
-  const h = 54 + lines.length * 38, y = H - h - 18;
-  ctx.fillStyle = 'rgba(12,10,30,0.82)'; rr(90, y, 1100, h, 18); ctx.fill();
-  text(name, 116, y + 24, 19, CH[seg.who].color, { align: 'left' });
-  lines.forEach((ln, i) => text(ln, 640, y + 62 + i * 38, 30, '#fff', { weight: 600 }));
+  let fontSize = 32;
+  let lines = wrap(cur.text, 1080, fontSize);
+  if (lines.length > 2) { fontSize = 28; lines = wrap(cur.text, 1100, fontSize); }
+  const lh = fontSize + 8;
+  const h = 54 + lines.length * lh, y = H - h - 14;
+  ctx.fillStyle = 'rgba(12,10,30,0.88)'; rr(56, y, 1168, h, 18); ctx.fill();
+  text(name, 84, y + 26, 28, CH[seg.who].color, { align: 'left' });
+  lines.forEach((ln, i) => text(ln, 640, y + 66 + i * lh, fontSize, '#fff', { weight: 600 }));
 }
 function drawLowerThird(cap, t) {
   const k = ease(t / 0.5), out = ease((t - 4.5) / 0.5); if (t > 5) return;
   const [nm, ...rest] = cap.split(' · ');
-  ctx.save(); ctx.translate(lerp(-700, 0, k) - out * 700, 0);
-  ctx.fillStyle = '#fde047'; rr(50, 410, 620, 60, 8); ctx.fill(); text(nm, 72, 441, 34, '#111', { align: 'left' });
-  ctx.fillStyle = '#111827'; rr(50, 470, 620, 44, 8); ctx.fill(); text(rest.join(' · '), 72, 492, 20, '#fff', { align: 'left', weight: 500 });
+  const sub = rest.join(' · ');
+  ctx.save(); ctx.translate(lerp(-780, 0, k) - out * 780, 0);
+  ctx.fillStyle = '#fde047'; rr(50, 424, 720, 56, 8); ctx.fill();
+  let ns = 34; ctx.font = `700 ${ns}px Fredoka`; while (ctx.measureText(nm).width > 680 && ns > 28) { ns--; ctx.font = `700 ${ns}px Fredoka`; }
+  text(nm, 72, 452, ns, '#111', { align: 'left' });
+  if (sub) {
+    ctx.fillStyle = '#111827'; rr(50, 480, 720, 48, 8); ctx.fill();
+    let ss = 28; ctx.font = `500 ${ss}px Fredoka`; while (ctx.measureText(sub).width > 680 && ss > 28) { ss--; ctx.font = `500 ${ss}px Fredoka`; }
+    text(sub, 72, 504, ss, '#fff', { align: 'left', weight: 500 });
+  }
   ctx.restore();
 }
 
@@ -698,21 +727,36 @@ function charState(seg, c, t) {
 }
 function camera(seg, t) {
   // returns {cx, cy, s}
+  const boardOn = seg.board && seg.board.some(b => t >= b.t);
+  const side = boardSide(seg);
   const conf = seg.scene && seg.scene.startsWith('confess');
-  if (conf) { const c0 = seg.cast[0]; const cs0 = CH[c0.who]; const drift = (t - firstOf(seg).t0) * 0.003;
+  if (conf) {
+    const c0 = seg.cast[0]; const cs0 = CH[c0.who]; const drift = (t - firstOf(seg).t0) * 0.003;
+    if (boardOn) {
+      const s = 1.55;
+      const targetSX = side === 'right' ? 258 : 1022;
+      return { cx: c0.x - (targetSX - W / 2) / s, cy: cs0.monster ? GROUND - 175 : GROUND - 370 * cs0.h + 115, s };
+    }
     if (cs0.monster) return { cx: c0.x - 110, cy: GROUND - 175, s: 1.45 + drift };
-    return { cx: c0.x - 90, cy: GROUND - 370 * cs0.h + 105, s: 1.8 + drift }; }
+    return { cx: c0.x - 90, cy: GROUND - 370 * cs0.h + 105, s: 1.8 + drift };
+  }
   if (seg.kind !== 'line' || seg.offstage) return { cx: 640, cy: 360, s: 1 };
   const sp = speakerAt(seg); if (!sp) return { cx: 640, cy: 360, s: 1 };
-  const boardOn = seg.board.some(b => t >= b.t);
   const cs = CH[sp.who]; const headY = GROUND - (cs.monster ? 230 : 370 * cs.h);
+  // Whenever a board is visible, lock a clean 2-column split with speaker in the open 516px column
+  if (boardOn) {
+    const s = cs.monster ? 1.38 : 1.50;
+    const targetSX = side === 'right' ? 258 : 1022;
+    const cx = sp.x - (targetSX - W / 2) / s;
+    return { cx, cy: cs.monster ? GROUND - 175 : headY + 115, s };
+  }
   if (seg.shot === 'wide') return { cx: 640, cy: 360, s: 1 };
   if (seg.shot === 'two') {
     const others = seg.cast.filter(o => o.who !== sp.who).sort((a, b) => Math.abs(a.x - sp.x) - Math.abs(b.x - sp.x));
     const mid = others.length ? (sp.x + others[0].x) / 2 : sp.x; return { cx: mid, cy: 380, s: 1.2 };
   }
-  const s = cs.monster ? 1.45 : 1.6; let cx = sp.x; if (boardOn) cx = sp.x + (sp.x < 640 ? 300 : -300) / s;
-  return { cx, cy: cs.monster ? GROUND - 170 : headY + 105, s };
+  const s = cs.monster ? 1.45 : 1.6;
+  return { cx: sp.x, cy: cs.monster ? GROUND - 170 : headY + 105, s };
 }
 function clampCam(c) { const hw = W / 2 / c.s, hh = H / 2 / c.s; c.cx = clamp(c.cx, hw, W - hw); c.cy = clamp(c.cy, hh, H - hh); return c; }
 
@@ -720,6 +764,9 @@ function drawStage(seg, t, opts = {}) {
   const cam = clampCam(camera(seg, t));
   const conf = seg.scene && seg.scene.startsWith('confess');
   const wob = conf ? 2.5 : 0;
+  const boardOn = seg.board && seg.board.some(b => t >= b.t);
+  const bRect = boardOn ? boardRect(boardSide(seg)) : null;
+  const sp = seg.kind === 'line' && !seg.offstage ? speakerAt(seg) : null;
   ctx.save();
   ctx.translate(W / 2 + Math.sin(t * 0.9) * wob + Math.sin(t * 2.3) * wob * 0.4, H / 2 + Math.cos(t * 0.7) * wob);
   if (conf) ctx.rotate(Math.sin(t * 0.5) * 0.004);
@@ -729,6 +776,12 @@ function drawStage(seg, t, opts = {}) {
   const order = [...seg.cast].sort((a, b) => behind(a.who) - behind(b.who));
   for (const c of order) {
     if (t < c.appear) continue;
+    // Never leave a non-speaking character's face/head trapped behind an open Neuro-Board
+    if (bRect && (!sp || c.who !== sp.who)) {
+      const sx = W / 2 + (c.x - cam.cx) * cam.s;
+      const halfW = (CH[c.who].monster ? 115 : 80) * cam.s;
+      if (sx + halfW > bRect.x - 16 && sx - halfW < bRect.x + bRect.w + 16) continue;
+    }
     const pk = c.appear > 0 ? clamp((t - c.appear) / 0.45, 0, 1) : 1;
     ctx.save();
     if (pk < 1) { const sc = back(pk); ctx.translate(c.x, GROUND); ctx.scale(sc, sc); ctx.translate(-c.x, -GROUND); }
@@ -781,7 +834,7 @@ function drawChallenge(seg, t) {
   if (seg.phase === 'count') {
     const k = t - seg.t0, n = Math.max(1, 5 - Math.floor(k));
     ctx.beginPath(); ctx.arc(640, 470, 110, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * (1 - (k % 1))); strokeC('#fde047', 16);
-    text(String(n), 640, 475, 120, '#fff'); text('pause now if you need longer!', 640, 640, 26, '#c7d2fe', { weight: 500 });
+    text(String(n), 640, 475, 120, '#fff'); text('pause now if you need longer!', 640, 640, 28, '#c7d2fe', { weight: 500 });
   }
   if (seg.phase === 'a') {
     const k = back((t - seg.t0) / 0.5); ctx.save(); ctx.translate(560, 430); ctx.scale(k, k);
@@ -791,7 +844,7 @@ function drawChallenge(seg, t) {
   if (seg.phase === 'q') text('Think…', 640, 470, 50, 'rgba(255,255,255,0.4)');
   if (seg.subs !== undefined && seg.phase !== 'count') { /* subtitles */ const s2 = Object.assign({}, seg, { subs: [{ t: seg.say0, text: seg.text }] }); drawSubsSmall(s2, t); }
 }
-function drawSubsSmall(seg, t) { if (t < seg.say0) return; const lines = wrap(seg.subs[0].text, 860, 24); const h = 20 + lines.length * 30, y = H - h - 14; ctx.fillStyle = 'rgba(0,0,0,0.6)'; rr(60, y, 900, h, 12); ctx.fill(); lines.forEach((l, i) => text(l, 510, y + 25 + i * 30, 24, '#fff', { weight: 500 })); }
+function drawSubsSmall(seg, t) { if (t < seg.say0) return; const lines = wrap(seg.subs[0].text, 880, 28); const h = 24 + lines.length * 36, y = H - h - 14; ctx.fillStyle = 'rgba(0,0,0,0.72)'; rr(40, y, 920, h, 12); ctx.fill(); lines.forEach((l, i) => text(l, 500, y + 30 + i * 36, 28, '#fff', { weight: 500 })); }
 
 function drawFreeze(seg, t) {
   const ref = TL.segments[seg.ref]; const k = t - seg.t0;
@@ -813,8 +866,9 @@ window.renderAt = function (t) {
   if (seg.kind === 'freeze') return drawFreeze(seg, t);
   if (!seg.scene) return;
   drawStage(seg, t);
+  const boardOn = seg.board && seg.board.some(b => t >= b.t);
   drawBoard(seg.board, t, boardSide(seg));
-  if (seg.caption) { let first = seg; for (const s of TL.segments) { if (s.scene === seg.scene && s.caption === seg.caption && s.t0 <= seg.t0) { first = s; break; } } drawLowerThird(seg.caption, t - firstOf(seg).t0); }
+  if (seg.caption && !boardOn) { drawLowerThird(seg.caption, t - firstOf(seg).t0); }
   if (seg.kind === 'line') drawSubs(seg, t);
   // fade from black at very start
   if (t < 0.6) { ctx.fillStyle = `rgba(0,0,0,${1 - t / 0.6})`; ctx.fillRect(0, 0, W, H); }

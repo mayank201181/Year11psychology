@@ -77,23 +77,23 @@ export function DrillItemCard({
   }
 
   return (
-    <article className="card p-4 sm:p-6">
+    <article className="card min-w-0 overflow-hidden p-4 sm:p-6">
       {header}
-      <Rich text={item.prompt} className="text-[1.08rem]" />
+      <Rich text={item.prompt} className="min-w-0 break-words text-[1.08rem]" />
       {item.diagram ? <Diagram svg={item.diagram} /> : null}
-      <div className="mt-4">
+      <div className="mt-4 min-w-0">
         <AnswerInput value={value} onChange={(v) => { setValue(v); setMsg(null); }} onSubmit={check} type={item.answer.type} disabled={!!done} autoFocus />
       </div>
       {!done ? (
         <>
           {msg ? (
-            <div className={`animate-pop mt-3 rounded-xl px-3 py-2 text-sm ${msg.status === "incorrect" ? "animate-shake bg-bad-soft" : msg.status === "close" ? "bg-warn-soft" : "bg-info-soft"}`} role="status" aria-live="polite">
+            <div className={`animate-pop mt-3 break-words rounded-xl px-3 py-2 text-sm ${msg.status === "incorrect" ? "animate-shake bg-bad-soft" : msg.status === "close" ? "bg-warn-soft" : "bg-info-soft"}`} role="status" aria-live="polite">
               {msg.status === "incorrect" ? <strong>Not quite. </strong> : msg.status === "close" ? <strong>Almost! </strong> : null}
               {msg.text ?? (msg.status === "incorrect" ? "Check your working and try once more." : null)}
             </div>
           ) : null}
           {hinted && item.hint ? (
-            <div className="mt-3 rounded-xl bg-warn-soft px-3 py-2 text-sm">
+            <div className="mt-3 break-words rounded-xl bg-warn-soft px-3 py-2 text-sm">
               <strong>Hint: </strong>
               <RichInline text={item.hint} />
             </div>
@@ -115,7 +115,7 @@ export function DrillItemCard({
           </div>
         </>
       ) : (
-        <div className={`animate-pop mt-4 rounded-xl border-l-4 p-4 ${done.correct ? "border-good bg-good-soft" : "border-bad bg-bad-soft"}`} role="status" aria-live="polite">
+        <div className={`animate-pop mt-4 min-w-0 break-words rounded-xl border-l-4 p-4 ${done.correct ? "border-good bg-good-soft" : "border-bad bg-bad-soft"}`} role="status" aria-live="polite">
           <div className="font-extrabold">{done.correct ? (done.tries === 1 && !done.hinted ? "✅ Correct — clean solve!" : "✅ Correct") : "Not this time"}</div>
           {/* Only specific feedback on the last wrong answer (a trap or checker hint) — never a "try again" prompt. */}
           {!done.correct && msg?.status === "incorrect" && msg.text ? <p className="mt-1 font-semibold">{msg.text}</p> : null}

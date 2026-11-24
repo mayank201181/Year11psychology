@@ -6,7 +6,7 @@ import { useStore } from "@/lib/store";
 type Tab = "welcome" | "login" | "signup";
 
 export function AuthGate() {
-  const { login, signup, startGuest, cloudAvailable } = useStore();
+  const { login, signup, startGuest, accountsAvailable } = useStore();
   const [tab, setTab] = useState<Tab>("welcome");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
@@ -38,7 +38,7 @@ export function AuthGate() {
           <button type="button" className="btn btn-primary w-full text-lg" onClick={startGuest}>
             Continue as Vanishree (no login needed)
           </button>
-          {cloudAvailable ? (
+          {accountsAvailable ? (
             <>
               <button type="button" className="btn btn-secondary w-full" onClick={() => setTab("login")}>
                 Sign in to cloud account
@@ -48,7 +48,7 @@ export function AuthGate() {
               </button>
             </>
           ) : null}
-          {cloudAvailable ? <p className="text-center text-xs text-ink-2">Optional cloud sync backs up progress across devices and unlocks Dr. Synapse AI hints.</p> : null}
+          {accountsAvailable ? <p className="text-center text-xs text-ink-2">Optional cloud sync backs up progress across devices and unlocks Dr. Synapse AI hints.</p> : null}
         </div>
       ) : (
         <form className="card mt-8 space-y-4 p-5" onSubmit={submit}>

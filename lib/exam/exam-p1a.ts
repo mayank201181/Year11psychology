@@ -280,10 +280,10 @@ export const paper: ExamPaper = {
       question:
         "How do the **suprachiasmatic nucleus (SCN)** and the **pineal gland** interact with **light** to regulate the circadian sleep-wake rhythm?",
       options: [
-        "Bright morning light causes the pineal gland to flood the bloodstream with melatonin to wake the cortex",
-        "The SCN is an exogenous zeitgeber in the cerebellum that releases growth hormone at noon",
-        "Light detected by retinal ganglion cells signals the hypothalamic SCN (endogenous pacemaker), which inhibits pineal melatonin release during daylight and allows melatonin secretion in darkness",
-        "Darkness shuts down the SCN completely so REM sleep cannot occur after midnight",
+        "Bright morning daylight detected by the retina stimulates the hypothalamic SCN to trigger a pineal surge of melatonin, raising cortical alertness for waking",
+        "The SCN acts as an exogenous zeitgeber located inside the cerebellum, signalling the pituitary gland to release growth hormone in response to evening darkness",
+        "Light detected by retinal cells signals the hypothalamic SCN (endogenous pacemaker), which inhibits pineal melatonin release in daylight and allows secretion in darkness",
+        "Evening darkness switches off the hypothalamic SCN completely, allowing the pineal gland to suppress both Slow-Wave Sleep and REM dreaming until dawn arrives",
       ],
       answerIndex: 2,
       explanation:
@@ -303,10 +303,10 @@ export const paper: ExamPaper = {
       question:
         "According to **Oswald's Restoration Theory of Sleep**, how do the restorative roles of **Slow-Wave Sleep (NREM Stage 3)** and **REM sleep** differ?",
       options: [
-        "SWS drives physical body restoration via growth-hormone release and tissue repair, while REM drives brain restoration via protein synthesis, neurotransmitter replenishment and memory consolidation",
-        "SWS restores procedural motor skills only, while REM repairs broken bone tissue",
-        "Both SWS and REM exist solely to keep animals immobile in burrows away from nocturnal predators",
-        "SWS flushes melatonin out of muscles, while REM suppresses brain protein synthesis",
+        "SWS drives physical body repair via growth-hormone release and cellular recovery, while REM drives brain restoration via protein synthesis and neurotransmitter replenishment",
+        "SWS drives brain restoration by replenishing depleted neurotransmitters and synaptic plasticity, while REM drives physical muscle repair through pituitary growth-hormone surges",
+        "Both SWS and REM evolved primarily to conserve metabolic calories and keep vulnerable animals hidden and immobile in burrows away from nocturnal predators",
+        "SWS clears excess pineal melatonin out of skeletal muscles early in the night, while REM temporarily halts brain protein synthesis to conserve cortical glucose",
       ],
       answerIndex: 0,
       explanation:
@@ -423,10 +423,10 @@ export const paper: ExamPaper = {
       question:
         "What is the precise distinction between **prosocial behaviour** and **true altruism**?",
       options: [
-        "Prosocial behaviour only occurs among genetic relatives, whereas altruism only occurs on public transport",
-        "Prosocial behaviour includes any voluntary action intended to benefit others (even for praise or mood boost), whereas altruism helps another at personal cost with zero expectation of self-reward",
-        "Prosocial behaviour is reflexive and unconscious, whereas altruism requires tangible token rewards",
-        "Altruism means ignoring emergencies in crowds, whereas prosocial behaviour means copying television violence",
+        "Prosocial behaviour refers exclusively to helping close genetic relatives to boost inclusive fitness, whereas altruism refers to any everyday favour offered to unrelated strangers",
+        "Prosocial behaviour covers any voluntary act intended to benefit others (even for praise or mood relief), whereas altruism helps at personal cost with zero expected self-reward",
+        "Prosocial behaviour is strictly selfless helping carried out anonymously at high personal risk, whereas altruism is the broader umbrella covering any helpful act including rewarded acts",
+        "Prosocial behaviour is an involuntary biological reflex triggered automatically by victim distress, whereas altruism requires tangible external reinforcement or reciprocal payback",
       ],
       answerIndex: 1,
       explanation:
@@ -486,10 +486,10 @@ export const paper: ExamPaper = {
       question:
         "What surprising result did **Piliavin et al. (1969)** find on New York subway trains regarding the **number of passengers in the carriage** when the cane-carrying victim collapsed?",
       options: [
-        "Zero passengers ever helped the cane victim in any carriage",
-        "Female passengers carried the male victim off the train significantly more often than male passengers",
-        "Passengers only helped when promised a $10 subway voucher beforehand",
-        "Opposite to laboratory bystander apathy, larger crowds on the subway helped JUST AS FAST (or slightly faster) than smaller crowds — while the cane victim received far more spontaneous help (~95%) than the drunk victim (~50%)",
+        "Matching Latané & Darley's laboratory seizure findings, carriages with seven or more passengers showed strong diffusion of responsibility and almost never helped the cane victim",
+        "Larger crowds produced slower helping for the cane victim than for the drunk victim, with female passengers stepping in as the first helper on roughly 90% of subway trials",
+        "Crowd size made helping collapse completely after 70 seconds unless a uniformed model offered commuters transit vouchers, showing subway bystanders ignore visible emergencies",
+        "Unlike lab bystander apathy, larger subway crowds helped at least as fast as smaller crowds — and the cane victim received far more spontaneous help (~95%) than the drunk victim (~50%)",
       ],
       answerIndex: 3,
       explanation:
@@ -509,10 +509,10 @@ export const paper: ExamPaper = {
       question:
         "How did **Rushton et al.'s** twin questionnaire study support a **biological/genetic** basis for prosocial behaviour?",
       options: [
-        "Dizygotic (non-identical) twins scored higher on altruism than monozygotic twins",
-        "Twins raised in cities helped dropped pens less often than singletons in Levine et al.",
-        "Monozygotic (identical, 100% shared genes) twins showed significantly stronger correlations on self-reported altruism and empathy scales (~50% heritability) than dizygotic twins (~50% shared genes)",
-        "Brain scans showed twins lacked an amygdala altogether",
+        "Dizygotic (non-identical, ~50% shared genes) twins showed significantly higher correlations on self-reported altruism and empathy scales than monozygotic (identical) twins",
+        "Monozygotic twins scored identically to dizygotic twins across all helping items, showing that shared family upbringing accounted for roughly 50% of altruism variance",
+        "Monozygotic (identical, 100% shared genes) twins showed significantly higher correlations on self-reported altruism and empathy (~50% heritability) than dizygotic twins (~50% genes)",
+        "Covert street observations confirmed that monozygotic twins donated blood and helped strangers twice as often as non-twin siblings, with zero role for non-shared environment",
       ],
       answerIndex: 2,
       explanation:
@@ -532,10 +532,10 @@ export const paper: ExamPaper = {
       question:
         "What did **Prot et al.'s** large cross-cultural investigation (across Western and East Asian nations) conclude about **prosocial media** (video games/TV where characters help and cooperate)?",
       options: [
-        "Prosocial media had zero relationship with empathy in collectivist cultures",
+        "Prosocial video games increased empathy only among individualist Western youths, showing no significant link with helping in collectivist East Asian nations like Singapore",
         "Exposure to prosocial media increased trait empathy, which in turn predicted higher real-world helping behaviour across diverse cultures both correlationally and longitudinally",
-        "Playing prosocial video games actually increased playground aggression",
-        "Only parental punishment, never media role models, influenced teenagers' helping",
+        "Frequent cooperative gaming reduced real-world helping over two years because spending extra hours on screens lowered face-to-face perspective-taking and empathy",
+        "Prosocial media showed only a brief laboratory correlation with kindness, disappearing completely once baseline Wave 1 helping was controlled in the longitudinal study",
       ],
       answerIndex: 1,
       explanation:
@@ -709,9 +709,9 @@ export const paper: ExamPaper = {
       question:
         "Dr Yeo investigates whether room temperature (16 °C vs 28 °C) affects recall of a 25-word list. Halfway through, the air-conditioning breaks so the '16 °C' group actually sits in a noisy hallway while workmen hammer! Why does this destroy **internal validity**?",
       options: [
-        "Because the hallway has too much ecological validity",
-        "Because 25 words is qualitative nominal data",
-        "Because Dr Yeo used a bar chart instead of a histogram",
+        "Because testing participants in a lively everyday hallway raises ecological validity too high, automatically turning a controlled laboratory design into a correlational survey",
+        "Because moving one condition to a noisy hallway prevents the researcher from calculating a mean recall score, turning the 25-word count into qualitative nominal data",
+        "Because hammering noise occurred only in the cool room, it affected both experimental groups equally as a standardised situational control rather than an extraneous variable",
         "Because loud hammering noise varied systematically with one condition only, acting as a confounding variable so Dr Yeo cannot tell whether temperature or noise changed recall",
       ],
       answerIndex: 3,

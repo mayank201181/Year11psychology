@@ -135,10 +135,10 @@ export const practice: TopicPractice = {
       question:
         "In **Haber & Levin's (2001)** outdoor field study, which type of target object yielded the **most accurate** size and distance judgements?",
       options: [
-        "Unfamiliar flat cardboard triangles and circles",
+        "Unfamiliar geometric cardboard cut-outs (such as plain flat circles, triangles, and rectangles)",
         "Familiar invariant-sized objects (such as regulation basketballs and 2-litre soda bottles)",
-        "Objects flashed for 30 milliseconds in a dark basement",
-        "Taboo words triggering Galvanic Skin Response",
+        "Familiar variant-sized objects (such as teddy bears, Christmas trees, and houseplants)",
+        "Monocular 2D geometric illusion cards (such as Müller-Lyer shafts and Ebbinghaus rings)",
       ],
       answerIndex: 1,
       explanation:

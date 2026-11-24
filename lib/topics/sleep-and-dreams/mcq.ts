@@ -235,9 +235,9 @@ export const mcqPapers: Paper[] = [
         question:
           "What was a headline finding of **Iorio, Sommantico & Parrello's (2020)** study of **796 Italian participants** during the COVID-19 lockdown?",
         options: [
-          "Lockdown completely eliminated dream recall in both men and women until restrictions ended",
-          "Dreams consisted solely of pleasant childhood holiday wishes with zero pandemic imagery",
-          "EEG recordings showed Slow-Wave Sleep expanded to eight hours per night in infected patients",
+          "Men and older adults reported higher dream recall than women, while participants directly affected by COVID-19 recalled almost no dreams at all",
+          "Lockdown dreams consisted predominantly of disguised positive wish-fulfilment themes, with virtually no waking pandemic or confinement imagery",
+          "Home EEG sleep logs showed that infected participants spent twice as long in Slow-Wave Sleep while REM dreaming disappeared during quarantine",
           "Women and participants directly affected by COVID-19 reported higher dream recall, stronger negative emotions, and themes of contagion and confinement",
         ],
         answerIndex: 3,
@@ -349,9 +349,9 @@ export const mcqPapers: Paper[] = [
           "Singapore Airlines passengers flying **eastward** from London to Singapore (shortening their day by 8 hours — a **phase advance**) typically suffer worse jet lag than when flying **westward** from Singapore to London (**phase delay**). Why?",
         options: [
           "The human endogenous SCN clock naturally free-runs slightly longer than 24 hours (~24.5h), making it easier to lengthen a day westward than compress it eastward",
-          "Melatonin is only secreted in the Northern Hemisphere and stops working near the equator",
-          "Westward flights eliminate REM sleep completely so travellers need only two hours of sleep",
-          "Cabin air pressure permanently disables exogenous light zeitgebers on eastbound routes",
+          "The endogenous SCN pacemaker naturally free-runs shorter than 24 hours (~22h), making it harder to stay awake longer westward than to advance sleep eastward",
+          "Pineal melatonin secretion is triggered exclusively by bright morning sunlight, so crossing eastward time zones floods the cortex with excess sleep hormones",
+          "Eastward jet travel suppresses NREM Stage 3 delta waves altogether while lengthening ultradian REM cycles from 90 minutes to 12 hours after arrival",
         ],
         answerIndex: 0,
         explanation:
@@ -392,10 +392,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why does **unihemispheric Slow-Wave Sleep** in bottlenose and Indus River dolphins (putting **one brain hemisphere to sleep at a time** while swimming continuously to breathe) pose a powerful challenge to **Meddis's Evolutionary Theory**?",
         options: [
-          "It proves dolphins have no suprachiasmatic nucleus or pineal gland",
-          "It shows aquatic mammals spend 24 hours a day in paralysed REM dreaming",
-          "If sleep merely evolved to keep animals still and safe, dolphins should have evolved out of sleeping altogether when stillness causes drowning — proving sleep serves an essential brain-restoration need",
-          "It proves predators sleep fewer hours per day than open-savannah grazing prey",
+          "It demonstrates that aquatic mammals lack an endogenous suprachiasmatic nucleus and pineal gland, relying entirely on water temperature as a zeitgeber",
+          "It proves that dolphins spend almost all their sleep time in paralysed REM dreaming to process sonar memories, whereas Meddis argued only land mammals dream",
+          "If sleep merely evolved to enforce safe stillness, dolphins should have lost sleep when immobility risks drowning — showing sleep meets an essential brain-restoration need",
+          "It contradicts Meddis's predator-avoidance data by showing that large ocean predators sleep significantly fewer hours per day than exposed savannah herbivores",
         ],
         answerIndex: 2,
         explanation:
@@ -437,9 +437,9 @@ export const mcqPapers: Paper[] = [
           "A sleep clinician advises Zara (who revises, watches movies, and worries in bed for hours every night) to **use her bed strictly for sleeping**, do all revision at a desk, and leave the bedroom for quiet dim-light reading whenever she is still awake after 20 minutes. What psychological principle underpins this **stimulus control** sleep-hygiene rule?",
         options: [
           "Breaking the learned classical conditioning association between the bed and anxious wakefulness so the bed cues rapid sleepiness again",
-          "Permanently halting all REM dreaming so Zara stays in NREM Stage 1 all night",
-          "Increasing blue-light stimulation of the optic chiasm at 2:00 am",
-          "Triggering proactive interference so Zara forgets her exam worry",
+          "Suppressing late-night REM sleep cycles so Zara transitions directly from relaxed alpha wakefulness into uninterrupted NREM Stage 1 sleep",
+          "Exposing the retina to bright room lighting every 20 minutes to reset the suprachiasmatic nucleus and speed up nocturnal melatonin release",
+          "Using cognitive displacement and proactive interference at a desk so exam anxieties are permanently repressed before sleep onset begins",
         ],
         answerIndex: 0,
         explanation:
@@ -502,10 +502,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Many people report the common dream of **trying to sprint away from danger while their legs feel heavy like concrete or paralysed**. How does **Hobson & McCarley's Activation-Synthesis Theory** neatly explain this exact sensation?",
         options: [
-          "It represents an unconscious childhood wish to remain a helpless infant",
-          "High melatonin freezes the visual cortex while legs kick wildly under the duvet",
-          "Slow delta waves in Stage 3 convince the cerebellum that gravity has doubled",
-          "Brainstem activation triggers motor-cortex running commands during REM, while brainstem muscle atonia blocks actual leg movement — and the forebrain synthesises that mismatch as 'frozen legs'",
+          "Dreamwork disguises a repressed unconscious desire to stay passive and dependent as a manifest running nightmare, protecting the dreamer from waking in anxiety",
+          "High pineal melatonin levels temporarily suppress the occipital visual cortex during REM, preventing the dreamer from seeing their legs moving normally in bed",
+          "High-amplitude delta waves in NREM Stage 3 slow cerebellar balance signals so drastically that the sleeping cortex perceives normal body weight as paralysed",
+          "Brainstem activation triggers motor-cortex running signals during REM, while muscle atonia blocks real leg movement — and the forebrain synthesises that mismatch as 'frozen legs'",
         ],
         answerIndex: 3,
         explanation:
@@ -634,10 +634,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why does keeping a bedroom cool (~`18 °C`) rather than hot (`28 °C`) serve as an effective **sleep-hygiene** practice?",
         options: [
-          "Cold air forces skeletal muscles to shiver, inducing REM paralysis immediately",
+          "Cool bedroom air lowers skeletal muscle tone rapidly, bypassing light NREM Stages 1 and 2 to trigger REM atonia immediately at sleep onset",
           "Falling core body temperature naturally accompanies circadian melatonin rise at sleep onset, whereas overheating triggers wakeful arousal",
-          "The pineal gland freezes above 22 °C and stops producing Growth Hormone",
-          "Cool temperatures extend each ultradian sleep cycle from 90 minutes to 6 hours",
+          "Warm room temperatures above 22 °C inhibit the pineal gland from releasing Growth Hormone, preventing physical tissue repair during Stage 3",
+          "Lower ambient temperatures slow the endogenous SCN pacemaker, stretching each 90-minute ultradian sleep cycle into a longer six-hour cycle",
         ],
         answerIndex: 1,
         explanation:
@@ -728,10 +728,10 @@ export const mcqPapers: Paper[] = [
         question:
           "**Ralph et al. (1990)** transplanted SCN tissue from mutant **20-hour** hamsters into normal **24-hour** hamsters whose own SCN had been lesioned, shifting the recipients to a **20-hour** sleep-wake cycle. Mention **one key limitation** of using this study to explain human circadian rhythms.",
         options: [
-          "It used an online self-report questionnaire that hamsters could fake for social desirability",
+          "It relied on subjective owner self-reports of hamster sleep schedules rather than objective behavioural monitoring, introducing social desirability bias",
           "Invasive animal brain surgery raises ethical harm concerns and rodent circadian responsiveness may not generalise fully to humans influenced by complex social cues",
-          "It had no Independent Variable or measurable Dependent Variable",
-          "Hamsters do not possess a hypothalamus or optic nerve",
+          "It was a purely correlational field observation with no manipulated Independent Variable and no standardised control over light-dark exposure",
+          "Because hamsters lack both a hypothalamus and retinal light pathways, their biological clocks operate through entirely different brain structures from humans",
         ],
         answerIndex: 1,
         explanation:
@@ -750,10 +750,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Rechtschaffen et al.'s (1983)** 'disk-over-water' experiment, rats forced awake whenever they drifted into sleep lost weight and died within weeks. Beyond ethical harm, what **confounding variable** weakens using this study as pure proof of **Oswald's Restoration Theory**?",
         options: [
-          "The rats were given unlimited melatonin supplements that made them sleep 20 hours a day",
-          "The rats were allowed to sleep normally in safe burrows throughout the experiment",
+          "Experimental rats received high daily melatonin doses that suppressed Growth Hormone release, preventing tissue repair independently of waking duration",
+          "Yoked control rats were housed in total darkness without light zeitgebers, so their deaths reflected circadian disruption rather than sleep deprivation",
           "Being repeatedly knocked into cold water induced extreme physiological stress, so stress rather than lack of sleep repair alone may have caused death",
-          "Rats never experience NREM or REM sleep stages in nature",
+          "Laboratory rats naturally lack Slow-Wave Sleep and REM muscle atonia, meaning the rotating disk procedure could never deprive them of restorative stages",
         ],
         answerIndex: 2,
         explanation:
@@ -772,9 +772,9 @@ export const mcqPapers: Paper[] = [
         question:
           "Neuropsychologist **Mark Solms (2000)** studied stroke and tumour patients and discovered two striking facts: (1) patients with **brainstem pons damage** often *continued dreaming*, whereas (2) patients with **ventromedial prefrontal/parietal forebrain damage** completely *lost dreaming* even though their **REM sleep stayed intact**! Which theory does this directly challenge?",
         options: [
-          "Godden & Baddeley's context-dependent diver theory",
-          "Siffre's endogenous cave pacemaker findings",
-          "Meddis's giraffe predator-avoidance findings",
+          "Oswald's claim that Slow-Wave Sleep Growth Hormone drives physical muscle and tissue repair",
+          "Siffre's claim that the endogenous SCN pacemaker free-runs slightly longer than 24 hours",
+          "Meddis's claim that sleep evolved to conserve energy and keep vulnerable prey immobile",
           "Hobson & McCarley's claim that REM pons activation is the essential generator of all dreams",
         ],
         answerIndex: 3,
@@ -795,9 +795,9 @@ export const mcqPapers: Paper[] = [
           "Why do research psychologists classify **Freud's (1900) dream theory** as **unfalsifiable**?",
         options: [
           "No empirical observation can ever disprove it — whether a dream matches a wish or shows the exact opposite, an analyst can claim dreamwork disguised or inverted the latent wish",
-          "Freud tested over ten thousand participants using double-blind EEG machines",
-          "Dreams last less than 200 milliseconds so nobody can ever write one down",
-          "Freud refused to discuss unconscious desires in any of his published books",
+          "Freud relied exclusively on quantitative EEG sleep-lab recordings from large samples, which produced statistical correlations that could never establish clinical case validity",
+          "Because REM dreams occur solely in NREM Stage 3 delta sleep, participants experience total morning amnesia and cannot report any manifest dream plot to test empirically",
+          "Freud deliberately refused to formulate hypotheses about latent content or childhood wishes in his published works, focusing purely on brainstem activation during sleep",
         ],
         answerIndex: 0,
         explanation:
@@ -838,10 +838,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why was **Iorio et al.'s (2020)** combination of **standardised rating scales** (emotion intensity 1–5) AND **open-ended written 'Most Recent Dream' narratives** a strong methodological choice?",
         options: [
-          "It guaranteed participants never forgot any dream details upon waking",
-          "It allowed researchers to manipulate COVID-19 lockdown as a random laboratory IV",
+          "Combining scales with written reports eliminated retrospective forgetting and social desirability bias, guaranteeing 100% accurate dream recall",
+          "It enabled researchers to randomly allocate Italian adults into lockdown versus non-lockdown laboratory conditions, establishing strict causation",
           "Quantitative scales enabled objective statistical comparisons across groups, while qualitative narratives captured rich symbolic lockdown themes",
-          "It eliminated the need for informed consent or participant anonymity",
+          "Using mixed self-report formats provided objective EEG verification of whether each reported lockdown dream occurred during REM or NREM Stage 3",
         ],
         answerIndex: 2,
         explanation:
@@ -860,9 +860,9 @@ export const mcqPapers: Paper[] = [
         question:
           "Twin studies of **sleepwalking (somnambulism)** (e.g. Hublin et al.; Lecendreux et al.) find concordance rates of roughly **~50–55% in monozygotic (MZ, identical) twins** versus **~10–15% in dizygotic (DZ, non-identical) twins**. What conclusion do both numbers together support?",
         options: [
-          "Sleepwalking is 100% environmentally learned by imitating siblings at bedtime",
-          "Sleepwalking is 100% genetically determined with zero role for environmental triggers",
-          "DZ twins share 100% of genes whereas MZ twins share only 50% of genes",
+          "Sleepwalking is purely environmentally learned through sibling imitation at home, because DZ twins show almost the exact same concordance as MZ twins",
+          "Sleepwalking is 100% genetically determined with no influence from stress or sleep loss, because MZ concordance is more than three times higher than DZ concordance",
+          "Sleepwalking has only a weak environmental basis because DZ twins share 100% of their genes while MZ twins share 50%, inverting the usual heritability pattern",
           "Sleepwalking has a strong genetic predisposition (MZ > DZ), but environmental triggers like sleep deprivation or stress also play a role since MZ concordance is well below 100%",
         ],
         answerIndex: 3,
@@ -904,10 +904,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A school survey finds a **strong negative correlation (`r = −0.68`)** between **hours of late-night phone use after 10:00 pm** and **total hours slept on school nights**. Which interpretation is scientifically **valid**?",
         options: [
-          "Late-night phone use is proven to be the sole cause of short sleep in every teenager",
-          "As late-night phone hours increase, total hours slept tend to decrease — though a third variable (such as pre-existing insomnia or stress) could contribute, because correlation does not prove causation",
-          "Students who use phones longer after 10:00 pm also sleep significantly more hours",
-          "There is zero relationship between late-night phone use and sleep duration",
+          "Late-night phone use is proven experimentally to be the direct cause of shorter sleep in teenagers, because an r value of −0.68 confirms a causal link",
+          "As late-night phone hours increase, total hours slept tend to decrease — yet a third variable (like stress or insomnia) could contribute, since correlation cannot prove causation",
+          "As late-night phone use increases, total school-night sleep tends to increase as well, though a third variable like homework load could confound this positive trend",
+          "Because the correlation coefficient is negative rather than positive, there is no meaningful association between late-night phone use and sleep duration",
         ],
         answerIndex: 1,
         explanation:
@@ -948,9 +948,9 @@ export const mcqPapers: Paper[] = [
         question:
           "**Horne & Minard (1985)** took participants on an exhausting but **physically gentle** day out (cinema, shopping centres, art galleries, scenic drives — heavy visual/mental stimulation with minimal muscle exercise) and found **Slow-Wave Sleep increased significantly** that night! How does this refine **Oswald's Restoration Theory**?",
         options: [
-          "It proves Slow-Wave Sleep only occurs in predators after hunting prey",
-          "It shows Slow-Wave Sleep is merely an artefact of drinking coffee at galleries",
-          "It proves REM sleep rather than SWS releases Growth Hormone into leg muscles",
+          "It supports Meddis's evolutionary view that Slow-Wave Sleep rises purely to conserve calories after prolonged periods of low physical movement",
+          "It indicates that Slow-Wave Sleep increases solely in response to intense skeletal muscle fatigue, confirming physical exercise is its only trigger",
+          "It demonstrates that REM sleep rather than Slow-Wave Sleep releases pituitary Growth Hormone to repair overworked visual pathways after mental effort",
           "It suggests Slow-Wave Sleep is vital for cerebral cortex recovery from intense waking mental processing, not merely physical muscle repair",
         ],
         answerIndex: 3,
@@ -970,10 +970,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What major methodological limitation affects **all** dream-content studies — whether **Freud's** clinical notes, **Dement & Kleitman's** lab awakenings, or **Iorio et al.'s (2020)** online lockdown surveys?",
         options: [
-          "Researchers can never observe a dream directly — they must rely on the dreamer's subjective retrospective verbal/written report after waking, risking forgetting and reconstructive distortion",
-          "Dreams only happen once every five years in healthy adults",
-          "EEG machines erase dream memories the instant an electrode touches the scalp",
-          "Participants are paralysed for three hours after waking and cannot speak",
+          "Researchers cannot observe dreams directly — they must rely on subjective retrospective waking reports, which are vulnerable to forgetting and reconstructive distortion",
+          "All dream-content studies rely exclusively on tiny `n = 1` clinical case studies of Austrian patients, preventing quantitative comparison across larger adult samples",
+          "Polysomnography scalp electrodes artificially disrupt REM sleep in every dream study, causing low ecological validity and eliminating natural emotional themes",
+          "Because REM muscle atonia persists for over an hour after waking, participants cannot speak or write until their dream memories have completely decayed from STM",
         ],
         answerIndex: 0,
         explanation:

@@ -6,7 +6,7 @@ import sys, os, json, hashlib, re, subprocess
 import numpy as np, soundfile as sf
 
 SR = 24000
-FPS = 12
+FPS = 24
 HERE = os.path.dirname(os.path.abspath(__file__))
 script_path, out = sys.argv[1], sys.argv[2]
 os.makedirs(out, exist_ok=True)

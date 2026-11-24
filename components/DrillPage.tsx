@@ -66,7 +66,7 @@ export function DrillPage({ skillId, topicReady = true }: { skillId: string; top
   );
 
   return (
-    <div className="space-y-5">
+    <div className="min-w-0 space-y-5">
       <nav aria-label="Breadcrumb" className="text-sm">
         <ol className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-ink-2">
           <li>
@@ -85,7 +85,7 @@ export function DrillPage({ skillId, topicReady = true }: { skillId: string; top
             )}
           </li>
           <li aria-hidden>›</li>
-          <li aria-current="page" className="font-bold text-ink">
+          <li aria-current="page" className="min-w-0 break-words font-bold text-ink">
             {drill.title}
           </li>
         </ol>
@@ -95,7 +95,7 @@ export function DrillPage({ skillId, topicReady = true }: { skillId: string; top
 
       <div className="flex flex-wrap items-center gap-2">
         {topicReady ? (
-          <Link href={lessonHref} className="btn btn-secondary text-sm">
+          <Link href={lessonHref} className="btn btn-secondary max-w-full break-words text-left text-sm">
             <span aria-hidden>📖</span> {section ? `Lesson: ${section.heading}` : "Revise the lesson"}
           </Link>
         ) : null}

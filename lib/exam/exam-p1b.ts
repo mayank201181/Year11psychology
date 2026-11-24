@@ -18,10 +18,10 @@ export const paper: ExamPaper = {
       question:
         "In **Murdock's (1962)** serial position study, if participants are forced to **count backwards in threes for 30 seconds** immediately after hearing the 20th word before recalling, what happens to the serial position curve?",
       options: [
-        "The primacy effect vanishes completely while the recency effect doubles",
-        "Both primacy and recency rise to 100% accuracy",
+        "The primacy effect disappears completely (because early words decay from LTM during counting), while the recency effect stays high (held in STM)",
+        "Both primacy and recency rise sharply (because counting aloud provides acoustic maintenance rehearsal that consolidates all 20 words into LTM)",
         "The recency effect disappears (because the 30s distractor displaces/decays STM), while the primacy effect remains high (already stored in LTM)",
-        "All 20 words transfer instantly into the visuo-spatial sketchpad",
+        "Middle-list words become the best recalled (because the 30s verbal delay frees the central executive to retrieve items from the sensory register)",
       ],
       answerIndex: 2,
       explanation:
@@ -42,9 +42,9 @@ export const paper: ExamPaper = {
         "In Baddeley & Hitch's Working Memory Model, which two subdivisions make up the **phonological loop**?",
       options: [
         "The phonological store ('inner ear') and the articulatory control process ('inner voice')",
-        "The visual cache and the inner scribe",
-        "The hippocampus and the amygdala",
-        "The manifest buffer and the latent executive",
+        "The visual cache (storing form and colour) and the inner scribe (spatial movement coding)",
+        "The central executive (attentional boss) and the episodic buffer (multi-modal integrator)",
+        "The iconic register (brief visual trace) and the echoic register (brief auditory trace)",
       ],
       answerIndex: 0,
       explanation:
@@ -256,10 +256,10 @@ export const paper: ExamPaper = {
       question:
         "During which sleep stage does **somnambulism (sleepwalking)** occur, and why does it **NOT** occur during REM dreaming?",
       options: [
-        "REM sleep, because delta waves activate the motor cortex",
-        "NREM Stage 1 hypnagogic transition, triggered by excess pineal adrenaline",
+        "REM sleep during the final morning cycle, because high-amplitude delta waves excite the motor cortex and briefly disable brainstem muscle paralysis",
+        "NREM Stage 1 light transition, because sleep spindles and K-complexes trigger sudden pineal adrenaline surges before deep delta paralysis sets in",
         "NREM Stage 3 (Slow-Wave Sleep), because voluntary skeletal muscles are NOT paralysed in NREM (whereas REM muscle atonia prevents acting out dreams)",
-        "Wakeful alpha relaxation before closing the eyes",
+        "NREM Stage 2 light sleep, because brain activity slows completely during REM dreaming and fails to generate any motor signals toward skeletal limbs",
       ],
       answerIndex: 2,
       explanation:
@@ -280,9 +280,9 @@ export const paper: ExamPaper = {
         "French cave explorer Michel Siffre lived underground for months with **zero clocks or natural daylight**, yet his body still maintained a regular ~24.5-hour sleep-wake cycle. What does Siffre's study demonstrate?",
       options: [
         "That humans possess an innate endogenous biological pacemaker (the SCN), though external zeitgebers like daylight normally entrain/reset it precisely to 24.0 hours",
-        "That the sleep-wake rhythm is driven purely by social clocks and meal times",
-        "That living in darkness eliminates REM sleep permanently",
-        "That ultradian cycles stretch to 48 hours without sunlight",
+        "That human circadian sleep-wake rhythms are governed entirely by exogenous social clocks and daylight, collapsing into random timing whenever external cues are removed",
+        "That prolonged isolation in constant cave darkness shuts down pineal melatonin secretion permanently, eliminating REM sleep while leaving only NREM Stage 3 intact",
+        "That removing morning sunlight stretches each 90-minute ultradian NREM–REM sleep cycle to 24.5 hours, proving exogenous zeitgebers control ultradian sleep stages",
       ],
       answerIndex: 0,
       explanation:
@@ -322,10 +322,10 @@ export const paper: ExamPaper = {
       question:
         "Which comparative animal observation poses a **challenge** to **Meddis's Evolutionary (Predator-Avoidance) Theory** of sleep?",
       options: [
-        "Bats sleep ~19 hours a day tucked safely inside dark caves",
-        "Shift workers suffer jet-lag symptoms when flying east",
-        "Humans release growth hormone during Slow-Wave Sleep",
-        "Grazing prey animals like horses and giraffes sleep only ~2–3 hours, whereas Vulnerable tree sloths AND apex predators like lions vary — and more importantly, sleep leaves animals unconscious and unresponsive, whereas quiet wakeful resting in a burrow would conserve energy WITHOUT losing predator vigilance!",
+        "Little brown bats sleep roughly 19 hours a day hidden safely inside dark caves, showing that protected animals sleep longer when foraging windows are brief",
+        "Exposed grazing herbivores such as horses and giraffes sleep only 2 to 3 hours per day on open grasslands, minimising time spent vulnerable to savannah predators",
+        "Apex predators such as lions sleep up to 15 hours a day after feeding because they face minimal predation risk and benefit from conserving energy between hunts",
+        "Sleep leaves animals unconscious and slow to detect approaching predators, whereas quiet wakeful resting in a safe shelter would conserve energy without sacrificing vigilance",
       ],
       answerIndex: 3,
       explanation:
@@ -440,9 +440,9 @@ export const paper: ExamPaper = {
         "According to **Hamilton's Kin Selection (Inclusive Fitness) Theory**, why would an animal or human risk greater danger to rescue **three full siblings** (each sharing 50% of genes) than to rescue **one distant cousin** (sharing 12.5% of genes)?",
       options: [
         "Because natural selection favours genes that promote the survival and reproduction of close genetic relatives who carry copies of those same alleles",
-        "Because siblings always pay back cash loans faster via operant token economies",
-        "Because pluralistic ignorance only affects strangers on subways",
-        "Because cousins trigger high-amplitude delta waves in the amygdala",
+        "Because three siblings are more likely to return equal future favours under Trivers's reciprocal altruism than a distant cousin who lives further away",
+        "Because rescuing three siblings reduces bystander diffusion of responsibility faster than rescuing one cousin, lowering the helper's physiological arousal",
+        "Because Social Learning Theory shows parents selectively reinforce helping full siblings with warm verbal praise while ignoring altruistic acts toward cousins",
       ],
       answerIndex: 0,
       explanation:
@@ -462,9 +462,9 @@ export const paper: ExamPaper = {
       question:
         "Vampire bats regurgitate blood meals to save unrelated roost-mates who failed to feed — **provided** those roost-mates have shared food with them in the past (cheaters are remembered and refused!). Which evolutionary mechanism explains helping **non-relatives**?",
       options: [
-        "Kin selection",
-        "Retroactive interference",
-        "Pluralistic ignorance",
+        "Hamilton's kin selection ('help close relatives who share DNA')",
+        "Batson's empathy-altruism ('help purely to relieve suffering')",
+        "Piliavin's cost–reward model ('help to reduce guilty arousal')",
         "Trivers's reciprocal altruism ('help now, be helped back later')",
       ],
       answerIndex: 3,
@@ -505,10 +505,10 @@ export const paper: ExamPaper = {
       question:
         "Which **parenting approach** is most strongly associated with fostering internalised empathy and prosocial helping in children?",
       options: [
-        "Harsh physical punishment without explanation whenever a child refuses to share",
+        "Strict power-assertive discipline, firm authority, and immediate confiscation of privileges (enforcing external compliance without emotional discussion)",
         "Parental warmth, prosocial role-modelling, and inductive reasoning discipline (calmly explaining how the child's actions made another person feel)",
-        "Paying cash bribes for every polite word (crowding out intrinsic concern)",
-        "Ignoring both selfish and helpful behaviour completely",
+        "Consistent love-withdrawal parenting paired with contingent cash rewards (withholding affection for selfishness and paying tokens for polite sharing)",
+        "Permissive non-intervention combined with occasional preaching about charity (telling children to share while letting peer conflicts resolve themselves)",
       ],
       answerIndex: 1,
       explanation:
@@ -676,9 +676,9 @@ export const paper: ExamPaper = {
       question:
         "Which of the following is a correctly **operationalised null hypothesis** for an experiment testing whether chewing gum affects digit-span recall?",
       options: [
-        "Chewing gum has zero effect on short-term memory.",
-        "There will be a difference in digits recalled between gum chewers and non-chewers.",
-        "Participants who chew mint gum will recall fewer digits than participants who do not chew gum.",
+        "There will be no significant difference in overall short-term memory performance between participants who chew gum and participants who do not chew gum; any difference is due to chance.",
+        "There will be a significant difference in the maximum number of digits recalled in correct order between participants who chew mint gum and participants who do not chew gum.",
+        "Participants who chew mint gum will recall significantly fewer digits in correct order than participants who do not chew gum during the digit-span recall task.",
         "There will be no significant difference in the maximum number of digits recalled in correct order between participants who chew mint gum and participants who do not chew gum; any difference is due to chance.",
       ],
       answerIndex: 3,
@@ -699,10 +699,10 @@ export const paper: ExamPaper = {
       question:
         "Why is **matched pairs design** often chosen over **repeated measures** when testing whether a persuasive empathy video increases charitable donations?",
       options: [
-        "Because showing the empathy video AND the neutral video to the exact same person would instantly reveal the study's aim (severe demand characteristics and irreversible carry-over!), whereas IQ/empathy-matched pairs avoid order/carry-over effects while still controlling baseline empathy",
-        "Because matched pairs needs zero pre-testing and takes half the time",
-        "Because matched pairs guarantees 100% ecological validity in every laboratory",
-        "Because repeated measures requires twice as many participants as matched pairs",
+        "Because watching both videos exposes the aim (demand characteristics) and causes irreversible emotional carry-over, whereas matched pairs avoid order effects while controlling baseline empathy",
+        "Because matched pairs requires no baseline empathy pre-testing and recruits half as many participants as repeated measures, making data collection much faster and cheaper",
+        "Because pairing participants by baseline empathy automatically eliminates all situational extraneous variables and guarantees high ecological validity inside a laboratory setting",
+        "Because repeated measures designs cannot control individual differences in baseline empathy and require twice as many participants as matched pairs to avoid sampling bias",
       ],
       answerIndex: 0,
       explanation:

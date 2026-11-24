@@ -75,9 +75,9 @@ export const mcqPapers: Paper[] = [
         question:
           "How does the binocular depth cue of **convergence** inform the brain that a bee hovering 20 cm in front of your nose is very close?",
         options: [
-          "Parallel railway lines behind the bee meet at a vanishing point.",
-          "The bee blocks part of the garden hedge behind it.",
-          "Rods in the retina switch off colour sensation in bright daylight.",
+          "Each retina captures a slightly different horizontal image of the bee, which the visual cortex fuses into a single 3D view.",
+          "The bee's silhouette overlaps and conceals the garden hedge behind it, signalling that the unblocked object lies closer.",
+          "Parallel edges of the garden path behind the bee appear to narrow towards a distant vanishing point on the horizon.",
           "Extraocular muscles rotate both eyeballs sharply inwards, sending strong proprioceptive tension signals to the brain.",
         ],
         answerIndex: 3,
@@ -181,10 +181,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which statement accurately describes the perceptual distortion in the **Müller-Lyer** and **Ebbinghaus (Titchener circles)** illusions?",
         options: [
-          "In Müller-Lyer, the shaft with outward-flaring fins (`>—<`) looks longer than the shaft with arrowheads (`<—>`); in Ebbinghaus, a central circle surrounded by tiny circles looks larger than an identical circle surrounded by giant circles.",
-          "In Müller-Lyer, the shaft with arrowheads (`<—>`) looks twice as long; in Ebbinghaus, a central circle surrounded by giant circles looks larger.",
-          "Both illusions are ambiguous figures whose 3D cube faces flip every 4 seconds.",
-          "Both illusions disappear immediately as soon as you close one eye.",
+          "In Müller-Lyer, the outward-fin shaft (`>—<`) looks longer than the arrowhead shaft (`<—>`); in Ebbinghaus, the central circle framed by small circles looks larger than the one framed by large circles.",
+          "In Müller-Lyer, the arrowhead shaft (`<—>`) looks longer than the outward-fin shaft (`>—<`); in Ebbinghaus, the central circle framed by large circles looks larger than the one framed by small circles.",
+          "In Müller-Lyer, the outward-fin shaft (`>—<`) looks longer than the arrowhead shaft (`<—>`); in Ebbinghaus, the central circle framed by large circles looks larger than the one framed by small circles.",
+          "In Müller-Lyer, the arrowhead shaft (`<—>`) looks longer than the outward-fin shaft (`>—<`); in Ebbinghaus, the central circle framed by small circles looks larger than the one framed by large circles.",
         ],
         answerIndex: 0,
         explanation:
@@ -203,10 +203,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why is the **Necker Cube** classified as an **ambiguous figure** rather than a geometric distortion or fiction?",
         options: [
-          "Because viewers invent four extra circles that are not drawn on the page.",
+          "Because the visual cortex invents illusory subjective borders that are not physically printed anywhere on the stimulus page.",
           "Because the wireframe lacks depth cues specifying which square face is closer, causing the brain to alternate multistably between two equally valid 3D orientations.",
-          "Because the top horizontal edge looks 25% longer than the bottom horizontal edge.",
-          "Because only hungry participants can perceive the cube.",
+          "Because misplaced size-constancy scaling stretches the upper horizontal edge so it appears physically longer than the identical lower edge.",
+          "Because binocular retinal disparity forces the left and right eyes to focus on different corners, preventing any stable 3D shape from forming.",
         ],
         answerIndex: 1,
         explanation:
@@ -269,9 +269,9 @@ export const mcqPapers: Paper[] = [
           "When two curved garden hoses cross each other in a pile of leaves, you effortlessly perceive two smooth intersecting hoses rather than four sharp V-shaped bends meeting at a point. Which **Gestalt principle** explains this?",
         options: [
           "Continuity (good continuation)",
-          "Proximity",
-          "Similarity",
-          "Size constancy",
+          "Closure (contour completion)",
+          "Proximity (spatial closeness)",
+          "Similarity (shared features)",
         ],
         answerIndex: 0,
         explanation:
@@ -311,10 +311,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A standing lamppost 10 metres away casts a 5.0 mm vertical image on your retina. When you walk away to **50 metres**, the retinal image shrinks to **1.0 mm**, yet the lamppost still looks 4 metres tall rather than 80 cm tall because:",
         options: [
-          "Your cornea physically zooms in fivefold like a telephoto camera lens.",
-          "Binocular convergence increases fivefold at 50 metres.",
+          "The eye's lens and cornea physically magnify the incoming retinal image fivefold to keep its height at 5.0 mm regardless of distance.",
+          "Binocular convergence and retinal disparity increase fivefold at 50 metres, forcing extraocular muscles to double perceived height.",
           "Size constancy automatically scales the fivefold smaller retinal sensation up using monocular distance cues showing the lamppost is five times further away.",
-          "Gestalt closure erases the surrounding pavement.",
+          "Shape constancy adjusts the lamppost's geometric outline from a rectangle into a narrower vertical bar without using distance cues.",
         ],
         answerIndex: 2,
         explanation:
@@ -425,10 +425,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why was testing **day-old chicks and 1-day-old goat kids** in **Gibson & Walk (1960)** crucial for addressing a major limitation of the human infant data?",
         options: [
-          "Because chicks and goat kids have larger occipital lobes than human infants.",
-          "Because human infants refused to look at checkerboard patterns.",
-          "Because chicks only possess binocular vision with zero monocular cues.",
-          "Because human infants could only be tested once able to crawl at 6–14 months (after months of visual learning), whereas newborn chicks/kids had virtually zero prior learning yet showed 0% deep-side crossings.",
+          "Because precocial chicks and goat kids rely solely on binocular retinal disparity, proving monocular texture gradients are unnecessary for depth perception.",
+          "Because human infants could not perceive red-and-white checkerboard contrasts clearly until age two, requiring animal species with sharper colour vision.",
+          "Because human infants in the study crossed the deep side 89% of the time, so Gibson & Walk needed non-human species to obtain any evidence of cliff avoidance.",
+          "Because human infants could only be tested once crawling at 6–14 months (after months of visual learning), whereas day-old chicks and kids had minimal prior experience yet 0% crossed the deep side.",
         ],
         answerIndex: 3,
         explanation:
@@ -447,10 +447,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How does **Gregory's (1970) Constructivist Theory** explain why the **upper horizontal bar** in the **Ponzo illusion** looks longer than the identical lower bar?",
         options: [
-          "Misplaced size-constancy scaling: converging lines trigger a top-down 3D linear-perspective hypothesis that the upper bar is further away, so the brain inappropriately scales up its perceived size on a flat 2D surface.",
-          "Rods in the upper retina are physically wider than cones in the lower retina.",
-          "Optic flow streams faster across the upper bar during forward running.",
-          "Emotional perceptual defence blocks awareness of the lower bar.",
+          "Misplaced size-constancy scaling: converging lines trigger a top-down 3D perspective hypothesis that the upper bar is further away, so the brain scales up its perceived length on a 2D page.",
+          "Bottom-up optic flow invariants: texture streaming outward from the focus of expansion directly magnifies the upper bar without needing stored schemas or past experience.",
+          "Gestalt figure–ground reversal: the converging rails alternate between foreground and background, causing the brain to flip between perceiving the upper or lower bar as longer.",
+          "Perceptual defence and emotional set: anxiety triggered by converging railway tracks suppresses conscious awareness of the lower bar so it appears shortened compared with the upper bar.",
         ],
         answerIndex: 0,
         explanation:
@@ -469,10 +469,10 @@ export const mcqPapers: Paper[] = [
         question:
           "According to **Gregory's 3D corner ('carpentered-world') explanation** of the **Müller-Lyer illusion**, why does the shaft with **outward-flaring fins** (`>———<`) appear longer than the shaft with **inward arrowheads** (`<———>`)?",
         options: [
-          "Outward fins trigger convergence in the extraocular muscles.",
+          "Outward fins resemble the near outside corner of a building jutting closer (scaled up), whereas arrowheads resemble the distant inside corner of a room receding away (scaled down).",
           "Outward fins resemble the inside corner of a room receding further away (scaled up), whereas arrowheads resemble the near outside corner of a building jutting closer (scaled down).",
-          "Outward fins erase the blind spot on the nasal retina.",
-          "Arrowheads trigger Gestalt similarity with triangles.",
+          "Outward fins increase binocular convergence and retinal disparity across the shaft, whereas arrowheads relax the extraocular muscles so the line appears closer and shorter.",
+          "Outward fins trigger Gestalt closure that extends the shaft past the page border, whereas arrowheads trigger figure–ground segregation that isolates the shaft from its background.",
         ],
         answerIndex: 1,
         explanation:
@@ -513,10 +513,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why is **Haber & Levin (2001)** especially valuable support for **Gregory's Constructivist Theory** when debating **Gibson**?",
         options: [
-          "Because it tested newborn chicks in total darkness",
-          "Because it proved monocular depth cues never work outdoors",
-          "Because it used artificial 30-millisecond peephole flashes in a dark basement",
-          "Because Gibsonians often dismiss top-down studies as artificial lab tricks, yet Haber & Levin proved top-down object familiarity improves perception outdoors in a real 100-metre grassy field!",
+          "Because it tested newborn infants within 24 hours of birth on real grassy fields, ruling out the criticism that top-down schemas depend on cultural upbringing.",
+          "Because it stripped away all monocular texture gradients and perspective cues inside a darkened laboratory, isolating pure stored memory schemas from environmental data.",
+          "Because it demonstrated that unfamiliar geometric cardboard cut-outs were judged more accurately outdoors than familiar objects, refuting Gibson's affordance claim.",
+          "Because Gibsonians often dismiss top-down effects as artificial lab tricks, yet Haber & Levin showed top-down object familiarity sharpens perception in a real 100-metre grassy field.",
         ],
         answerIndex: 3,
         explanation:
@@ -536,9 +536,9 @@ export const mcqPapers: Paper[] = [
           "Which phenomenon poses the **greatest difficulty** for **Gibson's pure bottom-up Direct Theory** to explain without borrowing top-down concepts?",
         options: [
           "Why identical ambiguous stimuli (such as `I3` in Bruner & Minturn or the Hollow Mask) produce opposite perceptions depending on prior expectation and past experience",
-          "Why pilots use radial optic flow to land aircraft smoothly on runways",
-          "Why nearby fence posts rush past a train window faster than distant hills (motion parallax)",
-          "Why day-old goat kids avoid stepping onto the deep side of the Visual Cliff",
+          "Why pilots landing on runways use radial optic flow and the stationary focus of expansion to judge descent speed and heading directly from the moving light array",
+          "Why nearby fence posts streak past a moving train window faster than distant hills, supplying dynamic motion parallax cues to relative depth without conscious calculation",
+          "Why day-old chicks and goat kids avoid stepping onto the deep side of the Visual Cliff immediately after birth using texture-density jumps before any trial-and-error learning",
         ],
         answerIndex: 0,
         explanation:
@@ -557,10 +557,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What is a key **population validity limitation** of **Haber & Levin (2001)**?",
         options: [
-          "Only 6-month-old infants were tested.",
+          "All participants were 6–14-month-old crawling infants recruited from local nurseries, preventing generalisation to adult perception.",
           "All participants were male American college students (androcentric and ethnocentric sample, with only n = 9 in Experiment 2).",
-          "Only semi-nomadic Namibian pastoralists were tested.",
-          "Participants were tested exclusively on New York subway trains.",
+          "All participants were semi-nomadic rural Himba pastoralists from northern Namibia, preventing generalisation to Western urban populations.",
+          "All participants were food-deprived volunteers who had fasted for 20 hours beforehand, creating a biased sample affected by physiological hunger.",
         ],
         answerIndex: 1,
         explanation:
@@ -579,10 +579,10 @@ export const mcqPapers: Paper[] = [
         question:
           "When **Campos et al. (1970)** placed **2-month-old pre-crawling infants** directly onto the deep glass side of the Visual Cliff and measured their **heart rates**, their heart rates **decelerated** (a sign of curious attention rather than fear). What nuance did this add to **Gibson & Walk (1960)**?",
         options: [
-          "2-month-old babies are completely blind to texture gradients.",
-          "Only teenagers can perceive depth on glass tables.",
+          "Infants cannot perceptually *detect* any depth cues until roughly 6 months, because heart-rate deceleration indicates total blindness to texture gradients.",
+          "Fear of heights is completely innate from birth, whereas visual detection of checkerboard texture gradients only develops after months of crawling.",
           "Infants can perceptually *detect* depth very early (~2 months), whereas the *fear* of falling develops later through locomotor crawling experience.",
-          "Heart rate has no connection to the autonomic nervous system.",
+          "Pre-crawling 2-month-olds show intense autonomic panic over the deep side, proving that wariness of cliffs requires zero self-produced locomotion.",
         ],
         answerIndex: 2,
         explanation:
@@ -622,10 +622,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How does **Neisser's (1976) Perceptual Cycle** resolve the clash between **Gibson's bottom-up** and **Gregory's top-down** theories?",
         options: [
-          "It proposes an interactionist loop: bottom-up environmental data dominates when viewing conditions are clear and moving, while top-down schemas guide exploration and fill gaps when sensory input is brief, noisy, or ambiguous.",
-          "It rejects both theories and claims perception occurs solely in the spinal cord.",
-          "It argues humans use bottom-up processing only at night and top-down processing only before noon.",
-          "It claims schemas never change after birth.",
+          "It proposes an interactionist loop: bottom-up sensory data drives perception in clear moving scenes, while top-down schemas direct exploration and update when new input is brief or ambiguous.",
+          "It replaces both theories with a purely nativist stage model, claiming infants rely on top-down schemas before birth and switch permanently to bottom-up optic flow once they start walking.",
+          "It argues bottom-up processing handles only binocular depth cues such as convergence, whereas top-down schemas operate exclusively when judging 2D geometric illusions in dark laboratories.",
+          "It claims stored schemas remain fixed and unchangeable after early childhood, filtering out any conflicting bottom-up environmental information rather than revising expectations.",
         ],
         answerIndex: 0,
         explanation:
@@ -644,10 +644,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Gibson & Walk (1960)**, several infants peered through the glass on the deep side, **patted the solid glass surface firmly with their hands**, yet still refused to crawl across to their mothers. What did this specific behaviour demonstrate?",
         options: [
-          "Tactile touch sensations always dominate visual depth cues in infancy.",
+          "Tactile sensations of solid support consistently override conflicting visual depth cues once infants begin crawling.",
           "Visual depth cues (texture-density jump and motion parallax) overrode reassuring tactile feedback that the surface was solid.",
-          "Infants could not hear their mothers calling across the table.",
-          "The glass on the deep side was colder than the glass on the shallow side.",
+          "Infants relied primarily on auditory cues from their mothers' voices rather than on visual texture or touch when crossing.",
+          "Infants could not detect the solid glass with their palms because tactile receptors in the hand remain immature at 6–14 months.",
         ],
         answerIndex: 1,
         explanation:
@@ -672,10 +672,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What is **perceptual set** in CIE 0266 Psychology?",
         options: [
-          "Permanent damage to retinal rods caused by bright sunlight",
-          "The surgical alignment of extraocular muscles to fix double vision",
-          "A temporary top-down cognitive readiness or predisposition to notice certain sensory features (selector) and interpret ambiguous input in line with expectations, motivation, emotion, or culture (interpreter)",
-          "A laboratory apparatus used to measure infant crawling speed",
+          "A bottom-up retinal mechanism that keeps an object's perceived size, shape, and colour invariant even when viewing distance, angle, or ambient illumination changes",
+          "An innate ecological readiness to detect radial optic flow and direct action affordances from environmental light without involving stored memory schemas or expectations",
+          "A top-down state of cognitive readiness to notice certain sensory features (selector) and interpret ambiguous input via expectation, motivation, emotion, or culture (interpreter)",
+          "A Gestalt organising rule that automatically groups dots, lines, and colours by physical proximity and similarity before any personal experience or motivation acts",
         ],
         answerIndex: 2,
         explanation:
@@ -693,9 +693,9 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Bruner & Minturn's (1955)** tachistoscope experiment (`n = 24`), participants saw an ambiguous broken figure (`I3`) after viewing either four capital letters or four two-digit numbers. What were the exact results?",
         options: [
-          "50% of both groups reported seeing a triangle.",
-          "100% of both groups saw '13' because numbers are processed faster than letters.",
-          "Letter-primed participants saw '13' (92%), whereas number-primed participants saw 'B' (83%).",
+          "50% of letter-primed participants and 50% of number-primed participants reported 'B', showing prior context had no measurable effect on ambiguous symbols.",
+          "92% of both letter-primed and number-primed participants reported '13', showing numerical schemas override alphabetical context regardless of priming.",
+          "92% of letter-primed participants reported '13' (drawing the gap wider), whereas 83% of number-primed participants reported 'B' (drawing the gap closed).",
           "83% of letter-primed participants reported 'B' (drawing the gap closed), whereas 92% of number-primed participants reported '13' (drawing the gap wider).",
         ],
         answerIndex: 3,
@@ -715,10 +715,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Gilchrist & Nesberg's (1952)** motivation study, **26 students who fasted for 20 hours** adjusted dimmed projector slides of meals (steak, fried chicken) **dimmer** than original baseline compared with 20 fed controls. Why did setting the projector *dimmer* show food looked *brighter* to hungry participants?",
         options: [
-          "Because hunger heightened perceptual sensitivity so the test food slide already looked extra bright to them, requiring less physical projector light to match their memory of the original slide!",
-          "Because fasting for 20 hours damaged their optic nerves so bright light hurt their eyes.",
-          "Because the fed control group secretly wore sunglasses.",
-          "Because hungry students disliked looking at pictures of steak and hamburgers.",
+          "Because hunger heightened perceptual salience so the test food slide already looked extra bright, requiring less physical projector light to match their memory of the original slide.",
+          "Because fasting for 20 hours dilated their pupils and hypersensitised retinal rods to all light, causing every slide—both food and non-food—to look painfully dazzling.",
+          "Because perceptual defence caused hungry participants to suppress upsetting images of unavailable meals, making them lower the illumination to avoid viewing food clearly.",
+          "Because the fed control group turned the projector brightness up excessively due to post-meal drowsiness, creating an artificial baseline gap against normal hungry ratings.",
         ],
         answerIndex: 0,
         explanation:
@@ -737,10 +737,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In **McGinnies's (1949)** study of emotion and **perceptual defence**, participants took longer tachistoscope exposures to verbally report **taboo words** than neutral words, despite showing elevated **Galvanic Skin Response (GSR)** beforehand. What is the main **alternative explanation (confounding bias)** critics raise?",
         options: [
-          "Taboo words were printed in invisible ink.",
-          "Social embarrassment / response bias: participants may have consciously recognised the rude word just as fast, but hesitated before speaking an offensive word aloud to an authority figure!",
-          "Galvanic Skin Response only measures binocular retinal disparity.",
-          "Neutral words like 'apple' and 'music' were unfamiliar to university students.",
+          "Optic-nerve fatigue: neutral words were always presented in the second half of the session after participants' eyes had adapted to the dim tachistoscope screen.",
+          "Social embarrassment / response bias: participants may have consciously recognised the rude word just as fast, but hesitated before speaking an offensive word aloud to an authority figure.",
+          "Measurement invalidity: Galvanic Skin Response records voluntary extraocular muscle tension rather than autonomic arousal, so it cannot reflect emotional reactions.",
+          "Food-deprivation confounding: participants had fasted for 20 hours before viewing the tachistoscope slides, which selectively slowed recognition of non-food words.",
         ],
         answerIndex: 1,
         explanation:
@@ -759,10 +759,10 @@ export const mcqPapers: Paper[] = [
         question:
           "According to **Segall, Campbell & Herskovits's (1966) Carpentered-World Hypothesis**, why are Western urban residents significantly more susceptible to the **Müller-Lyer illusion** than traditional rural **Zulu** villagers?",
         options: [
-          "Urban air pollution blurs retinal cone cells.",
-          "Rural Zulu villagers lack colour constancy.",
-          "Growing up surrounded by rectangular rooms, straight corridors, and 90-degree corners trains Western brains to interpret angled fins as 3D perspective corners, whereas round rural huts lack rectangular corner cues.",
-          "Western urban residents rely solely on Gibson's optic flow indoors.",
+          "Inherited genetic differences in retinal cone density cause Western urban eyes to refract angled fin lines more sharply than the eyes of rural Zulu participants.",
+          "Rural Zulu villagers experience stronger binocular convergence outdoors across open savannah, which permanently prevents size constancy from operating on 2D drawings.",
+          "Growing up among rectangular rooms, straight corridors, and 90-degree corners trains Western brains to read angled fins as 3D corners, whereas round rural huts lack such cues.",
+          "Western urban residents rely strictly on Gibson's innate bottom-up optic flow indoors, making them unable to apply top-down learned schemas when viewing flat geometric figures.",
         ],
         answerIndex: 2,
         explanation:
@@ -781,9 +781,9 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Bremner et al.'s (2016)** cross-cultural developmental study, which visual illusion was used to compare **traditional rural Himba** in Namibia, **urbanised Himba** in Opuwo, and **British (UK)** participants?",
         options: [
-          "The Necker wireframe cube",
-          "Rubin's figure–ground vase",
-          "Gibson & Walk's Visual Cliff",
+          "The Necker wireframe cube multistable orientation illusion",
+          "Rubin's reversible goblet-and-faces figure–ground illusion",
+          "The Müller-Lyer inward-and-outward fins length illusion",
           "The Ebbinghaus (Titchener circles) size-contrast illusion",
         ],
         answerIndex: 3,
@@ -802,10 +802,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What was the **developmental trajectory** discovered by **Bremner et al. (2016)** across ages **3 to 10 years and adulthood** in the UK versus rural Namibia?",
         options: [
-          "At ages 3–4, BOTH UK and rural Himba children showed low illusion susceptibility; with age, UK participants became strongly susceptible (global context processing), whereas rural Himba remained largely immune (local detail processing).",
-          "UK infants were born with maximum illusion error at age 3 and outgrew it completely by adulthood.",
-          "Rural Himba adults showed three times more illusion error than London adults.",
-          "Both cultures showed identical high illusion susceptibility at every age from 3 to 40.",
+          "At ages 3–4, both UK and rural Himba children showed low susceptibility; with age, UK participants grew strongly susceptible (global processing), while rural Himba stayed largely immune (local processing).",
+          "At ages 3–4, UK children already showed peak illusion susceptibility while rural Himba showed none; by adulthood, both groups converged to equally low error through visual maturation.",
+          "At ages 3–4, both UK and rural Himba children showed strong susceptibility; with age, UK adults outgrew the illusion through formal schooling, while rural Himba adults grew more susceptible.",
+          "At ages 3–4, rural Himba children showed stronger susceptibility than UK toddlers; across ages 5–10, both cultural groups maintained virtually identical high global-processing error into adulthood.",
         ],
         answerIndex: 0,
         explanation:
@@ -824,10 +824,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why did **Bremner et al. (2016)** also test **urbanised Himba** adults living in the Namibian town of **Opuwo**?",
         options: [
-          "To increase sample size because no children lived in London",
-          "To rule out purely genetic/ethnic explanations: because urbanised Himba shifted significantly toward UK illusion susceptibility, visual environment (cluttered town vs open rural compound) rather than DNA drives contextual perception!",
-          "To test whether Opuwo residents could cross a Visual Cliff",
-          "To measure hunger effects after a 20-hour fast",
+          "To prove a genetic origin for local processing: urbanised Himba in Opuwo showed zero shift toward UK susceptibility, confirming ethnicity rather than town environment drives the effect.",
+          "To separate visual environment from ethnicity: because urbanised Himba shifted significantly toward UK susceptibility, town visual experience rather than genetics drives global contextual processing.",
+          "To test binocular depth perception under artificial lighting: Opuwo offered darkened laboratories with tachistoscopes that were unavailable in traditional rural compounds.",
+          "To act as a longitudinal follow-up group: the same rural Himba toddlers tested at ages 3–4 were relocated to Opuwo and retested ten years later to measure individual change.",
         ],
         answerIndex: 1,
         explanation:
@@ -846,10 +846,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why is **culture** in **Bremner et al. (2016)** classified in CIE 0266 Paper 2 as a **quasi-independent (naturally occurring) variable** rather than a true experimental IV?",
         options: [
-          "Because circle sizes were measured in millimetres rather than inches",
-          "Because no quantitative data were collected",
-          "Because researchers cannot randomly allocate infants at birth to grow up as British Londoners versus rural Namibian Himba!",
-          "Because only one participant was tested in total",
+          "Because the dependent variable was collected through unstructured interviews rather than objective quantitative accuracy scores.",
+          "Because participants completed the Ebbinghaus circle task in outdoor village settings rather than a standardised laboratory room.",
+          "Because researchers cannot randomly allocate infants at birth to grow up as British Londoners versus rural Namibian Himba.",
+          "Because the study used a repeated-measures design in which every individual participant was tested in both London and Namibia.",
         ],
         answerIndex: 2,
         explanation:
@@ -868,9 +868,9 @@ export const mcqPapers: Paper[] = [
         question:
           "While hiking at dusk after listening to spooky podcasts about snakes, Arjun jumps backward when he sees a coiled brown **tree root** on the path — momentarily perceiving a **viper** with scales! Which two determinants of **perceptual set** combined here?",
         options: [
-          "Binocular convergence and colour constancy",
-          "Optic flow invariants and day-old innate reflexes",
-          "Gestalt proximity and shape constancy",
+          "Physiological motivation (hunger drive from hiking) and cultural carpentered-world schemas",
+          "Gibson's bottom-up optic flow invariants and innate visual-cliff avoidance reflexes",
+          "Binocular retinal disparity and misplaced size-constancy scaling from converging trail edges",
           "Expectation (primed by snake podcasts) and heightened fear emotion under ambiguous dim lighting",
         ],
         answerIndex: 3,
@@ -891,9 +891,9 @@ export const mcqPapers: Paper[] = [
           "What methodological limitation applies to laboratory **tachistoscope** studies of perceptual set such as **Bruner & Minturn (1955)** and **McGinnies (1949)**?",
         options: [
           "Flashing isolated 2D symbols through a peephole for 30–90 milliseconds lacks mundane realism and ecological validity compared with continuous, moving everyday vision.",
-          "Tachistoscopes fail to control exposure duration across participants.",
-          "Participants had to fast for 72 hours before viewing letters.",
-          "Tachistoscopes only work outdoors in sunny grassy fields.",
+          "Tachistoscopes cannot standardise stimulus exposure durations across trials, resulting in weak internal validity and uncontrolled extraneous lighting variables.",
+          "Tachistoscope procedures rely on naturally occurring cross-cultural groups rather than random allocation, preventing researchers from establishing cause and effect.",
+          "Tachistoscope tasks require testing pre-crawling infants alongside mothers, making it impossible to obtain written informed consent or verbal debriefing afterwards.",
         ],
         answerIndex: 0,
         explanation:
@@ -954,9 +954,9 @@ export const mcqPapers: Paper[] = [
         question:
           "Proofreaders checking their own essays routinely skim right past a typo like `THE CAT SAT ON THE THE MAT` because top-down grammar schemas predict a single `'THE'`. Which theory of perception best explains why experienced readers miss the extra word?",
         options: [
-          "Gibson's Direct bottom-up theory",
-          "Kin selection theory",
-          "Retinal colour constancy",
+          "Gibson's Direct bottom-up theory (data-driven environmental light pickup)",
+          "Gestalt figure–ground theory (automatic separation of print from paper)",
+          "Perceptual constancy theory (stable size scaling across reading distance)",
           "Gregory's Constructivist top-down theory (expectation-driven hypothesis testing)",
         ],
         answerIndex: 3,
@@ -976,10 +976,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Taken together, **Gibson & Walk (1960)**, **Haber & Levin (2001)**, and **Bremner et al. (2016)** support which overarching conclusion about human visual perception?",
         options: [
-          "Basic depth avoidance matures very early by locomotion onset (nature / bottom-up foundation), while object familiarity and cultural visual environments progressively tune contextual size and distance perception across childhood (nurture / top-down).",
-          "Human perception is 100% hard-wired at birth and unaffected by culture or object familiarity.",
-          "Human perception is 100% learned after age 10, so infants under age 2 have zero depth perception.",
-          "Visual illusions affect rural Namibian pastoralists far more strongly than urban British adults.",
+          "Basic depth avoidance emerges early by locomotion onset (nature / bottom-up foundation), while object familiarity and cultural environments progressively tune size and distance perception across childhood (nurture / top-down).",
+          "Visual perception is 100% innate and hard-wired at birth across all human societies, meaning neither familiarity with everyday objects nor urban versus rural visual environments alters size or depth judgements.",
+          "Visual perception is 100% learned through formal schooling after age 10, meaning crawling human infants and newborn precocial animals possess zero depth perception until they acquire cultural schemas.",
+          "Cultural experience dominates infancy while innate reflexes emerge in adulthood, causing traditional rural Himba adults to show much stronger Ebbinghaus illusion susceptibility than urban British adults.",
         ],
         answerIndex: 0,
         explanation:

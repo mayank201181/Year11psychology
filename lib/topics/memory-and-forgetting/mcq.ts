@@ -810,10 +810,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why is **Freud's theory of motivated forgetting (repression)** considered much harder to test scientifically than **interference theory**?",
         options: [
-          "Interference never occurs in adults, whereas repression happens every thirty seconds",
+          "Interference theory relies solely on qualitative clinical interviews, whereas Freud's repression theory can only be tested with nonsense trigrams",
           "Trauma cannot ethically be induced in a lab, and unconscious repression cannot easily be falsified or distinguished from ordinary forgetting",
-          "Repression only affects consonant trigrams in Short-Term Memory",
-          "Brain scans have proved the unconscious mind is located inside the cerebellum",
+          "Repression only disrupts acoustic Short-Term Memory traces for 18–30 seconds, making it too brief to measure with standardised recall scales",
+          "Interference occurs exclusively in semantic Long-Term Memory during sleep, whereas Freud claimed repression operates only as a conscious strategy",
         ],
         answerIndex: 1,
         explanation:
@@ -962,9 +962,9 @@ export const mcqPapers: Paper[] = [
           "Which key critique highlights a **circularity problem** in **Craik & Lockhart's (1972) Levels of Processing** framework?",
         options: [
           "There is no independent objective measure of 'depth' — researchers often infer a task was 'deep' simply because participants remembered it better",
-          "It draws four structural slave-system boxes without showing arrows between them",
-          "It claims Short-Term Memory can only process Native American folk tales",
-          "It relies entirely on single-subject epilepsy surgeries rather than laboratory experiments",
+          "It treats Short-Term Memory as a single passive store with fixed rehearsal loops, ignoring the central executive and separate slave systems",
+          "It assumes all memories are reconstructed through cultural folk-tale schemas, so researchers cannot score factual word lists objectively in labs",
+          "It relies solely on single-case studies of epilepsy patients with hippocampal damage, preventing generalisation to healthy adult memory encoding",
         ],
         answerIndex: 0,
         explanation:

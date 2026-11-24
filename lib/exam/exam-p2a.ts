@@ -18,10 +18,10 @@ export const paper: ExamPaper = {
       question:
         "What is the fundamental distinction between **sensation** and **perception**?",
       options: [
-        "Sensation requires both eyes open (binocular), whereas perception only works with one eye closed (monocular)",
-        "Sensation occurs in the prefrontal cortex using past memories, whereas perception occurs solely in the cornea",
-        "Sensation is the passive physical detection of stimulus energy (e.g. light wavelengths hitting retinal photoreceptors), whereas perception is the brain's active organisation and interpretation of those neural signals into meaningful experience",
-        "Sensation is top-down hypothesis testing, whereas perception is raw chemical transduction",
+        "Sensation relies exclusively on binocular cues from both eyes working together, whereas perception operates solely through monocular pictorial cues learned from flat 2D images",
+        "Sensation is the brain's top-down construction of meaningful scenes using stored memory schemas, whereas perception is the raw detection of light wavelengths by retinal cells",
+        "Sensation is the raw physical detection of stimulus energy by sensory receptors (e.g. light hitting the retina), whereas perception is the brain's active organisation and interpretation",
+        "Sensation occurs only in conscious awareness after Gestalt laws group contours together, whereas perception is an automatic unconscious reflex restricted to the eye's cornea",
       ],
       answerIndex: 2,
       explanation:
@@ -110,10 +110,10 @@ export const paper: ExamPaper = {
       question:
         "How did **Haber & Levin (2001)** provide empirical support for **Gregory's top-down Constructivist Theory** when participants estimated distances to objects in an open field?",
       options: [
-        "Blindfolded newborns judged field distances more accurately than adults",
-        "Participants estimated distances far more accurately and consistently for objects with familiar, invariant real-world sizes (such as cars, bottles and doors) than for unfamiliar geometric cardboard cutouts or variable-sized objects",
-        "Participants only judged distance accurately while sprinting (optic flow)",
-        "Everyone judged distant trees to be 2 cm tall because size constancy failed",
+        "Participants estimated distances equally accurately for unfamiliar flat cardboard triangles and familiar everyday objects, showing prior size knowledge played no role outdoors",
+        "Participants estimated distances far more accurately for objects with familiar, invariant sizes (such as bottles and doors) than for unfamiliar cutouts or variable-sized items",
+        "Participants judged outdoor distances accurately only when walking forward to generate radial optic flow across the grass, failing completely whenever they stood stationary",
+        "Participants consistently underestimated distances to familiar objects like basketballs and bicycles because misplaced size-constancy scaling distorted real-world outdoor scenes",
       ],
       answerIndex: 1,
       explanation:
@@ -133,10 +133,10 @@ export const paper: ExamPaper = {
       question:
         "In **Bremner et al.'s (2016)** cross-cultural study comparing rural **Himba** participants in Namibia with **urban British** participants on the **Ebbinghaus (Titchener circles) illusion**, what was the key finding?",
       options: [
-        "Himba participants were three times more fooled by surrounding circle context than British adults",
-        "Only hungry participants saw the central circle shrink",
-        "Both cultures were completely immune to the illusion from birth",
-        "Rural Himba participants showed a much weaker Ebbinghaus illusion (more accurate local size judgements, less distracted by surrounding circles) than urban British participants, showing culture and visual environment shape perceptual style",
+        "Rural Himba participants were far more susceptible to the surrounding Ebbinghaus context circles than urban British participants, reflecting stronger holistic visual processing",
+        "Urbanised Himba living in Namibian towns remained just as immune to the illusion as rural Himba, proving genetic ethnicity rather than visual environment drives susceptibility",
+        "Both rural Himba and urban British participants showed identical high illusion error from age three into adulthood, supporting Gibson's claim that size perception is purely innate",
+        "Rural Himba showed a much weaker Ebbinghaus illusion (more accurate local size judgements) than urban British participants, showing culture and visual environment shape perception",
       ],
       answerIndex: 3,
       explanation:
@@ -230,10 +230,10 @@ export const paper: ExamPaper = {
       question:
         "Four-year-old Maya loves painting dinosaurs purely for fun during free play. Her teacher begins handing out a shiny plastic medal **only** when children paint a picture — and two weeks after the medals stop, Maya paints **far less** than she did originally! This drop in internal enjoyment is called:",
       options: [
-        "Maslow's peak self-actualisation",
-        "Hull's primary drive homeostasis",
+        "Maslow's deficiency frustration (unmet safety needs blocking creative growth)",
+        "Hull's primary drive satiation (biological tension returning to homeostasis)",
         "The overjustification effect (extrinsic rewards crowding out intrinsic motivation)",
-        "Nostalgic psychodynamic transference",
+        "Yerkes-Dodson over-arousal (excessive pressure impairing skilled performance)",
       ],
       answerIndex: 2,
       explanation:
@@ -251,9 +251,9 @@ export const paper: ExamPaper = {
         "In **Boniecki & Moore's (2003)** university classroom experiment (`ABA reversal design`), what happened when the professor awarded a **token** (redeemable for 1 extra exam point) to the first student answering each lecture question?",
       options: [
         "Directed participation more than doubled AND latency to raise hands plummeted during the token phase — then fell straight back down to baseline as soon as tokens were withdrawn",
-        "Hand-raising dropped to zero due to classroom embarrassment",
-        "Only intrinsic self-actualisation increased, continuing unchanged for 6 months after tokens ended",
-        "Students refused the tokens unless paired with nostalgic music",
+        "Directed participation dropped sharply during the token phase due to immediate overjustification, then rebounded above original baseline levels once the tokens were withdrawn",
+        "Hand-raising rose steadily during the token phase and remained permanently elevated throughout the second baseline phase, showing tokens built lasting intrinsic motivation",
+        "Voluntary comments doubled while directed question-answering stayed flat, and hand-raising latency increased because students hesitated to appear extrinsically motivated",
       ],
       answerIndex: 0,
       explanation:
@@ -316,10 +316,10 @@ export const paper: ExamPaper = {
       question:
         "How did **Merchant et al. (2013)** explain why **nostalgic charity advertisements** (*'remember warm childhood moments...'*) motivate adults to donate money?",
       options: [
-        "Nostalgia lowers blood glucose, triggering Hull's primary hunger drive",
-        "Evoking personal nostalgia triggers warm emotional longing alongside subtle guilt/discomfort from past separation, which donating to charity relieves (emotional recovery / mood repair), boosting donation intentions",
-        "Nostalgic adverts force viewers to set 5-week SMART athletic targets",
-        "Viewers only donate if promised a 1-point classroom token",
+        "Childhood nostalgia lowers physiological arousal into a calm homeostatic state, reducing Hull's primary biological drives so viewers donate out of pure rational calculation",
+        "Evoking personal nostalgia stirs warm longing alongside subtle discomfort or sadness, which donating relieves via emotional recovery (mood repair), boosting donation intentions",
+        "Nostalgic charity adverts work solely by setting specific, measurable SMART fundraising goals with strict deadlines, bypassing unconscious emotions and childhood memories",
+        "Adults only increase charitable giving when nostalgic advertisements pair childhood images with tangible extrinsic cash vouchers, avoiding the overjustification effect",
       ],
       answerIndex: 1,
       explanation:
@@ -433,10 +433,10 @@ export const paper: ExamPaper = {
       question:
         "In **Jean Berko's (1958) 'Wug Test'**, 4-year-old children shown a cartoon bird they had NEVER seen before (*'This is a wug. Now there are two of them. There are two ___?'*) overwhelmingly answered **'wugs!'** — and similarly say *'I goed'* or *'two foots'*. Why is this crucial evidence against pure **imitation**?",
       options: [
-        "Because adults constantly say 'wugs' and 'goed' on television",
-        "Because honeybees also pass the Wug Test via waggle dances",
-        "Because 4-year-olds have not yet reached object permanence",
-        "Because applying morphological rules (-s plural, -ed past tense) to brand-new nonsense words ('wugs') and irregular roots ('goed') proves children extract and apply productive internal grammar rules rather than merely parroting heard adult words",
+        "Because adults frequently repeat words like 'wugs' and 'goed' during Child-Directed Speech, showing toddlers only reproduce irregular forms after intensive operant shaping",
+        "Because 4-year-olds refuse to pluralise any unfamiliar creature name until caregivers reward each new syllable with praise, confirming Skinner's reinforcement hypothesis",
+        "Because children under age five lack Piagetian object permanence and therefore treat two cartoon birds as a single holophrastic label rather than applying plural morphology",
+        "Because applying plural (-s) and past-tense (-ed) rules to novel nonsense words ('wugs') and irregular verbs ('goed') shows children internalise grammar rules rather than copying adults",
       ],
       answerIndex: 3,
       explanation:
@@ -456,10 +456,10 @@ export const paper: ExamPaper = {
       question:
         "How did **Senghas's (1995)** natural study of deaf schoolchildren in Managua (**Nicaraguan Sign Language**) strongly support **Chomsky's Nativist LAD** and the **Critical Period Hypothesis**?",
       options: [
-        "Teachers explicitly drilled English sign-grammar flashcards using chocolate rewards",
-        "Older teenagers aged 17 learned sign syntax twice as fast as 5-year-olds",
-        "Deaf children brought together with no pre-existing sign language spontaneously invented a structured grammar — and younger children exposed early transformed pidgin gestures into complex grammatical inflections far more fluently than older adolescents!",
-        "None of the children ever communicated until taught spoken Spanish",
+        "Teachers systematically drilled American Sign Language syntax flashcards using operant food tokens, demonstrating that explicit adult reinforcement created the grammar",
+        "Late-exposed adolescents aged 15 to 17 developed richer spatial verb inflections than children entering school at age five, showing mature cognitive schemas outweigh age",
+        "Deaf children with no pre-existing sign language spontaneously built structured grammar — and younger cohorts exposed early developed richer inflections than late-exposed adolescents",
+        "Children failed to form any shared gestures until they first mastered spoken Spanish lip-reading in class, confirming language depends solely on auditory verbal input",
       ],
       answerIndex: 2,
       explanation:
@@ -479,10 +479,10 @@ export const paper: ExamPaper = {
       question:
         "In **Goldstein, King & West's (2003)** experiment on 8-month-old infants, Group A mothers smiled and touched their baby **contingently** (immediately after every babble), while Group B ('yoked control') mothers smiled just as often at **random** moments unrelated to babbling. What happened?",
       options: [
-        "Both groups stopped babbling completely",
-        "Only infants receiving contingent social feedback shifted rapidly toward more mature, syllabic canonical speech-like babbling — supporting social learning/reinforcement in early phonology!",
-        "Random smiling produced more adult sentences than contingent smiling",
-        "Infants only babbled when given milk bottles (Hull's drive reduction)",
+        "Both groups showed identical gains in mature syllabic babbling, showing total maternal warmth mattered far more than whether smiles followed vocalisations immediately",
+        "Only infants receiving contingent social feedback shifted rapidly toward mature, syllabic speech-like babbling — supporting social reinforcement in early phonological growth",
+        "Infants in the yoked random-smiling group produced significantly more mature consonant–vowel syllables, because unpredictable timing sustained higher cortical curiosity",
+        "Neither group changed babbling quality without verbal spoken coaching from mothers, supporting Chomsky's claim that non-verbal social feedback cannot shape speech",
       ],
       answerIndex: 1,
       explanation:
@@ -527,10 +527,10 @@ export const paper: ExamPaper = {
       question:
         "Karl von Frisch discovered foraging honeybees perform a figure-eight **waggle dance** indicating the direction and distance of distant nectar flowers not visible from the dark hive. Which of **Hockett's design features** DOES the bee waggle dance partially show — and which feature does it **LACK** compared with human language?",
       options: [
-        "Is 100% culturally learned from television rather than genetically innate",
-        "Shows infinite recursive syntax, but lacks any semantic meaning",
-        "Shows zero displacement, because bees only dance right on top of flowers",
-        "Shows limited displacement (referring to spatially distant nectar), but LACKS open-ended productivity/creativity (bees cannot invent novel sentences about politics, yesterday's dreams, or vertical 'up' nectar!)",
+        "Shows full cultural transmission (learned purely through caregiver LASS scaffolding), but lacks any genetic basis or consistent direction encoding inside dark hives",
+        "Shows open-ended productivity and recursive syntax (combining dance steps into novel topics), but lacks semanticity because dance angles carry no consistent meaning",
+        "Shows zero spatial displacement (bees can only signal flowers visible right beside the hive), yet shows unlimited creativity to invent new vertical 'straight-up' cues",
+        "Shows limited displacement (signalling spatially distant nectar), yet lacks open-ended productivity (bees cannot invent novel signals for abstract ideas or vertical 'up' nectar)",
       ],
       answerIndex: 3,
       explanation:
@@ -652,9 +652,9 @@ export const paper: ExamPaper = {
       diagram: `<svg viewBox="0 0 360 185" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scattergraph showing downward trend from top-left to bottom-right as Coaching Pressure increases and Intrinsic Enjoyment decreases"><rect x="8" y="8" width="344" height="169" rx="10" fill="#f8fafc" stroke="#cbd5e1"/><line x1="52" y1="145" x2="325" y2="145" stroke="#334155" stroke-width="2"/><line x1="52" y1="145" x2="52" y2="22" stroke="#334155" stroke-width="2"/><g fill="#2563eb"><circle cx="72" cy="34" r="4.5"/><circle cx="95" cy="44" r="4.5"/><circle cx="118" cy="52" r="4.5"/><circle cx="145" cy="68" r="4.5"/><circle cx="170" cy="76" r="4.5"/><circle cx="198" cy="88" r="4.5"/><circle cx="222" cy="102" r="4.5"/><circle cx="250" cy="112" r="4.5"/><circle cx="278" cy="126" r="4.5"/><circle cx="305" cy="134" r="4.5"/></g><text x="188" y="165" font-size="10" text-anchor="middle" fill="#334155" font-family="sans-serif">Coaching Pressure Score (1 → 10)</text><text x="18" y="84" font-size="9.5" text-anchor="middle" transform="rotate(-90 18 84)" fill="#334155" font-family="sans-serif">Enjoyment (0–40)</text></svg>`,
       options: [
         "There is a strong negative correlation: as perceived coaching pressure increases, intrinsic sport enjoyment decreases (without proving causation)",
-        "It proves experimentally that strict coaches destroy enjoyment",
-        "There is a zero correlation because the dots slope downwards",
-        "There is a strong positive correlation across 20 athletes",
+        "It proves experimentally that strict coaching pressure directly causes lower sport enjoyment, because the plotted points follow a tight straight line",
+        "There is a zero correlation between coaching pressure and enjoyment, because dots sloping downwards from top-left to bottom-right cancel out mathematically",
+        "There is a strong positive correlation across the 10 athletes: as perceived coaching pressure rises from 1 to 10, intrinsic enjoyment rises steadily alongside it",
       ],
       answerIndex: 0,
       explanation:

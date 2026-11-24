@@ -102,10 +102,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What did **Jean Berko Gleason's (1958) 'Wug' Test** demonstrate when young children pluralised a novel cartoon creature from *'one wug'* to ***'two wugs'***?",
         options: [
-          "Children only speak words that parents have reinforced with chocolate tokens",
+          "Children acquire plural endings purely by imitating and repeating familiar nouns that adults have previously reinforced aloud",
           "Children unconsciously extract productive morphological rules and apply them to brand-new words they have never heard before",
-          "Preschoolers suffer permanent retrograde amnesia for irregular nouns",
-          "Deaf children cannot learn sign language after age three",
+          "Children rely on semantic overextension to stretch a familiar animal label like 'bird' across every unfamiliar cartoon creature",
+          "Children cannot apply regular grammatical suffixes until they have mastered Piaget's concrete operational conservation tasks",
         ],
         answerIndex: 1,
         explanation:
@@ -124,9 +124,9 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Noam Chomsky's Nativist Theory**, what is the role of **Universal Grammar (UG)** inside the **Language Acquisition Device (LAD)**?",
         options: [
-          "It pre-loads every baby with fluent English vocabulary at birth",
-          "It trains mothers to smile silently whenever an 8-month-old infant babbles",
-          "It teaches honeybees the solar angle to distant clover patches",
+          "It pre-loads infants at birth with an innate spoken vocabulary of specific local English, Mandarin or Spanish words before any social exposure",
+          "It guides caregivers to deliver immediate contingent smiles, rhythmic child-directed speech and recasting whenever a baby begins babbling",
+          "It builds general sensorimotor play schemas such as object permanence and transporting through assimilation before any words can emerge",
           "It provides innate, species-specific deep structural principles shared across all human languages so children rapidly extract local syntax",
         ],
         answerIndex: 3,
@@ -168,10 +168,10 @@ export const mcqPapers: Paper[] = [
         question:
           "According to **B.F. Skinner's (1957) Behaviourist Theory**, how do infants progress from rough sounds like *'muh'* to clear words like *'milk'*?",
         options: [
-          "Through innate Universal Grammar parameter switches in the pons",
-          "Through sensorimotor object-permanence searches under blankets",
+          "Through innate Universal Grammar: setting biological syntax parameters inside the Language Acquisition Device",
+          "Through Piagetian cognitive development: forming sensorimotor object-permanence schemas via accommodation",
           "Through operant conditioning: selective positive reinforcement and shaping of successive approximations",
-          "Through unconscious Freudian dreamwork displacement",
+          "Through classical conditioning: automatically pairing neutral milk bottles with innate reflex salivation",
         ],
         answerIndex: 2,
         explanation:
@@ -190,10 +190,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Goldstein, King & West (2003)**, how did the **contingent** mother–infant group differ experimentally from the **yoked non-contingent control** group?",
         options: [
-          "Contingent mothers read picture dictionaries aloud, while control mothers sat behind a soundproof wall",
+          "Contingent mothers repeated clear Child-Directed Speech words aloud right after every babble, while yoked mothers remained completely motionless with a stone-faced expression",
           "Contingent mothers smiled, approached and touched silently *immediately* when their baby vocalised, while yoked mothers gave the exact same total smiles/touches on a random schedule",
-          "Contingent infants were 36 months old, while control infants were newborn",
-          "Contingent infants received sweet milk bottles, while control infants were scolded",
+          "Contingent mothers gave twice as many smiles, touches and cuddling episodes overall, while yoked mothers withheld physical touch completely until the final ten minutes of the session",
+          "Contingent infants were 24–30 months old practising telegraphic sentences with toy props, while yoked control infants were 8–10-month-olds tested before canonical babbling began",
         ],
         answerIndex: 1,
         explanation:
@@ -212,10 +212,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What is **Jean Piaget's** core claim about the relationship between **cognitive development** and **language acquisition**?",
         options: [
-          "Language develops completely independently of thought inside a dedicated genetic grammar module",
-          "Words come first and automatically create mental schemas in newborns",
+          "Language develops independently of general thought inside an innate biological grammar module (LAD), so complex syntax can emerge without prior sensorimotor schemas",
+          "Spoken language precedes and shapes thought: children must first hear adult words via Child-Directed Speech before they can form mental concepts like object permanence",
           "Cognitive development precedes language: children must first build mental schemas (such as object permanence) via assimilation and accommodation before naming those concepts",
-          "Thought and schemas do not exist; only observable muscle twitches exist",
+          "Internal mental schemas cannot be studied scientifically: verbal speech arises solely from external caregiver reinforcement shaping observable vocal habits over time",
         ],
         answerIndex: 2,
         explanation:
@@ -234,9 +234,9 @@ export const mcqPapers: Paper[] = [
         question:
           "What research method and key focus characterise **Hewitt's (2022)** study in CIE 0266 Language Development?",
         options: [
-          "Double-blind drug trial testing melatonin on toddler vocabulary",
-          "Postal correlation of 10,000 adult bilingual crossword players",
-          "Laboratory brain-lesion surgery on songbird vocal cords",
+          "Controlled laboratory experiment using wireless headphones and a yoked control group to test whether silent contingent maternal smiles accelerate infant babbling",
+          "Cross-cohort natural experiment comparing early-exposed and late-exposed deaf school children in Managua to track the spontaneous emergence of spatial sign grammar",
+          "Quantitative laboratory picture-card test presenting cartoon nonsense creatures like 'wugs' to preschoolers to measure productive English plural and past-tense rules",
           "Naturalistic qualitative case studies observing how young children's repetitive play action schemas (such as transporting and enveloping) scaffold conceptual language",
         ],
         answerIndex: 3,
@@ -256,10 +256,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Jerome Bruner's Interactionist Theory**, what does **LASS** stand for, and how does it relate to Chomsky's **LAD**?",
         options: [
-          "Lexical Acoustic Sound Sensor; it proves Chomsky's LAD is completely false",
+          "Language Acquisition Support System; it completely rejects Chomsky's innate LAD and argues children learn grammar solely through solitary operant reinforcement",
           "Language Acquisition Support System; adult social scaffolding, joint-attention routines and child-directed speech partner with the child's innate LAD",
-          "Longitudinal Amnesia Screening Scale; it measures hippocampal decay",
-          "Latin American Sign Syntax; it refers solely to Nicaraguan deaf schools",
+          "Linguistic Assimilation Schema Stage; it extends Piaget's sensorimotor period by arguing private cognitive play replaces both caregiver interaction and the LAD",
+          "Lexical Auditory Shaping System; it describes how caregivers ignore babbling and correct grammatical suffixes strictly through explicit classroom drills",
         ],
         answerIndex: 1,
         explanation:
@@ -300,10 +300,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Karl von Frisch's (1967)** research on the **honeybee waggle dance**, what two pieces of information are encoded by the **angle** of the straight waggle run on the vertical comb and its **duration**?",
         options: [
-          "Queen bee's age and hive temperature",
-          "Predator species and yesterday's rainfall",
+          "Distance to the flowers (via run angle), and nectar scent quality (via duration)",
+          "Vertical altitude of flowers above the hive, and exact nectar sugar volume",
           "Direction of the food source relative to the sun, and distance from the hive",
-          "Number of rival hives and flower colour",
+          "Type of approaching hive predator, and seasonal blooming month of the clover",
         ],
         answerIndex: 2,
         explanation:
@@ -322,10 +322,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What overall conclusion emerges from great-ape communication studies such as **Washoe** (ASL signs) and **Kanzi** (Yerkish lexigrams)?",
         options: [
-          "Apes cannot learn the meaning of even a single visual symbol",
-          "Apes routinely write complex multi-clause novels about future centuries",
+          "Apes cannot acquire semantic meaning for even a handful of visual symbols, responding solely to unconditioned food reflexes rather than learning sign associations",
+          "Apes master open-ended recursive syntax and complex multi-clause grammar matching human ten-year-olds, spontaneously narrating abstract events from distant centuries",
           "Apes can acquire hundreds of meaningful symbols and understand simple word order, yet plateau around a two-year-old toddler's level without human recursive syntax",
-          "Apes speak fluent vocal English once raised in human families",
+          "Apes easily acquire fluent vocal spoken English pronunciation once raised in human homes, proving their vocal tracts are identical to human speech anatomy",
         ],
         answerIndex: 2,
         explanation:
@@ -354,10 +354,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Three-year-old Ravi tells his grandma: *'I **runned** fast and hurt both my **foots**!'* Grandma worries Ravi is picking up 'bad slang' from television. How should a psychology student reassure her?",
         options: [
-          "Ravi is showing pre-linguistic variegated babbling caused by ear wax",
+          "Ravi is demonstrating semantic overextension — stretching familiar vocabulary labels too broadly across unrelated objects that share similar surface shapes or actions",
           "Ravi is demonstrating grammatical overregularisation — positive proof that he has extracted English past-tense (-ed) and plural (-s) rules rather than merely parroting adults",
-          "Ravi is displaying semantic underextension of nouns",
-          "Ravi has missed the critical period and can never learn irregular verbs",
+          "Ravi is demonstrating telegraphic functor omission — dropping essential auxiliary verbs and articles because toddlers under four cannot yet string more than two words together",
+          "Ravi is demonstrating semantic underextension — restricting irregular verbs and nouns too narrowly because he missed the early sensitive period for acquiring spoken English",
         ],
         answerIndex: 1,
         explanation:
@@ -399,9 +399,9 @@ export const mcqPapers: Paper[] = [
           "Why does a toddler's utterance *'Mummy isn't boy, he girl'* — followed by the mother smiling and replying *'That's right, darling!'* (**Brown & Hanlon, 1970**) — challenge **Skinner's Behaviourist Theory**?",
         options: [
           "It shows parents positively reinforce **factual truth** even when grammar is wrong, so operant reinforcement cannot explain how children eliminate grammatical errors",
-          "It proves mothers never smile at toddlers in naturalistic homes",
-          "It shows toddlers cannot pronounce consonant sounds before age seven",
-          "It proves television cartoons are required to learn pronouns",
+          "It shows caregivers systematically punish every minor pronoun or syntax slip with scolding, leaving toddlers too anxious to attempt novel multi-word sentences",
+          "It shows children learn accurate pronouns strictly through silent visual imitation of mothers' facial gestures rather than through spoken verbal feedback at home",
+          "It shows toddlers in the two-word stage lack Piagetian object permanence, making them unable to distinguish between male and female family members until age five",
         ],
         answerIndex: 0,
         explanation:
@@ -420,10 +420,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A deaf boy in rural Central America is not enrolled in a deaf school until **age 14**, whereas his younger deaf cousin joins at **age 5**. Based on **Senghas (1995)** and the **sensitive period hypothesis**, what outcome is predicted ten years later?",
         options: [
-          "The older boy will master subtle spatial verb inflections better because teenagers have larger lungs",
-          "Both cousins will invent spoken Spanish without hearing aids",
+          "The boy who entered at age 14 will master subtle spatial verb inflections far more rapidly because adolescent formal-operational cognition speeds up implicit grammar acquisition",
+          "Both cousins will achieve identical native-like spatial sign syntax within ten years, because Chomsky's Universal Grammar remains equally flexible at any age throughout adulthood",
           "The cousin who entered at age 5 will display native-like grammatical sign fluency, whereas the boy exposed at 14 will show persistent gaps in complex syntax despite learning vocabulary signs",
-          "Neither child will ever learn a single lexical sign",
+          "The boy exposed at age 14 will be completely unable to learn even basic individual vocabulary signs, because passing puberty shuts down both lexical memory and syntax acquisition",
         ],
         answerIndex: 2,
         explanation:
@@ -442,10 +442,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A paediatric clinic advises new fathers: *'When your 9-month-old baby babbles, look over, smile warmly and touch their hand right away — don't stare at your phone and smile two minutes later!'* Which compulsory CIE 0266 study directly underpins this advice?",
         options: [
-          "Senghas (1995)",
-          "Hewitt (2022)",
-          "von Frisch (1967)",
-          "Goldstein, King & West (2003)",
+          "Senghas (1995) — Managua deaf cohorts",
+          "Hewitt (2022) — early-years play cases",
+          "Ochs & Schieffelin (1984) — Kaluli homes",
+          "Goldstein, King & West (2003) — lab dyads",
         ],
         answerIndex: 3,
         explanation:
@@ -464,10 +464,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In a nursery playroom, 20-month-old Amir spends twenty minutes wrapping toy cars inside silk scarves and peeking underneath while his key-worker narrates: *'Under the scarf… gone! Look, inside!'* Within days, Amir uses *'under'* and *'gone'* spontaneously. Which pair of theorists/studies **together** best explain Amir's rapid learning?",
         options: [
-          "Skinner's pigeon box and von Frisch's waggle dance",
+          "Skinner's operant conditioning shaping isolated phonemes + Goldstein, King & West (2003) on silent non-verbal maternal smiling",
           "Piaget / Hewitt (2022) on enveloping action schemas building concepts + Bruner's LASS adult scaffolding mapping words onto play",
-          "Hull's cellular dehydration drive and Merchant's nostalgic charity posters",
-          "Strict Nativism claiming adult interaction plays zero helpful role",
+          "Chomsky's strict innate LAD activating grammar automatically + Senghas (1995) showing adult language models are unnecessary",
+          "Hockett's semantic displacement for absent events + von Frisch (1967) on genetically fixed spatial foraging signals in hives",
         ],
         answerIndex: 1,
         explanation:
@@ -552,10 +552,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Scientists place a dish of sugar water directly on top of a **20-metre vertical tower** right above a beehive. Scout bees placed on the dish fly down and perform random circular dances, and **zero** hive-mates find the tower top. Which limitation of animal communication does this classic **von Frisch** test prove?",
         options: [
-          "Bees are completely blind to ultraviolet light",
+          "The honeybee waggle dance lacks spatial displacement altogether, meaning scout bees can never indicate food located out of direct sight of the hive",
           "The honeybee waggle dance is a closed, genetically restricted code lacking open-ended productivity to invent a novel signal for 'straight up'",
-          "Bees only communicate via Yerkish keyboard lexigrams",
-          "Bees suffer social desirability bias when watched by entomologists",
+          "The honeybee waggle dance relies strictly on cultural transmission across generations, so scouts failed only because older bees had not taught them",
+          "The honeybee waggle dance lacks semanticity entirely, proving that neither the angle nor duration of a dance conveys any specific foraging meaning",
         ],
         answerIndex: 1,
         explanation:
@@ -575,9 +575,9 @@ export const mcqPapers: Paper[] = [
           "A child with **Williams syndrome** struggles severely with Piagetian spatial/number conservation tasks (scoring an IQ around 55), yet speaks in rich, grammatically complex embedded sentences. Which theory is **most challenged** by this dissociation, and which theory gains **partial support**?",
         options: [
           "Challenges Piaget's claim that general cognitive development strictly precedes complex grammar; partially supports Chomsky's modular LAD",
-          "Challenges Chomsky's LAD; proves Skinner's pigeon shaping explains 100% of IQ",
-          "Challenges von Frisch's honeybees; proves bees have Williams syndrome",
-          "Challenges Bruner's LASS; proves infants never look at picture books",
+          "Challenges Chomsky's claim of an innate modular LAD; partially supports Piaget's view that general spatial intelligence drives all syntax",
+          "Challenges Skinner's claim that parents shape vocabulary through reinforcement; partially supports Piaget's preoperational conservation stage",
+          "Challenges Bruner's claim that caregivers scaffold early words via LASS; partially supports von Frisch's genetically closed communication code",
         ],
         answerIndex: 0,
         explanation:
@@ -597,9 +597,9 @@ export const mcqPapers: Paper[] = [
           "Hearing toddler *'Jim'* grew up with loving deaf parents who did not sign to him at home and instead let him watch hours of spoken English television daily. At age 3 years 9 months his spoken grammar was severely delayed, until live play sessions with a speech therapist rapidly unlocked fluent English. What does Jim's case show?",
         options: [
           "Passive audio input alone is not enough to trigger Chomsky's LAD — interactive two-way social scaffolding (Bruner's LASS) is vital",
-          "Television causes permanent damage to the hippocampus",
-          "Children can only learn spoken language after age fourteen",
-          "Skinner's non-contingent yoked schedule is superior to live conversation",
+          "Passive television speech alone triggers Chomsky's innate LAD fully, proving social turn-taking and caregiver scaffolding are unnecessary",
+          "Missing interactive spoken input before age three closes the critical period permanently, preventing children from ever acquiring grammar",
+          "Non-contingent background speech accelerates syntax better than contingent interaction, supporting Goldstein et al.'s yoked control group",
         ],
         answerIndex: 0,
         explanation:
@@ -662,10 +662,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How does a **bilingual** toddler raised in Singapore hearing both **English** at preschool and **Mandarin** from grandparents illustrate the partnership of **nature and nurture** in language?",
         options: [
-          "Bilingual children skip the holophrastic and telegraphic stages completely",
-          "Innate biological readiness (Chomsky's LAD) enables both grammars to be acquired on the universal milestone schedule, while social learning & LASS determine *which* two vocabularies and accents the child speaks",
-          "Hearing two languages destroys object permanence until age ten",
-          "Only Skinner's punishment can separate two languages",
+          "Biological maturation (nature) determines which specific local words and accents the child speaks, while social scaffolding (nurture) forces bilingual toddlers to skip the holophrastic stage",
+          "Innate biological readiness (Chomsky's LAD) supports both grammars on the universal milestone schedule, while social learning and LASS supply *which* two vocabularies and accents emerge",
+          "Exposure to two environmental languages overloads Piagetian schemas and Chomsky's LAD equally, delaying babbling and telegraphic speech by several years until formal schooling begins",
+          "Language is 100% environmental operant conditioning, so bilingual toddlers can only separate English from Mandarin when caregivers punish every mixed-language sentence during early play",
         ],
         answerIndex: 1,
         explanation:
@@ -695,9 +695,9 @@ export const mcqPapers: Paper[] = [
           "Why did **Goldstein, King & West (2003)** use a **yoked non-contingent control group** rather than a control group where mothers completely ignored their babies with stone-faced silence for 30 minutes?",
         options: [
           "Because stone-faced silence could distress infants AND would confound *contingent timing* with *total amount of maternal warmth/stimulation*",
-          "Because 8-month-old infants can read written instructions on clipboards",
-          "Because yoked controls eliminate all need for an operationalised DV",
-          "Because repeated-measures surgeries were used instead",
+          "Because yoked mothers were permitted to speak full Child-Directed Speech sentences, allowing researchers to test vocal imitation against silence",
+          "Because using a yoked schedule converts an independent-measures lab study into a longitudinal repeated-measures design with zero participant variables",
+          "Because silent stone-faced mothers would increase ecological validity too much, making acoustic spectrogram recording impossible inside the playroom",
         ],
         answerIndex: 0,
         explanation:
@@ -739,9 +739,9 @@ export const mcqPapers: Paper[] = [
           "What is a valid **ecological validity** limitation of **Goldstein, King & West (2003)**?",
         options: [
           "In real family homes, caregivers almost *always* talk, coo and sing back verbally when smiling at a babbling baby — so silent headphone-cued smiling is somewhat artificial",
-          "Infants never babble outside laboratories",
-          "30 mothers is larger than the entire population of the United States",
-          "Acoustic spectrograms cannot measure sound frequencies",
+          "Because the study relied solely on naturalistic covert filming in noisy family supermarkets, extraneous background chatter ruined internal control over response timing",
+          "Because mothers were instructed to repeat complex multi-word grammar rules aloud to 8-month-olds, the task failed to isolate silent non-verbal social reinforcement",
+          "Because acoustic spectrograms and blind audio coders could not score syllable maturity objectively, the vocal data consisted purely of unverified parental diary notes",
         ],
         answerIndex: 0,
         explanation:
@@ -761,9 +761,9 @@ export const mcqPapers: Paper[] = [
           "Why is **Senghas's (1995)** Nicaraguan Sign Language study classified as a **natural / quasi-experiment** rather than a true laboratory experiment?",
         options: [
           "Because the IVs — year cohort of school entry and age at first exposure — occurred naturally in real life rather than being randomly assigned by the researcher",
-          "Because no quantitative grammar counts were ever recorded",
-          "Because it studied wild honeybees in a meadow",
-          "Because every participant experienced both early entry and late entry via counterbalancing",
+          "Because Senghas collected strictly qualitative unstructured diaries and never quantified spatial verb inflections or grammatical modulations across age groups",
+          "Because every deaf student completed both the early-entry (<10 years) and late-entry (>10 years) conditions in a counterbalanced repeated-measures design",
+          "Because Senghas actively manipulated school-entry ages inside a university soundproofed laboratory while keeping control children isolated until adolescence",
         ],
         answerIndex: 0,
         explanation:
@@ -782,10 +782,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why must psychologists interpret the tragic case study of **Genie (Curtiss, 1977)** with methodological caution when testing Chomsky's **critical period hypothesis**?",
         options: [
-          "Genie was rescued at 6 months old, long before puberty",
-          "Severe physical abuse, malnutrition, trauma and lack of emotional attachment act as major confounding variables — we cannot be 100% certain whether her syntax deficit came purely from age or from brain/emotional trauma",
-          "Genie spoke seven fluent languages before her rescue",
-          "Case studies of one individual automatically generalise to 100% of humanity without replication",
+          "Because Genie was rescued at age six before puberty began and rapidly mastered complex adult syntax, her case actually disproves any sensitive period for language acquisition",
+          "Severe abuse, malnutrition, trauma and attachment deprivation act as major confounding variables, so we cannot separate pure age effects from neurological or emotional damage",
+          "Because Curtiss used a large cross-cultural sample of over 500 deaf children in California, individual qualitative detail about Genie's home environment was never documented",
+          "Because single-participant case studies eliminate all extraneous variables and automatically achieve high population generalisability, Genie's outcome needs no replication",
         ],
         answerIndex: 1,
         explanation:
@@ -804,9 +804,9 @@ export const mcqPapers: Paper[] = [
         question:
           "What are **one key strength** and **one key limitation** of **Hewitt's (2022)** qualitative naturalistic case-study method for investigating child schemas and language?",
         options: [
-          "Strength: Zero researcher interpretation needed; Limitation: Uses painful electric shocks",
-          "Strength: Proves mathematical cause-and-effect across 50,000 infants; Limitation: Completely artificial MRI tunnel",
-          "Strength: Double-blind placebo control; Limitation: Order effects from ABBA counterbalancing",
+          "Strength: Tight laboratory control proves direct cause-and-effect between play and words; Limitation: Artificial wireless headphone cues lower everyday mundane realism",
+          "Strength: Large representative sample across multiple countries boosts population validity; Limitation: Rigid closed Likert scales miss rich qualitative play context",
+          "Strength: Objective computer spectrograms eliminate all researcher subjectivity completely; Limitation: Counterbalanced repeated-measures trials cause toddler fatigue",
           "Strength: Rich, holistic, ecologically valid detail of natural play-to-word transitions; Limitation: Small sample limits generalisability and qualitative coding risks researcher subjectivity",
         ],
         answerIndex: 3,
@@ -848,10 +848,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Goldstein, King & West (2003)**, **30 mother–infant dyads** were split equally between the contingent group and the yoked non-contingent control group. How many infants were in **each** condition, and why were acoustic properties measured with computer spectrograms alongside blind coders?",
         options: [
-          "30 in each condition; to increase social desirability bias",
-          "10 in each condition; to deceive the babies",
+          "30 in each condition; blind coding and acoustic spectrograms ensure every infant experiences both conditions in a repeated-measures design",
+          "15 in each condition; blind coding and acoustic spectrograms increase mundane realism by mimicking natural noisy home conversations",
           "15 in each condition; blind coding and acoustic measurements prevent investigator bias and raise objectivity/reliability",
-          "5 in each condition; to create demand characteristics",
+          "10 in each condition; blind coding allows researchers to identify which mothers smiled most warmly so they can reward those babies",
         ],
         answerIndex: 2,
         explanation:
@@ -892,10 +892,10 @@ export const mcqPapers: Paper[] = [
         question:
           "When **Terrace et al. (1979)** scrutinised slow-motion videotapes of chimpanzee **Nim Chimpsky** signing with trainers, what methodological flaw undermined earlier claims that apes compose spontaneous human-like sentences?",
         options: [
-          "Nim was actually a robot operated by radio control",
+          "Nim's trainers spoke English strictly through one-way mirrors while wearing loud music headphones, preventing Nim from seeing any human signing models to imitate",
           "Many of Nim's signs were unconscious **cued imitations** of the trainer's immediately preceding hand movements ('Clever Hans' cueing) paired with repetitive food-begging",
-          "Trainers forgot to turn on the camera lens cap for four years",
-          "Nim refused to eat bananas",
+          "Nim suffered severe hearing loss during infancy and therefore failed to acquire even a single individual lexical sign across four years of behavioural training",
+          "Nim mastered complex multi-clause past-tense grammar effortlessly, but trainers under-reported his fluency because they lacked inter-observer video checklists",
         ],
         answerIndex: 1,
         explanation:
@@ -914,10 +914,10 @@ export const mcqPapers: Paper[] = [
         question:
           "To prove bonobo **Kanzi** genuinely understood novel spoken English sentences like *'Put the soap on the apple'* without reading facial/body cues, **Savage-Rumbaugh et al. (1993)** had the tester speak from behind a **one-way mirror** while caregivers in the room wore **loud music headphones**. Which threat to **internal validity** did this eliminate?",
         options: [
-          "Attrition in longitudinal cohort tracking",
+          "Participant attrition across multi-year longitudinal developmental cohorts",
           "Unconscious visual/gestural cueing (investigator effects / Clever Hans cues)",
-          "Seasonal jet lag in circadian rhythms",
-          "Proactive interference from French vocabulary",
+          "Practice and fatigue order effects across repeated-measures testing blocks",
+          "Self-report social desirability bias on anonymous caregiver questionnaires",
         ],
         answerIndex: 1,
         explanation:
@@ -958,10 +958,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In an ethical nursery observation of toddler action schemas (**Hewitt 2022** style), 18-month-olds cannot read or sign a consent form themselves. How must the researcher satisfy **CIE ethical guidelines** for **informed consent** and **right to withdraw**?",
         options: [
-          "Skip consent completely because toddlers are shorter than one metre",
+          "Obtain written consent from the nursery headteacher alone, and continue filming even if a toddler cries so that natural distress reactions remain intact in the dataset",
           "Obtain prior written informed consent from parents/legal guardians AND monitor the child's own non-verbal assent (stopping immediately if a toddler shows fussiness, crying or turns away)",
-          "Offer toddlers $20 cash to sign an X on a contract",
-          "Film covertly through hidden bathroom cameras and post videos online",
+          "Film covertly without informing parents beforehand to prevent observer effects, then debrief the 18-month-old toddlers verbally at the end of the afternoon play session",
+          "Rely solely on the child's verbal consent during play without contacting parents, and publish toddlers' full names alongside video stills to ensure research transparency",
         ],
         answerIndex: 1,
         explanation:
@@ -1002,10 +1002,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which overarching evaluative conclusion best resolves the **nature vs nurture debate** in CIE 0266 Language Development?",
         options: [
-          "Language is 100% genetic DNA — deaf or isolated children speak fluent English with zero input",
-          "Language is 100% operant conditioning — pigeons and chimpanzees develop identical syntax to humans when given raisins",
-          "An interactionist synthesis is strongest: innate human biological architecture (LAD & sensitive period — Senghas 1995) provides syntactic readiness, while cognitive schemas (Piaget/Hewitt 2022) and contingent social scaffolding (Goldstein 2003; Bruner's LASS) activate and shape fluent language",
-          "Neither biology nor environment influences language; speech appears randomly at age twelve",
+          "Pure nativism is strongest: innate Universal Grammar (Chomsky's LAD) automatically generates fluent spoken English and local vocabulary by age three even when children receive zero interactive human input",
+          "Pure behaviourism is strongest: language is 100% operant shaping and imitation (Skinner), meaning chimpanzees and infants alike develop full recursive syntax solely through adult reinforcement of every word",
+          "An interactionist synthesis is strongest: innate biological readiness (LAD & sensitive period — Senghas 1995) combines with cognitive schemas (Piaget/Hewitt 2022) and contingent social scaffolding (Goldstein 2003; Bruner's LASS) to build fluent language",
+          "Pure Piagetian maturation is strongest: general non-verbal spatial conservation alone creates human syntax automatically, proving neither innate grammar modules nor caregiver scaffolding contribute to language",
         ],
         answerIndex: 2,
         explanation:

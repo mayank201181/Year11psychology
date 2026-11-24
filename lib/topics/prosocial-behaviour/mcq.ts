@@ -11,10 +11,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which statement accurately distinguishes **altruism** from the broader category of **prosocial behaviour** in CIE 0266 Psychology?",
         options: [
-          "Altruism is helping motivated purely by concern for another's welfare at a personal cost with no expected reward, whereas prosocial behaviour includes any voluntary act intended to benefit others regardless of motive.",
-          "Prosocial behaviour only occurs between genetic relatives, whereas altruism only occurs between unrelated strangers in emergencies.",
-          "Altruism requires public praise to reinforce the helper, whereas prosocial behaviour is always performed anonymously.",
-          "Prosocial behaviour is an involuntary biological reflex, whereas altruism only applies to financial charity donations.",
+          "Altruism is helping motivated purely by concern for another's welfare at personal cost with no expected reward, whereas prosocial behaviour covers any voluntary act aimed at helping.",
+          "Prosocial behaviour applies exclusively to helping close genetic relatives for inclusive fitness, whereas altruism refers to any everyday kindness shown toward unrelated strangers.",
+          "Altruism is the broad umbrella term for any voluntary helpful action including helping for praise, whereas prosocial behaviour is restricted to anonymous acts with no self-benefit.",
+          "Prosocial behaviour is an automatic involuntary biological reflex triggered by distress, whereas altruism refers solely to planned financial donations made through charitable groups.",
         ],
         answerIndex: 0,
         explanation:
@@ -98,9 +98,9 @@ export const mcqPapers: Paper[] = [
           "During a swimming gala, a spectator sees a swimmer struggling in deep water, realises nobody else has noticed, and feels responsible to act — yet freezes at the poolside because she cannot swim and sees no lifebuoy. At which step of **Latané & Darley's 5-step model** did intervention fail?",
         options: [
           "Step 4: Knowing how to help (deciding one has the competence/form of assistance)",
-          "Step 2: Interpreting the event as an emergency",
-          "Step 3: Assuming personal responsibility",
-          "Step 1: Noticing the event",
+          "Step 2: Interpreting the event as an emergency (overcoming pluralistic ignorance)",
+          "Step 3: Assuming personal responsibility (overcoming diffusion of responsibility)",
+          "Step 1: Noticing the event (attending to distress cues amid surrounding distractions)",
         ],
         answerIndex: 0,
         explanation:
@@ -161,9 +161,9 @@ export const mcqPapers: Paper[] = [
         question:
           "According to **Piliavin's Arousal–Cost–Reward Matrix**, what is the most likely outcome when **BOTH** the cost of helping (e.g. risk of violence) **AND** the cost of not helping (e.g. intense guilt watching a victim suffer) are **high**?",
         options: [
-          "Immediate direct physical intervention by every bystander present",
-          "Complete absence of physiological arousal from the start of the incident",
-          "Guaranteed altruistic self-sacrifice regardless of personal danger",
+          "Immediate direct physical intervention by bystanders, because high guilt always overrides personal danger in the cost–reward calculation",
+          "Walking away calmly with minimal emotional conflict, because high danger immediately eliminates physiological arousal and personal guilt",
+          "Unpredictable helping driven purely by personal social norms and mood, because both cost variables cancel out in the decision matrix",
           "Indirect help (calling emergency services) or cognitive reinterpretation (redefining the victim as not needing or deserving help)",
         ],
         answerIndex: 3,
@@ -227,10 +227,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In **Levine, Norenzayan & Philbrick's (2001)** cross-cultural field study across **23 large cities**, which two variables best predicted differences in street helping rates?",
         options: [
-          "Average winter temperature and national literacy rate",
-          "Total city population size and number of police officers per square kilometre",
+          "High economic purchasing power (positively linked to helping) and cultural values of *simpatía* (negatively linked to helping)",
+          "Total metropolitan population size (positively linked to helping) and strict public policing density (negatively linked to helping)",
           "Cultural values of *simpatía* (positively linked to helping) and economic productivity / fast walking pace (negatively linked to helping)",
-          "Percentage of monozygotic twins and average daily hours of television watched",
+          "High pedestrian walking pace (positively linked to helping) and average national winter temperature (negatively linked to helping)",
         ],
         answerIndex: 2,
         explanation:
@@ -451,9 +451,9 @@ export const mcqPapers: Paper[] = [
           "Which criticism is a valid **methodological limitation** of **Rushton et al.'s (1986)** twin study of altruism?",
         options: [
           "Altruism was measured via postal self-report questionnaires, which are vulnerable to social desirability bias rather than observing real costly helping.",
-          "The sample size of 12 twin pairs was too small for statistical comparison.",
-          "Dizygotic twins share 100% of their DNA, making genetic comparison impossible.",
-          "Participants were deceived into thinking their twin was having a seizure in a cubicle.",
+          "The sample included only 12 monozygotic and dizygotic twin pairs from one hospital, making statistical heritability estimates too small to generalise.",
+          "Dizygotic twins share 100% of their segregating genes while monozygotic twins share only 50%, preventing researchers from isolating genetic variance.",
+          "Twins were placed in isolated intercom cubicles and deceived into believing their co-twin was suffering a seizure, breaching ethical protection from harm.",
         ],
         answerIndex: 0,
         explanation:
@@ -559,10 +559,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which pair correctly contrasts the **norm of reciprocity** with the **norm of social responsibility**?",
         options: [
-          "Reciprocity applies only to family members; social responsibility applies only to paid employees.",
+          "Reciprocity obliges us to help vulnerable strangers without expecting return favours, whereas social responsibility instructs us to repay only people who have assisted us before.",
           "Reciprocity instructs us to return help to those who have helped us, whereas social responsibility instructs us to help dependent people in need even if they can never pay us back.",
-          "Reciprocity operates unconsciously in sleep; social responsibility operates only in laboratory cubicles.",
-          "Reciprocity reduces helping when gifts are given; social responsibility increases bystander apathy.",
+          "Reciprocity applies exclusively to close biological relatives who share DNA by descent, whereas social responsibility applies exclusively to paid workplace roles and formal contracts.",
+          "Reciprocity reduces charitable giving whenever unsolicited small gifts are offered, whereas social responsibility encourages diffusion of responsibility inside large crowded groups.",
         ],
         answerIndex: 1,
         explanation:
@@ -581,10 +581,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How did **Cialdini et al. (1987)** challenge **Batson's Empathy–Altruism Hypothesis** using the **Negative-State Relief Model**?",
         options: [
-          "They claimed participants in Batson's study were secretly genetically related to Elaine.",
-          "They showed high-empathy participants actually helped less than low-empathy participants.",
+          "They argued that high-empathy participants only volunteered to take Elaine's shocks because they expected cash payment or public praise from the experimenter.",
+          "They replicated Batson's easy-escape procedure and found that high-empathy participants actually helped significantly less often than low-empathy participants.",
           "They argued empathetic observers feel personal sadness that persists even if they walk out the door, so helping is still an egoistic way to lift their own sad mood.",
-          "They argued human beings lack mirror neurons needed to recognise pain.",
+          "They claimed that empathetic observers experience zero emotional distress when watching a victim suffer, proving helping is driven purely by innate kin selection.",
         ],
         answerIndex: 2,
         explanation:
@@ -624,9 +624,9 @@ export const mcqPapers: Paper[] = [
         question:
           "Which real-world action poses the **strongest challenge** to purely **evolutionary explanations** (kin selection and reciprocal altruism) of human helping?",
         options: [
-          "A mother donating bone marrow to save her biological daughter",
-          "Two flatmates taking turns cooking dinner across exam week",
-          "A shopkeeper giving loyal customers a free pastry before Chinese New Year",
+          "A mother undergoing painful surgery to donate bone marrow so her biological daughter can recover from a serious illness",
+          "Two university flatmates taking turns cooking evening meals and sharing revision notes throughout a busy final exam week",
+          "A neighbourhood bakery owner giving regular loyal customers a complimentary box of pastries every Lunar New Year holiday",
           "An anonymous tourist diving onto railway tracks to save an unrelated stranger in a city she will leave forever that evening",
         ],
         answerIndex: 3,
@@ -695,9 +695,9 @@ export const mcqPapers: Paper[] = [
           "Why does **power-assertive** parenting often fail to produce prosocial behaviour when adults are **not watching**?",
         options: [
           "Harsh threats focus the child on self-focused fear and external compliance ('don't get caught') rather than empathic concern for peers.",
-          "Children under age 12 cannot remember verbal rules for more than 18 seconds.",
-          "Power assertion eliminates all physiological arousal in the nervous system.",
-          "It increases genetic relatedness between classmates.",
+          "Power-assertive discipline relies too heavily on calm perspective-taking explanations, leaving young children unsure of explicit behavioural rules.",
+          "Strict punishment completely suppresses physiological arousal when children witness peer distress, making them unable to notice emergencies.",
+          "Because children only imitate warm peers rather than adult authority figures, parental discipline styles have zero effect on supervised behaviour.",
         ],
         answerIndex: 0,
         explanation:
@@ -759,10 +759,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why was **Study 2** of **Prot et al. (2014)** methodologically crucial for strengthening **Study 1**?",
         options: [
-          "Study 2 manipulated brain oxytocin levels directly in a double-blind clinical trial.",
-          "Study 2 replaced all questionnaires with covert subway observations.",
-          "Study 2 proved that violent games increase empathy more than cooperative games.",
-          "Study 2's 3-wave longitudinal design controlled for Wave 1 baseline helping, showing prosocial gaming preceded later gains in empathy and helping rather than merely reflecting pre-existing kindness.",
+          "Study 2 randomly assigned Singaporean youths to play cooperative or neutral games in a laboratory and timed real helping, establishing full experimental causation.",
+          "Study 2 replaced Study 1's self-report scales with covert naturalistic street observations across 23 cities, eliminating social desirability bias in helping scores.",
+          "Study 2 widened Study 1's single-nation Singapore sample by surveying 11,783 youths across seven Eastern and Western nations to improve population generalisability.",
+          "Study 2's 3-wave longitudinal design controlled for Wave 1 baseline helping, showing prosocial gaming preceded later empathy and helping gains rather than just prior kindness.",
         ],
         answerIndex: 3,
         explanation:
@@ -825,10 +825,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How does Buckley & Anderson's **General Learning Model (GLM)** explain why cooperative video games can have a powerful prosocial effect?",
         options: [
-          "Video games permanently rewrite the player's DNA relatedness coefficient r.",
-          "Players passively fall into slow-wave delta sleep while gaming.",
+          "Cooperative games activate innate biological kin-selection reflexes by convincing the brain that online avatars share genetic relatedness with the player.",
+          "Players absorb prosocial norms purely through passive unconscious exposure during gaming, without needing active practice, emotion, or feedback rewards.",
           "Players actively rehearse prosocial cognitive scripts, practise perspective-taking, and receive immediate positive reinforcement for helping teammates.",
-          "Video games trigger audience inhibition that stops players from speaking in real life.",
+          "Playing cooperative games heightens audience inhibition and personal distress, forcing players to help strangers later purely to escape guilty arousal.",
         ],
         answerIndex: 2,
         explanation:
@@ -890,10 +890,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Mei-Ling collapses with heat exhaustion at an outdoor concert. Her sister (**{{r = 0.50}}**) sprints through the crowd to help immediately, a nurse (**{{r = 0}}**) steps in because she knows heat-stroke first aid, and a bystander who just watched a paramedic drama helps carry water. Which **three** explanations work *together* in this single event?",
         options: [
-          "Love withdrawal, pluralistic ignorance, and habituation",
+          "Reciprocal altruism (sister), pluralistic ignorance in Latané & Darley's model (nurse), and power-assertive discipline (bystander)",
           "Kin selection (sister), Step 4 competence in Latané & Darley's model (nurse), and prosocial media script activation (bystander)",
-          "Audience inhibition, cognitive reinterpretation, and power assertion",
-          "Diffusion of responsibility, reciprocal cheating, and perceptual defence",
+          "Vicarious reinforcement (sister), audience inhibition at Step 5 (nurse), and cognitive reinterpretation of victim need (bystander)",
+          "Diffusion of responsibility (sister), negative-state mood relief (nurse), and love-withdrawal socialisation (bystander)",
         ],
         answerIndex: 1,
         explanation:
@@ -912,10 +912,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why does **Prot et al. (2014)** have dramatically higher **population generalisability** than **Latané & Darley (1968)**?",
         options: [
-          "Prot et al. tested only male psychology students at one elite university in New York.",
-          "Prot et al. tested 36 six-month-old infants across one afternoon.",
+          "Prot et al. randomly sampled 72 male and female university undergraduates in New York, whereas Latané & Darley tested only a single clinical case.",
+          "Prot et al. observed 4,450 commuting adults covertly on public subway trains across Manhattan, whereas Latané & Darley tested only preschool infants.",
           "Prot et al. sampled over 14,800 male and female youths across 8 diverse Eastern and Western nations (7 countries in Study 1 plus Singapore in Study 2).",
-          "Prot et al. avoided human participants by running computer simulations.",
+          "Prot et al. tested 573 adult monozygotic and dizygotic twin pairs from a British register, whereas Latané & Darley sampled only one school in Singapore.",
         ],
         answerIndex: 2,
         explanation:
@@ -956,9 +956,9 @@ export const mcqPapers: Paper[] = [
           "In **Greitemeyer's (2009)** media experiments, university students who listened to songs with **prosocial lyrics** (*'Heal the World'*, *'Help!'*) versus neutral lyrics subsequently:",
         options: [
           "Reported higher state empathy and donated significantly more of their participation fee to a non-profit charity",
-          "Refused to report smoke entering the laboratory",
-          "Showed lower empathy and higher aggression toward confederates",
-          "Helped only genetic relatives with r = 0.50",
+          "Reported lower personal distress but ignored an intercom emergency whenever four other listeners were present",
+          "Showed lower trait empathy and made harsher moral judgements because lyrical distractions lowered cognitive attention",
+          "Donated the exact same amount as neutral-lyric listeners, showing audio media cannot prime helping scripts",
         ],
         answerIndex: 0,
         explanation:
@@ -977,10 +977,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Suppose a researcher wants to prove **experimentally** (with full cause-and-effect validity) whether playing a cooperative rescue video game increases real helping in Year 11 students. Which design fixes the main methodological limitation of **Prot et al. (2014)**?",
         options: [
-          "Posting an online survey asking 500 gamers to rate how kind they think they are",
-          "Interviewing parents retrospectively about games their teenagers played at age 6",
-          "Randomly allocating students to play either a cooperative rescue game or a matched neutral puzzle game for 20 minutes, then staging an 'accidental' spill of 20 pencils to count how many pencils each student picks up",
-          "Calculating twin correlations on gamer hours without measuring helping",
+          "Posting an anonymous online self-report survey across five schools asking 500 Year 11 gamers to rate their weekly rescue-game hours and how helpful they consider themselves",
+          "Conducting semi-structured retrospective interviews with parents about which cooperative games their teenagers played at age six, then coding themes of childhood kindness",
+          "Randomly allocating students to play a cooperative rescue game or a matched neutral game for 20 minutes, then counting how many 'accidentally' spilled pencils each student picks up",
+          "Tracking monozygotic and dizygotic Year 11 twin pairs across two school terms to correlate their self-chosen weekly video-game genres with teacher ratings of classroom empathy",
         ],
         answerIndex: 2,
         explanation:

@@ -106,6 +106,16 @@ export function checkQuestion(where: string, q: Question, sectionIds: Set<string
     if (/\b(?:all|none) of the above\b|\bboth\s+[A-D]\s+and\s+[A-D]\b/i.test(q.options.join(" "))) {
       issues.push({ where, problem: "'all/none of the above' or 'both A and B' breaks when options are shuffled" });
     }
+    if (Array.isArray(q.options) && q.options.length === 4 && Number.isInteger(q.answerIndex) && q.answerIndex >= 0 && q.answerIndex < 4) {
+      const correctLen = q.options[q.answerIndex].trim().length;
+      const longestDistractor = Math.max(...q.options.filter((_, i) => i !== q.answerIndex).map((o) => o.trim().length));
+      if (longestDistractor > 0 && correctLen > 1.6 * longestDistractor) {
+        issues.push({
+          where,
+          problem: `correct MCQ option is conspicuously longer than distractors (${correctLen} chars vs max distractor ${longestDistractor} chars, ${(correctLen / longestDistractor).toFixed(2)}× > 1.6×)`,
+        });
+      }
+    }
   } else if (q.kind === "short") {
     checkSpec(`${where}.answer`, q.answer, issues);
     if (!Array.isArray(q.solution) || q.solution.length === 0) issues.push({ where, problem: "short question needs solution steps" });
@@ -114,7 +124,9 @@ export function checkQuestion(where: string, q: Question, sectionIds: Set<string
     if (q.commonError) checkText(`${where}.commonError`, q.commonError, issues);
     checkTraps(where, q.answer, q.traps, issues);
   } else if (q.kind === "written") {
-    if (q.marks !== q.markScheme?.length) issues.push({ where, problem: `marks (${q.marks}) must equal markScheme length (${q.markScheme?.length})` });
+    const schemeLen = q.markScheme?.length ?? 0;
+    if (schemeLen < q.marks) issues.push({ where, problem: `markScheme has fewer points (${schemeLen}) than marks (${q.marks})` });
+    else if (q.marks !== schemeLen) issues.push({ where, problem: `marks (${q.marks}) must equal markScheme length (${schemeLen})` });
     checkText(`${where}.modelAnswer`, q.modelAnswer, issues);
     q.markScheme?.forEach((p, i) => {
       checkText(`${where}.markScheme[${i}].point`, p.point, issues);

@@ -67,10 +67,10 @@ async def main():
             srv.shutdown()
             return
 
-        fps = tl["fps"]
+        fps = int(tl.get("fps", 24))
         total_frames = int(tl["duration"] * fps + 0.999999)
         # Strict cap <= 2 concurrent ffmpeg workers
-        workers = min(2, max(1, int(opt("--workers", "2"))))
+        workers = min(2, max(1, int(opt("--workers", "1"))))
         per = (total_frames + workers - 1) // workers
         t0 = time.time()
 
@@ -85,8 +85,9 @@ async def main():
                 [
                     "ffmpeg", "-y", "-loglevel", "error",
                     "-f", "image2pipe", "-framerate", str(fps), "-c:v", "mjpeg", "-i", "-",
+                    "-vf", "scale=in_range=full:out_range=tv,format=yuv420p",
                     "-c:v", "libx264", "-preset", "ultrafast", "-crf", "28",
-                    "-pix_fmt", "yuv420p", "-tune", "animation", seg,
+                    "-pix_fmt", "yuv420p", "-color_range", "tv", "-tune", "animation", seg,
                 ],
                 stdin=subprocess.PIPE,
             )

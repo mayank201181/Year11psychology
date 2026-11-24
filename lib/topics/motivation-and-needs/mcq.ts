@@ -190,9 +190,9 @@ export const mcqPapers: Paper[] = [
         question:
           "According to **Clark Hull's (1943) Biological Drive-Reduction Theory**, what is the precise difference between a **need** and a **drive**?",
         options: [
-          "A need is a learned workplace goal, whereas a drive is an unconscious childhood memory",
-          "A need only applies to animals, whereas a drive only applies to self-actualised humans",
-          "A need increases after eating, whereas a drive permanently switches off homeostasis",
+          "A need is the unpleasant psychological tension (such as feeling thirsty), whereas a drive is the objective cellular deficit (such as low body water) detected in tissue",
+          "A need is an external environmental reward (such as a warm pastry or cash bonus), whereas a drive is a conscious SMART target set to organise future workplace effort",
+          "A need is a higher-order humanistic growth desire (such as self-actualisation), whereas a drive is an operantly conditioned secondary token exchanged for backup prizes",
           "A need is the objective physiological deficit (such as cellular dehydration), whereas a drive is the unpleasant psychological tension (such as thirst) pushing action",
         ],
         answerIndex: 3,
@@ -212,10 +212,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Under Hull's classification, working extra hours to earn **money** or **promotion points** is driven by a:",
         options: [
-          "Primary innate biological drive",
+          "Primary (innate) biological drive wired for immediate cellular survival",
           "Secondary (acquired) drive learned through association with primary needs",
-          "Reflexive spinal homeostatic arc",
-          "Humanistic peak experience",
+          "Homeostatic physiological deficit triggered by tissue fluid imbalance",
+          "Humanistic growth need operating independently of external reinforcement",
         ],
         answerIndex: 1,
         explanation:
@@ -278,10 +278,10 @@ export const mcqPapers: Paper[] = [
         question:
           "According to the **Yerkes-Dodson Law**, how does physiological arousal relate to task performance?",
         options: [
-          "Lower arousal always produces superior performance on every possible task",
-          "Higher arousal increases performance infinitely in a straight upward line",
+          "Performance follows a downward linear slope, peaking near sleep-like calm and deteriorating steadily whenever physiological arousal rises",
+          "Performance follows an upward linear slope, climbing indefinitely as adrenaline and physiological arousal increase with no choking threshold",
           "Performance follows an inverted-U curve, peaking at a moderate optimal level of arousal and declining at very low or excessive arousal",
-          "Arousal has zero measurable impact on cognitive or athletic performance",
+          "Performance follows a U-shaped curve, peaking at both extreme drowsiness and intense panic while collapsing during moderate calm alertness",
         ],
         answerIndex: 2,
         explanation:
@@ -354,10 +354,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Leo loves sketching comic strips every weekend for fun. His uncle starts paying him $5 per page for a month, then stops paying. Two months later, Leo never sketches at all. Which cognitive shift explains Leo's behaviour?",
         options: [
-          "His primary biological drive for sketching reached permanent homeostatic satiety",
+          "His innate biological drive for creative sketching reached permanent homeostatic equilibrium once he completed enough pages to satisfy it",
           "The expected cash payment shifted his attribution from internal enjoyment to external reward, producing the overjustification effect",
-          "Verbal informational praise boosted his competence too rapidly",
-          "His safety needs were threatened by owning too many sketchbooks",
+          "The regular financial feedback satisfied his competence and autonomy needs under SDT, making further weekend practice unnecessary",
+          "Paying $5 per page raised his physiological arousal past the Yerkes-Dodson peak, permanently triggering anxiety whenever he held a pencil",
         ],
         answerIndex: 1,
         explanation:
@@ -442,10 +442,10 @@ export const mcqPapers: Paper[] = [
         question:
           "During a warzone blackout with scarce food and constant air-raid sirens, a poet stays up by candlelight writing verses to express her deepest human values. How would a CIE 0266 student use this case to evaluate **Maslow's Hierarchy of Needs**?",
         options: [
-          "It proves physiological needs sit above self-actualisation in every person",
+          "It confirms Maslow's strict bottom-up rule by showing Tier 1 physiological hunger and Tier 2 safety deficits automatically trigger Tier 5 creativity",
           "It provides a non-sequential exception showing people can pursue Tier 5 self-actualisation even when Tier 1 and Tier 2 deficiency needs are severely unmet",
-          "It demonstrates that poetry is an innate primary biological drive controlled by the hypothalamus",
-          "It confirms that token economies are essential for creative writing",
+          "It demonstrates that artistic poetry functions as a Tier 1 primary physiological drive controlled by hypothalamic homeostasis rather than a growth need",
+          "It proves that Maslow's hierarchy suffers from androcentric bias because only men were historically studied as self-actualised artists in warzones",
         ],
         answerIndex: 1,
         explanation:
@@ -553,9 +553,9 @@ export const mcqPapers: Paper[] = [
           "A children's hospital charity designs two fundraising posters: Poster 1 lists hospital budget figures in a table; Poster 2 shows a sepia photograph of children riding bicycles at sunset with the caption *'Remember the summers that shaped who you are?'* Based on **Merchant et al. (2013)**, what psychological sequence will Poster 2 trigger?",
         options: [
           "Personal nostalgia → warm positive emotion & reduced counter-arguing → heightened emotional engagement/empathy → stronger donation intentions",
-          "Cognitive overload → sensory adaptation → complete bystander apathy",
-          "Primary thirst drive → homeostatic imbalance → buying sports drinks instead of donating",
-          "Overjustification → resentment of childhood → refusal to volunteer",
+          "Personal nostalgia → painful grief over lost youth → defensive psychological withdrawal & avoidance → sharply reduced donation intentions",
+          "Extrinsic social guilt → controlled external regulation under SDT → overjustification crowding out sympathy → lower donation intentions",
+          "Rational budget scrutiny → conscious SMART goal setting → lowered emotional involvement with the imagery → strictly analytical giving",
         ],
         answerIndex: 0,
         explanation:
@@ -597,9 +597,9 @@ export const mcqPapers: Paper[] = [
           "A call-centre manager imposes a strict target: *'Close 40 sales calls per day by 5 pm or face disciplinary warning'*, while forbidding staff from customising scripts or chatting with colleagues. Productivity rises in Week 1, but staff turnover triples by Month 3. Which **combined** theoretical analysis best explains why?",
         options: [
           "Although the target was Specific, Measurable and Time-bound, coercion and isolation thwarted SDT autonomy and relatedness, causing controlled burnout and dropout",
-          "The target was too vague under Locke & Latham's theory, leaving workers under-aroused",
-          "Workers experienced Maslow's self-actualisation too quickly and retired wealthy",
-          "Nostalgic scripts triggered excessive charitable donations to customers",
+          "Because the target was too vague and unmeasurable under Locke & Latham's theory, workers lacked clear feedback in Week 1 and gradually lost arousal from boredom",
+          "Although script bans boosted SDT autonomy and competence, offering daily cash bonuses triggered the overjustification effect and reduced intrinsic sales enjoyment",
+          "Although isolating staff satisfied Maslow's Tier 2 safety needs, failing to lower physiological hunger drives under Hull's model prevented steady call output",
         ],
         answerIndex: 0,
         explanation:
@@ -641,9 +641,9 @@ export const mcqPapers: Paper[] = [
           "A youth tennis player sets the goal *'Win the national trophy in June'*, panics whenever an opponent plays brilliantly, and chokes on second serves. Why do sport psychologists recommend replacing pure **outcome goals** with **process/performance SMART goals**?",
         options: [
           "Opponents' brilliance is uncontrollable, spiking anxiety past optimal arousal; controllable process goals (like 75% first-serve placement) sustain SDT competence",
-          "Process goals remove all feedback so athletes never know whether they improved",
-          "Trophies are primary biological drives that disrupt blood glucose",
-          "Locke & Latham proved specific targets always worsen athletic accuracy",
+          "Process goals eliminate objective metrics and coach feedback altogether, keeping athletes permanently in a low-arousal state where performance cannot be evaluated",
+          "Outcome goals like winning a trophy produce under-arousal and boredom on the Yerkes-Dodson curve, whereas vague 'do your best' prompts maximise serve focus",
+          "Locke & Latham's Goal-Setting Theory showed that time-bound targets only work in office typing tasks and consistently impair fine motor coordination in sport",
         ],
         answerIndex: 0,
         explanation:
@@ -662,10 +662,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A multinational company transfers employees from an individualist Western office to a collectivist East Asian branch and finds that 'Employee of the Month' solo spotlight awards embarrass winners rather than motivating them. Which critique of **Maslow's hierarchy** does this illustrate?",
         options: [
-          "Biological reductionism of hypothalamic thirst sensors",
+          "Biological reductionism: Maslow explains workplace recognition solely through hypothalamic cellular deficits rather than conscious social aspirations",
           "Cultural bias / ethnocentrism: individualist status & solo self-actualisation are not universally prized above group harmony and collective belonging",
-          "Lack of test-retest reliability in polysomnography EEG",
-          "Demand characteristics in laboratory visual cliff experiments",
+          "Overjustification via operant extinction: public trophies automatically abolish all belonging needs once employees earn a monthly financial salary",
+          "Androcentric sampling bias: Western offices only employed male managers, proving women never experience Tier 4 esteem or Tier 5 growth motivation",
         ],
         answerIndex: 1,
         explanation:
@@ -694,10 +694,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why is **Boniecki & Moore (2003)** classified as having **high ecological validity** compared with an artificial laboratory button-pressing task?",
         options: [
-          "It used double-blind placebo capsules in a hospital sleep ward",
+          "It randomly selected thousands of adult workers from multiple countries and industries, ensuring strong cross-cultural population generalisability",
           "It took place in a real, scheduled university psychology class studying genuine course content with natural student-instructor interaction",
-          "It randomly sampled 10,000 citizens from every continent on Earth",
-          "It measured unconscious REM dreams using covert fMRI scanners",
+          "It isolated individual students inside a soundproofed laboratory booth with standardised light cues, eliminating extraneous classroom distractions",
+          "It replaced all quantitative participation tallies with unstructured biographical interviews, avoiding reductionist numerical measurement of behaviour",
         ],
         answerIndex: 1,
         explanation:
@@ -717,9 +717,9 @@ export const mcqPapers: Paper[] = [
           "What is a valid methodological **limitation** of **Boniecki & Moore's (2003)** single-group A-B-A design?",
         options: [
           "Without a separate simultaneous unrewarded control class, time-related variables (such as exam proximity or mid-semester topic interest) could partially covary with Phase B",
-          "Participants were 8-month-old infants who could not understand extra credit",
-          "Response latency was never measured quantitatively",
-          "Tokens were never removed, so nobody knows what happens after withdrawal",
+          "Because tokens were never withdrawn in a final baseline phase, the researchers could not observe whether heightened participation persisted after external rewards stopped",
+          "Because participation was assessed purely through anonymous end-of-term self-report ratings rather than timed behavioural observation, response latency was never measured",
+          "Because the study took place in an artificial laboratory cubicle with unfamiliar computer buttons, its mundane realism was lower than typical classroom field experiments",
         ],
         answerIndex: 0,
         explanation:
@@ -761,9 +761,9 @@ export const mcqPapers: Paper[] = [
           "Why can **Calvo et al. (2010)** NOT claim 100% definitive **cause-and-effect** proof that low autonomy *alone* caused athletes to quit football?",
         options: [
           "Because longitudinal questionnaire studies are non-experimental: third variables (such as injury, academic exam load or family relocation) were not experimentally randomised",
-          "Because they only tracked 3 athletes for twenty minutes",
-          "Because football is a solitary non-team activity",
-          "Because dropout was measured purely by guessing rather than next-season registration",
+          "Because the researchers randomly assigned half the boys to hostile authoritarian coaches, creating severe demand characteristics that confounded next-season dropout rates",
+          "Because the study used a cross-sectional snapshot on a single afternoon rather than tracking players into the next season, so actual dropout behaviour was never recorded",
+          "Because the sample contained only 12 teenage players from a single local village club, making it impossible to run any statistical comparisons between persisters and dropouts",
         ],
         answerIndex: 0,
         explanation:
@@ -782,9 +782,9 @@ export const mcqPapers: Paper[] = [
         question:
           "Which **population generalisability** critique applies directly to **Calvo et al. (2010)**?",
         options: [
-          "The sample consisted exclusively of US retirees aged over 70",
-          "The sample included only non-human rhesus monkeys solving latches",
-          "The sample contained only 4 case-study patients with hippocampal lesions",
+          "The sample comprised 63 American university psychology undergraduates in one introductory lecture class, so findings may not generalise to youth sports or non-student adults",
+          "The sample comprised solely non-student American adult consumers rating charity print adverts, so findings may not generalise to teenage athletes or competitive sport clubs",
+          "The sample comprised a tiny biographical list of elite Western historical figures such as Lincoln and Einstein, so findings cannot generalise to everyday adolescent athletes",
           "The sample comprised 492 male Spanish adolescent footballers (aged 13–17), so findings may not generalise identically to female athletes, individual sports or other cultures",
         ],
         answerIndex: 3,
@@ -805,9 +805,9 @@ export const mcqPapers: Paper[] = [
           "Self-report questionnaires in **Calvo et al. (2010)** asked teenage players to rate statements about their motivation and feelings toward their team. What validity threat can distort self-report motivation scales?",
         options: [
           "Social desirability bias — players claiming high team dedication to look loyal even if their coach might never see individual forms",
-          "Order effects from ABBA counterbalancing of surgical brain scans",
-          "Binocular retinal disparity",
-          "Grammatical overregularisation of irregular past-tense verbs",
+          "Practice and fatigue order effects — players becoming exhausted from repeating identical physical fitness drills across counterbalanced lab trials",
+          "Inter-observer disagreement — two sideline observers misinterpreting hand-raising counts during fast-paced live classroom token lectures",
+          "Perceptual constancy errors — players misjudging the physical size of football pitches from memory because of binocular retinal disparity",
         ],
         answerIndex: 0,
         explanation:
@@ -826,10 +826,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why did **Merchant et al. (2013, Study 3)** deliberately recruit **non-student adult consumers** rather than relying solely on 19-year-old psychology undergraduates?",
         options: [
-          "Undergraduates are legally banned from viewing print advertisements",
+          "Psychology undergraduates are strictly prohibited by BPS ethical guidelines from completing Likert scales about charitable donations or personal childhood memories",
           "Adult consumers have longer life histories for nostalgic reflection and real disposable income for charitable giving, improving population and mundane validity",
-          "Adults do not possess homeostasis or physiological drives",
-          "Only adults over 40 can read Likert scales",
+          "Older adult consumers experience stronger biological hunger drives under Hull's model, making them easier to motivate with food-themed charity print advertisements",
+          "Recruiting adult consumers eliminated the intention-behaviour gap entirely by guaranteeing that every participant donated real cash immediately after reading the advert",
         ],
         answerIndex: 1,
         explanation:
@@ -870,10 +870,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which major scientific criticism targets **Maslow's humanistic methodology** for defining **self-actualisation**?",
         options: [
-          "Maslow studied only laboratory rats in Skinner boxes and ignored humans",
-          "Maslow relied entirely on double-blind blood glucose assays",
-          "Maslow hand-picked a tiny biographical sample of mostly Western historical figures he personally admired (such as Lincoln and Einstein), introducing subjective researcher bias and poor falsifiability",
-          "Maslow ignored esteem and belonging completely",
+          "Maslow extrapolated human self-actualisation exclusively from animal experiments with hungry laboratory rats in Skinner boxes, ignoring conscious human meaning and values",
+          "Maslow relied strictly on invasive physiological blood-glucose and hormone assays inside darkened hospital labs, reducing self-actualisation to mechanistic cellular homeostasis",
+          "Maslow hand-picked a tiny biographical sample of mostly Western figures he personally admired (such as Lincoln and Einstein), creating subjective researcher bias and low falsifiability",
+          "Maslow based his hierarchy solely on large quantitative Likert surveys across 123 countries, omitting qualitative case detail about individual emotional growth and belonging",
         ],
         answerIndex: 2,
         explanation:
@@ -892,10 +892,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Large cross-national survey data by **Tay & Diener (2011)** across **123 countries** modified Maslow's theory by showing that:",
         options: [
-          "Basic physiological needs do not exist outside Europe",
+          "Maslow's need categories are uniquely Western constructs that failed to correlate with life satisfaction anywhere outside North America and Western Europe",
           "Human needs are universal, but people gain psychological wellbeing from social love and mastery in parallel even before lower survival/safety needs are 100% fulfilled",
-          "Token economies are the sole source of adult happiness worldwide",
-          "Self-actualisation must always be satisfied before a newborn baby can drink milk",
+          "Maslow's strict bottom-up sequence holds rigidly across all 123 nations, with zero wellbeing benefit from friendships or respect until food and shelter are 100% secure",
+          "Only extrinsic financial income and operant workplace tokens predicted life satisfaction worldwide, whereas social belonging and autonomy showed no measurable impact",
         ],
         answerIndex: 1,
         explanation:
@@ -914,9 +914,9 @@ export const mcqPapers: Paper[] = [
         question:
           "A researcher tests **Locke & Latham's Goal-Setting Theory** by randomly assigning 40 typists to **Group 1** (*'Type at least 65 words per minute with under 3 errors in 10 minutes'*) or **Group 2** (*'Do your absolute best for 10 minutes'*). What are the **operationalised IV and DV**?",
         options: [
-          "IV: Typing speed; DV: Random assignment",
-          "IV: Age of typists; DV: Childhood nostalgia score",
-          "IV: Number of typists (40); DV: Classroom hand-raising latency",
+          "IV: Words typed per minute and error count in 10 minutes; DV: Goal condition (specific SMART target vs vague 'do your best' instruction)",
+          "IV: Total sample size of 40 typists allocated to the lab; DV: Self-reported intrinsic enjoyment rated on a seven-point Likert questionnaire",
+          "IV: Standardised 10-minute session length across both groups; DV: Random assignment of typists into Group 1 versus Group 2",
           "IV: Goal condition (specific SMART target vs vague 'do your best' instruction); DV: Words typed per minute and error count in 10 minutes",
         ],
         answerIndex: 3,
@@ -958,10 +958,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why is **Hull's Drive-Reduction Theory** often criticised as **biologically reductionist** when applied to complex human ambitions?",
         options: [
-          "It ignores the body completely and focuses only on poetry and art",
+          "It focuses exclusively on holistic self-actualisation, personal meaning and cultural values while ignoring bodily survival needs such as hunger, thirst and homeostasis",
           "It reduces rich cognitive, cultural and value-driven human strivings (like studying medicine or campaigning for justice) down to mechanistic tissue-deficit tension loops",
-          "It relies exclusively on qualitative unstructured dream interviews",
-          "It claims humans have no hypothalamus or homeostasis",
+          "It relies exclusively on subjective biographical case studies and unstructured dream interviews, preventing researchers from testing hypotheses under lab conditions",
+          "It attributes all human behaviour strictly to conscious SMART goal-setting and verbal classroom tokens, denying that biological tissues or hormones affect motivation",
         ],
         answerIndex: 1,
         explanation:
@@ -980,9 +980,9 @@ export const mcqPapers: Paper[] = [
         question:
           "An ethical psychologist designing a school motivation study wants to test token reinforcement **without** harming keen learners via the overjustification effect. Which safeguard is most appropriate?",
         options: [
-          "Deceive parents and permanently ban keen readers from accessing library books",
-          "Pay students $100 per maths sum for one week then abruptly fine them $50",
-          "Publish named students' low motivation scores on the school gate to test esteem deprivation",
+          "Offer large expected cash prizes to the keenest readers for every chapter they finish for a month, then withdraw all rewards abruptly without debriefing to test extinction",
+          "Attach token reinforcement strictly to students' favourite voluntary art hobbies while withholding verbal feedback, ensuring external rewards completely replace internal interest",
+          "Display named students' weekly token rankings publicly on the classroom noticeboard and remove break-time privileges from the lowest scorers to maintain strong extrinsic pressure",
           "Apply token contingencies only to an initially low-interest routine task, pair with sincere competence praise, fade tokens gradually toward self-chosen SMART goals, and debrief fully",
         ],
         answerIndex: 3,
@@ -1003,9 +1003,9 @@ export const mcqPapers: Paper[] = [
           "Which statement accurately compares **psychodynamic motivation** (Merchant et al. 2013) with **cognitive goal-setting** (Locke & Latham 1990)?",
         options: [
           "Psychodynamic motivation emphasises partly unconscious emotional memories and nostalgia, whereas cognitive goal-setting emphasises conscious, explicit SMART targets and rational self-monitoring",
-          "Both theories claim humans are controlled solely by spinal reflexes and have zero emotions",
-          "Psychodynamic motivation uses SMART checklists, whereas Locke & Latham study childhood attachment defences",
-          "Neither theory can be applied to workplaces, charities or schools",
+          "Psychodynamic motivation relies on explicit written SMART checklists and stopwatch progress tracking, whereas cognitive goal-setting explores unconscious childhood nostalgia and emotional longing",
+          "Both theories are strictly biologically reductionist models claiming human action is driven solely by cellular tissue deficits and hypothalamic homeostasis with zero cognitive or emotional role",
+          "Psychodynamic motivation applies only to classroom token economies with wooden chips, whereas cognitive goal-setting applies solely to clinical dream analysis and cannot be used in workplaces",
         ],
         answerIndex: 0,
         explanation:

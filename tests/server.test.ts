@@ -19,12 +19,24 @@ const store = (globalThis.__fakeBlob ??= new Map());
 let n = 0;
 const tick = () => new Promise((r) => setTimeout(r, Math.random() * 4));
 export async function head(key) { await tick(); const b = store.get(key); if (!b) throw new BlobNotFoundError(); return { url: "https://fake.blob/" + key, etag: '"' + b.etag + '"' }; }
+export async function get(key, o = {}) {
+  await tick();
+  const b = store.get(key);
+  if (!b) return null;
+  if (o.access && b.access && o.access !== b.access) throw new BlobError("Access mismatch");
+  return {
+    statusCode: 200,
+    stream: new ReadableStream({ start(c) { c.enqueue(new TextEncoder().encode(b.body)); c.close(); } }),
+    headers: new Headers(),
+    blob: { url: "https://fake.blob/" + key, downloadUrl: "https://fake.blob/" + key, pathname: key, contentDisposition: "", cacheControl: "", uploadedAt: new Date(), etag: '"' + b.etag + '"', contentType: "application/json", size: b.body.length },
+  };
+}
 export async function put(key, body, o = {}) {
   await tick();
   const cur = store.get(key);
   if (o.ifMatch) { if (!cur || '"' + cur.etag + '"' !== o.ifMatch) throw new BlobPreconditionFailedError(); }
   else if (o.allowOverwrite !== true && cur) throw new BlobError("This blob already exists, use \`allowOverwrite: true\` if you want to overwrite it.");
-  store.set(key, { body, etag: ++n });
+  store.set(key, { body, etag: ++n, access: o.access ?? "public" });
   return { url: "https://fake.blob/" + key };
 }
 export async function del(url) { await tick(); store.delete(url.slice("https://fake.blob/".length)); }
@@ -188,6 +200,43 @@ test("Vercel Blob mode: missing keys read as null and conditional writes don't l
     assert.equal(await b.readJson("counter.json"), 13, "no update lost across instances");
     await a.deleteJson("counter.json");
     assert.equal(await b.readJson("counter.json"), null);
+
+    // Public-store HMAC prefixing for sensitive keys + transparent legacy read fallback
+    const prevToken = process.env.BLOB_READ_WRITE_TOKEN;
+    const prevAccess = process.env.BLOB_ACCESS;
+    process.env.BLOB_READ_WRITE_TOKEN = "test-store-secret-token";
+    delete process.env.BLOB_ACCESS;
+    try {
+      const prefixedSecretKey = a.storageKey("secrets/acc-1.json");
+      assert.notEqual(prefixedSecretKey, "secrets/acc-1.json", "sensitive key is prefixed on public store");
+      assert.ok(prefixedSecretKey.endsWith("/secrets/acc-1.json"));
+      assert.equal(a.storageKey("accounts/acc-1.json"), "accounts/acc-1.json", "non-sensitive key stays unprefixed");
+
+      // Legacy fallback: data stored under old unprefixed key is still readable and migrates cleanly on update
+      store().set("progress/acc-1/p1.json", { body: JSON.stringify({ stars: 42 }), etag: 999 } as never);
+      assert.deepEqual(await a.readJson("progress/acc-1/p1.json"), { stars: 42 });
+      const migrated = await a.updateJson<{ stars: number }>("progress/acc-1/p1.json", (cur) => ({ stars: (cur?.stars ?? 0) + 8 }));
+      assert.deepEqual(migrated, { value: { stars: 50 }, changed: true });
+      assert.ok(store().has(a.storageKey("progress/acc-1/p1.json")), "update writes to prefixed key");
+      assert.deepEqual(await b.readJson("progress/acc-1/p1.json"), { stars: 50 });
+      await a.deleteJson("progress/acc-1/p1.json");
+      assert.equal(await a.readJson("progress/acc-1/p1.json"), null, "delete removes both prefixed and legacy keys");
+
+      // Private store mode: BLOB_ACCESS=private uses get(..., { access: "private" }) and put(..., { access: "private" })
+      process.env.BLOB_ACCESS = "private";
+      assert.equal(a.storageKey("secrets/priv.json"), "secrets/priv.json");
+      await a.writeJson("secrets/priv.json", { pinHash: "abc" });
+      assert.equal((store().get("secrets/priv.json") as unknown as { access?: string })?.access, "private");
+      assert.deepEqual(await b.readJson("secrets/priv.json"), { pinHash: "abc" });
+      assert.deepEqual(await a.updateJson<{ pinHash: string }>("secrets/priv.json", () => ({ pinHash: "xyz" })), { value: { pinHash: "xyz" }, changed: true });
+      await a.deleteJson("secrets/priv.json");
+      assert.equal(await a.readJson("secrets/priv.json"), null);
+    } finally {
+      if (prevToken === undefined) delete process.env.BLOB_READ_WRITE_TOKEN;
+      else process.env.BLOB_READ_WRITE_TOKEN = prevToken;
+      if (prevAccess === undefined) delete process.env.BLOB_ACCESS;
+      else process.env.BLOB_ACCESS = prevAccess;
+    }
   } finally {
     globalThis.fetch = realFetch;
     process.env.LOCAL_BLOB_DIR = localDir;

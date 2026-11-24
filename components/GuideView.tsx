@@ -598,7 +598,7 @@ function SectionView({ topicId, section: s, index, stretch, read, open, next, on
 // ---------------------------------------------------------------------------
 
 export function GuideView({ topic, extras, onPractise }: { topic: Topic; extras: TopicExtras; onPractise?: () => void }) {
-  const { data, markSectionRead } = useStore();
+  const { data, aiAvailable, markSectionRead } = useStore();
   const sections = useMemo(() => topic.guide ?? [], [topic.guide]);
   const stretchIds = useMemo(() => new Set((metaById(topic.id)?.sections ?? []).filter((s) => s.stretch).map((s) => s.id)), [topic.id]);
   // Sections opened this session survive a tab switch (sessionStorage; not progress data).
@@ -666,9 +666,11 @@ export function GuideView({ topic, extras, onPractise }: { topic: Topic; extras:
 
       <div className="card p-4 sm:p-6">
         {topic.intro ? <Rich text={topic.intro} className="text-[1.05rem]" /> : null}
-        <div className="mt-4 flex flex-wrap items-center gap-2">
-          <AskAI context={askContext} />
-        </div>
+        {aiAvailable ? (
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            <AskAI context={askContext} />
+          </div>
+        ) : null}
       </div>
 
       <div className="lg:grid lg:grid-cols-[15rem_minmax(0,1fr)] lg:items-start lg:gap-6">

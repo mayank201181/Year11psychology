@@ -52,10 +52,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In a study on lighting and typing accuracy, all bright-light participants are tested at 09:00 and all dim-light participants are tested at 22:00 when exhausted. Time of day has become a **confounding variable** because it:",
         options: [
-          "Was measured as a second dependent variable",
-          "Varied randomly across individuals in both lighting groups",
+          "Was deliberately operationalised by the researcher as a second Dependent Variable alongside the number of typing errors made",
+          "Varied randomly and unpredictably across individuals in both lighting conditions, adding minor unsystematic noise to typing scores",
           "Varied systematically with the Independent Variable, making it unclear whether light level or fatigue caused the accuracy difference",
-          "Prevented participants from guessing the aim of the experiment",
+          "Standardised the testing procedure across conditions by keeping lighting conditions separated, thereby improving internal validity",
         ],
         answerIndex: 2,
         explanation:
@@ -137,10 +137,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What is the **main advantage** of a **repeated measures design** compared with an independent measures design?",
         options: [
-          "Participants never experience practice or fatigue order effects",
-          "Participants are far less likely to guess the aim of the experiment",
+          "Order effects such as practice, boredom, and fatigue are completely eliminated because each participant takes part in both conditions",
+          "Demand characteristics are far lower because completing all levels of the Independent Variable hides the hypothesis from participants",
           "Individual participant differences (such as baseline IQ or eyesight) are completely controlled because each person serves as their own control",
-          "Only one word list or stimulus set needs to be prepared even for memory recall tasks",
+          "Only one identical stimulus set or word list is ever required across both memory conditions, saving preparation time without carry-over",
         ],
         answerIndex: 2,
         explanation:
@@ -298,10 +298,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In a memory study where the **same** participants recall words in Quiet vs Noisy conditions, why MUST the researcher prepare **two different word lists of matched syllable length and familiarity** instead of reusing the same 20 words?",
         options: [
-          "To turn the study into a natural experiment",
-          "Because reusing the identical 20 words would allow direct memorisation from Trial 1 to inflate Trial 2 scores, while unmatched lists would introduce word-difficulty as an extraneous variable",
-          "Because repeated measures designs require twice as many participants as independent measures designs",
-          "To ensure the data collected is qualitative rather than quantitative",
+          "Because using two separate word lists converts a laboratory repeated-measures design into a naturalistic field experiment, eliminating order effects without counterbalancing",
+          "Because reusing identical words lets memorisation from Trial 1 inflate Trial 2 scores, while unmatched lists would introduce word difficulty as an extraneous variable",
+          "Because repeated-measures designs require twice as many participants as independent-measures designs, so each half of the sample needs an unrelated vocabulary list",
+          "Because testing two separate matched word lists ensures the recall scores are recorded as qualitative descriptive data rather than numerical frequencies",
         ],
         answerIndex: 1,
         explanation:
@@ -490,10 +490,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why is it **always wrong** in CIE 0266 to write *'The Independent Variable in this correlation was hours of revision'*?",
         options: [
-          "Because hours of revision is always the Dependent Variable",
+          "Because hours of revision must always be labelled the Dependent Variable while exam score serves as the Independent Variable",
           "Because in a correlational study the researcher measures two naturally varying co-variables without manipulating an IV",
-          "Because correlations only use qualitative categories rather than numbers",
-          "Because correlations require matched pairs pre-testing",
+          "Because correlational studies can only analyse qualitative nominal categories rather than continuous numerical measurements",
+          "Because correlational designs allocate participants into matched pairs beforehand, replacing the IV with a control group",
         ],
         answerIndex: 1,
         explanation:
@@ -512,10 +512,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A researcher wishes to study 13-year-old pupils' bedtime phone habits. Under psychological **ethical guidelines**, how must **informed consent** be obtained?",
         options: [
-          "Only the school headteacher needs to sign a form",
-          "Wait until the study ends and ask pupils during the debrief",
+          "Obtain written permission solely from the school headteacher, since pupils under 16 cannot give or withhold personal assent",
+          "Administer the bedtime questionnaire first to avoid demand characteristics, then collect retrospective consent during the debrief",
           "Obtain informed consent from a parent/legal guardian AND assent/agreement from the 13-year-old pupils beforehand",
-          "Consent is never needed if questionnaires take less than 10 minutes",
+          "Allow 13-year-old pupils to sign their own sole consent forms, provided the anonymous questionnaire takes under ten minutes",
         ],
         answerIndex: 2,
         explanation:
@@ -616,10 +616,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Participants memorise nonsense trigrams (`XQJ`, `BKP`) flashed on a lab screen to test everyday memory. Critics argue people rarely memorise meaningless three-letter strings in daily life. Which specific type of validity is being criticised?",
         options: [
-          "Test-retest reliability",
-          "Population validity",
+          "Test-retest reliability (consistency across trials)",
+          "Population validity (generalisability across people)",
           "Ecological validity (mundane realism of the task)",
-          "Inter-rater reliability",
+          "Internal validity (control of confounding variables)",
         ],
         answerIndex: 2,
         explanation:
@@ -704,10 +704,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Eight commuters wait the following times (in seconds) before helping a person who dropped groceries: **8, 10, 11, 12, 14, 15, 16, 114**. Why should the researcher report the **median (13 s)** rather than the **mean (25 s)**?",
         options: [
-          "Because the median uses every exact numerical score mathematically",
+          "Because the median incorporates the exact numerical value of every single commuter's score, making it mathematically more sensitive than the mean",
           "Because the extreme outlier (114 s) heavily inflates the mean, making 25 s higher than 7 of the 8 commuters, whereas the median is unaffected by outliers",
-          "Because reaction times are qualitative nominal categories",
-          "Because the median is always larger than the mean in positively skewed data",
+          "Because timed helping latencies measured in seconds are nominal categorical data, for which calculating an arithmetic mean is mathematically invalid",
+          "Because in any positively skewed distribution with a high outlier, the median always sits above the mean and represents the upper boundary of scores",
         ],
         answerIndex: 1,
         explanation:
@@ -875,9 +875,9 @@ export const mcqPapers: Paper[] = [
           "Researchers transcribe 30 unstructured interviews with insomniacs, create a coding list of recurring themes (*'racing thoughts'*, *'money worries'*, *'noise'*), and tally how many times each theme appears. This technique is called:",
         options: [
           "Content analysis (coding qualitative data into quantitative frequencies)",
-          "ABBA counterbalancing",
-          "Double-blind randomisation",
-          "Naturalistic covert experimentation",
+          "ABBA counterbalancing (rotating condition order to balance order effects)",
+          "Time sampling (recording visible actions at fixed periodic intervals)",
+          "Stratified sampling (matching subgroup proportions to a target population)",
         ],
         answerIndex: 0,
         explanation:
@@ -938,9 +938,9 @@ export const mcqPapers: Paper[] = [
           "Every single participant in Dr Koh's memory test scores **20 out of 20** in BOTH the Caffeine condition and the Water condition because the 20 words were far too easy (`cat, dog, sun...`). Why does this **ceiling effect** ruin internal validity?",
         options: [
           "Because everyone hit the maximum possible score in both conditions, hiding any genuine improvement that caffeine might have produced",
-          "Because the test had no mode",
-          "Because it turned the experiment into a covert observation",
-          "Because participants broke their right to withdraw",
+          "Because identical scores of 20 out of 20 eliminate the statistical mode and prevent the researcher from calculating a mean or range",
+          "Because an overly easy word list artificially exaggerates the gap between caffeine and water scores, producing a false positive difference",
+          "Because achieving 100% accuracy in both conditions violates informed consent and proves participants colluded to guess the hypothesis",
         ],
         answerIndex: 0,
         explanation:

@@ -38,10 +38,10 @@ export const paper: ExamPaper = {
       question:
         "Why is **Rubin's Vase / Two Faces** classified as an **ambiguous figure** whereas the **Ponzo railway-track illusion** is classified as a **geometric distortion illusion**?",
       options: [
-        "Rubin's Vase triggers multistable figure-ground reversal between two equally valid interpretations of the unchanging stimulus, whereas the Ponzo illusion uses converging linear-perspective depth cues to make two identical horizontal bars systematically look different in size",
-        "Rubin's Vase requires binocular goggles, whereas the Ponzo illusion only works in darkness",
-        "Rubin's Vase proves Gibson's optic flow, whereas the Ponzo illusion proves colour constancy",
-        "Only infants under 6 months old can see Rubin's Vase",
+        "Rubin's Vase flips multistably between two valid figure-ground readings of one image, whereas the Ponzo illusion uses converging perspective cues to distort perceived bar size",
+        "Rubin's Vase distorts the physical length of identical curved lines via misplaced size constancy, whereas the Ponzo illusion alternates spontaneously between two valid 3D figures",
+        "Rubin's Vase requires binocular retinal disparity from both eyes to reverse figure and ground, whereas the Ponzo illusion disappears immediately unless viewed in dim lab lighting",
+        "Rubin's Vase illustrates Gibson's bottom-up radial optic flow during forward motion, whereas the Ponzo illusion demonstrates colour constancy across changing railway shadows",
       ],
       answerIndex: 0,
       explanation:
@@ -61,9 +61,9 @@ export const paper: ExamPaper = {
       question:
         "In Bruner & Minturn's (1955) classic **perceptual set** experiment, an identical broken figure (`I3`) was perceived as the **letter 'B'** by participants primed with `A, C, D, E` — and as the **number '13'** by participants primed with `12, 14, 15, 16`! Which factor shaped their perception?",
       options: [
-        "Physiological hunger deprivation",
-        "Innate infant optic flow invariants",
-        "Retinal rod-cell bleaching",
+        "Biological motivation and hunger (deprivation-driven salience)",
+        "Bottom-up optic flow invariants (Gibson's direct array pickup)",
+        "Emotional perceptual defence (blocking taboo arousal stimuli)",
         "Expectation and surrounding context (top-down mental readiness)",
       ],
       answerIndex: 3,
@@ -221,10 +221,10 @@ export const paper: ExamPaper = {
       question:
         "A starving artist skips meals in a freezing attic to finish a masterpiece, or a political hunger-striker risks their life for justice. How do such real-world cases **challenge Maslow's strict sequential pyramid**?",
       options: [
-        "They prove physiological needs do not exist in humans",
-        "They prove Boniecki & Moore's classroom tokens work in art studios",
-        "They show people can pursue higher growth/esteem/self-actualisation values BEFORE lower deficiency survival and safety needs are satisfied, and collectivist cultures often prioritise group belonging above individual self-actualisation",
-        "They show self-actualisation is a primary biological homeostasis drive",
+        "They demonstrate that basic physiological survival and safety needs do not exist in creative adults, proving Maslow's lower four deficiency tiers apply only to young children",
+        "They confirm that extrinsic token economies and financial cash rewards are strictly necessary before any artist or activist can maintain intrinsic persistence under hardship",
+        "They show people can pursue higher growth and self-actualisation ideals before lower survival or safety needs are met, while collectivist cultures often place belonging above solo growth",
+        "They show that artistic creativity and moral justice act as innate primary biological drives regulated by hypothalamic homeostasis in the exact same way as hunger and thirst",
       ],
       answerIndex: 2,
       explanation:
@@ -244,10 +244,10 @@ export const paper: ExamPaper = {
       question:
         "According to the **Yerkes-Dodson Law** (`inverted-U curve` of arousal and performance), what level of physiological arousal produces **optimal performance** on a **complex, cognitively demanding exam** vs a **simple physical sprint**?",
       options: [
-        "Moderate arousal produces peak performance overall — with complex cognitive tasks peaking at slightly lower-to-moderate arousal (before high anxiety impairs working memory), whereas simple well-practised tasks tolerate higher arousal",
-        "Maximum panic-level arousal is optimal for complex exams, while very low arousal is optimal for sprinting",
-        "Zero arousal (deep sleep) is optimal for both tasks",
-        "Arousal has a linear positive correlation where more anxiety always improves exam marks",
+        "Moderate arousal gives peak performance overall — complex cognitive tasks peak at lower-to-moderate arousal before anxiety disrupts memory, whereas simple tasks tolerate higher arousal",
+        "High panic-level arousal is optimal for complex exams because adrenaline speeds up working memory, whereas very low drowsy arousal is optimal for simple physical sprints",
+        "Very low physiological arousal produces peak performance across both complex exams and physical sprints, because any rise in heart rate steadily lowers task accuracy",
+        "Physiological arousal has a straight linear positive relationship with output, meaning progressively higher anxiety reliably boosts both complex exam marks and sprint speed",
       ],
       answerIndex: 0,
       explanation:
@@ -292,9 +292,9 @@ export const paper: ExamPaper = {
       question:
         "Why does **sincere verbal praise focused on effort and strategy** (*'Your breakdown of that essay plan was really clear!'*) usually **boost** rather than undermine intrinsic motivation, unlike cash bribes?",
       options: [
-        "Because verbal praise is an unconditioned biological food stimulus",
-        "Because praise is a negative punishment in Skinner's box",
-        "Because verbal praise triggers retroactive amnesia for failure",
+        "Because spoken praise acts as an innate primary biological reinforcer that directly restores homeostatic balance in the hypothalamus",
+        "Because verbal feedback shifts the learner's locus of causality entirely outside themselves, replacing curiosity with external compliance",
+        "Because praise functions as negative punishment under operant conditioning, suppressing anxiety so learners avoid future essay mistakes",
         "Because informational verbal praise affirms the learner's sense of competence without making them feel externally controlled",
       ],
       answerIndex: 3,
@@ -449,10 +449,10 @@ export const paper: ExamPaper = {
       question:
         "According to **Skinner's Behaviourist (Operant Conditioning) Theory** of language, how does an infant progress from random vocalisations (`'ba-da-ma'`) to saying `'mama'` when seeing their mother?",
       options: [
-        "Through selective positive reinforcement and shaping of successive approximations (caregivers smile, hug and respond enthusiastically when sounds resemble real words, while ignoring random noises) alongside imitation",
-        "Through an innate Universal Grammar switch in Broca's area",
-        "Through resolving unconscious psychodynamic dream conflicts",
-        "Through learning written spelling rules before speaking",
+        "Through selective positive reinforcement and shaping of successive approximations (caregivers smile and respond when babbles resemble words, ignoring random sounds) plus imitation",
+        "Through an innate biological Language Acquisition Device containing Universal Grammar that automatically matures and maps sounds onto syntax without adult reinforcement",
+        "Through constructing sensorimotor action schemas like object permanence first via assimilation and accommodation, which automatically generate words once concepts mature",
+        "Through classical pairing of unfamiliar visual symbols with written spelling lists before infants can articulate consonant–vowel syllables in early babbling",
       ],
       answerIndex: 0,
       explanation:
@@ -472,9 +472,9 @@ export const paper: ExamPaper = {
       question:
         "Brown & Hanlon observed real parent-child conversations and noticed parents rarely correct **bad grammar** (*Child: 'Mama isn't boy, he girl!' → Mum: 'That's right!'*), correcting **factual truth** instead! Why is this observation a major problem for **Skinner's behaviourist theory**?",
       options: [
-        "Because it disproves Piaget's object permanence",
-        "Because it proves parents never talk to young children",
-        "Because it shows toddlers cannot hear consonants",
+        "Because it demonstrates that toddlers fail to understand basic gender concepts or Piagetian object permanence until caregivers explicitly drill textbook sentence structure",
+        "Because it proves caregivers almost never speak or respond contingently to young children at home, contradicting Goldstein et al.'s findings on early infant vocalisations",
+        "Because it shows that young children cannot physically hear pronoun differences in adult speech, forcing them to rely solely on visual lip-reading until starting school",
         "Because parents accidentally reinforce ungrammatical sentences as long as they are factually true, yet children still master adult syntax effortlessly within a few years!",
       ],
       answerIndex: 3,
@@ -495,10 +495,10 @@ export const paper: ExamPaper = {
       question:
         "Which features characterize **Child-Directed Speech (CDS / 'motherese')** within **Bruner's LASS**?",
       options: [
-        "Rapid monotone whispering using complex passive clauses without pauses",
-        "Refusing to speak until the child turns 4 years old",
+        "Rapid adult-speed delivery, flat monotone pitch, complex multi-clause passive sentences, minimal pauses between words, and abstract hypothetical vocabulary",
+        "Silent non-verbal gesturing without spoken words until age two, allowing the infant's innate Language Acquisition Device to mature without external interference",
         "Higher pitch, exaggerated prosodic intonation contours, slower tempo, clear pauses between phrases, repetition and concrete 'here-and-now' vocabulary",
-        "Correcting every single morphological error with a time-out",
+        "Strict grammatical drills where caregivers immediately interrupt every overregularisation error and withhold affection until the toddler repeats the irregular form",
       ],
       answerIndex: 2,
       explanation:
@@ -696,10 +696,10 @@ export const paper: ExamPaper = {
       question:
         "A questionnaire on work motivation puts 10 positively worded items in a row (*'I love Monday mornings'*, *'I always enjoy extra tasks'*, *'My manager is inspiring'…*). Hurried respondents tick *'Agree'* down the entire page without reading carefully! What specific response bias is this, and how do questionnaire designers prevent it?",
       options: [
-        "Order fatigue; prevent it via ABBA counterbalancing of participants' ages",
+        "Order fatigue bias; prevent it by using ABBA counterbalancing across participants' ages and switching the closed scale to a single unstructured interview",
         "Acquiescence ('yea-saying') bias; prevent it by mixing positively worded and reverse-scored negatively worded items so respondents must read each statement thoughtfully",
-        "Double-blind investigator bias; prevent it by switching to a histogram",
-        "Event-sampling drift; prevent it by testing only 1 participant",
+        "Social desirability bias; prevent it by publishing respondents' real names alongside their scores and asking managers to read every completed questionnaire aloud",
+        "Investigator bias; prevent it by removing all neutral rating options and ensuring every single statement on the page uses identical positive phrasing",
       ],
       answerIndex: 1,
       explanation:
