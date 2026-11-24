@@ -8,110 +8,93 @@ EP = dict(
             "Dr. Synapse, Vani, and Examiner Chen unpack language stages, Berko's wug test, Chomsky and Senghas, Skinner and Goldstein, Piaget, Hewitt, Bruner's LASS, and Hockett's animal features."
 )
 
-D_STAGES = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<text x="260" y="20" fill="#fde047">STAGES OF LANGUAGE ACQUISITION &amp; BERKO'S WUG TEST</text>
-<rect x="14" y="34" width="114" height="78" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="71" y="54" fill="#38bdf8">1. Pre-linguistic</text>
-<text x="71" y="72" fill="#cbd5e1" font-weight="normal" font-size="10">0-12m · Cooing</text>
-<text x="71" y="90" fill="#cbd5e1" font-weight="normal" font-size="10">Babbling (baba)</text>
-<rect x="138" y="34" width="114" height="78" rx="6" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="195" y="54" fill="#4ade80">2. Holophrastic</text>
-<text x="195" y="72" fill="#cbd5e1" font-weight="normal" font-size="10">12-18m · 1 word</text>
-<text x="195" y="90" fill="#cbd5e1" font-weight="normal" font-size="10">Overextension</text>
-<rect x="262" y="34" width="114" height="78" rx="6" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
-<text x="319" y="54" fill="#a78bfa">3. Telegraphic</text>
-<text x="319" y="72" fill="#cbd5e1" font-weight="normal" font-size="10">18-30m · 2+ words</text>
-<text x="319" y="90" fill="#cbd5e1" font-weight="normal" font-size="10">"Daddy kick ball"</text>
-<rect x="386" y="34" width="120" height="78" rx="6" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="446" y="54" fill="#f472b6">4. Multi-word</text>
-<text x="446" y="72" fill="#cbd5e1" font-weight="normal" font-size="10">30m+ · Grammar</text>
-<text x="446" y="90" fill="#fde047" font-size="10">"foots", "goed"</text>
-<rect x="24" y="128" width="472" height="84" rx="8" fill="#1e293b" stroke="#fde047" stroke-width="1.8"/>
-<circle cx="92" cy="168" r="18" fill="#38bdf8"/>
-<circle cx="98" cy="162" r="4" fill="#0f172a"/>
-<circle cx="204" cy="168" r="18" fill="#38bdf8"/>
-<circle cx="246" cy="168" r="18" fill="#38bdf8"/>
-<text x="372" y="158" fill="#fde047">Berko (1958): "1 WUG → 2 WUGS!"</text>
-<text x="372" y="178" fill="#f8fafc" font-weight="normal" font-size="10">Overregularisation proves INTERNAL RULES,</text>
-<text x="372" y="196" fill="#4ade80" font-size="10">NOT adult imitation!</text>
+D_STAGES = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<rect x="14" y="14" width="328" height="90" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="30" y="50" fill="#38bdf8">1. Pre-linguistic</text>
+<text x="30" y="88" fill="#cbd5e1" font-weight="normal">0–12m · Babbling</text>
+<rect x="358" y="14" width="328" height="90" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="374" y="50" fill="#4ade80">2. Holophrastic</text>
+<text x="374" y="88" fill="#cbd5e1" font-weight="normal">12–18m · 1 word</text>
+<rect x="14" y="114" width="328" height="90" rx="10" fill="#1e293b" stroke="#a78bfa" stroke-width="3"/>
+<text x="30" y="150" fill="#a78bfa">3. Telegraphic</text>
+<text x="30" y="188" fill="#cbd5e1" font-weight="normal">18–30m · 2+ words</text>
+<rect x="358" y="114" width="328" height="90" rx="10" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="374" y="150" fill="#f472b6">4. Multi-word</text>
+<text x="374" y="188" fill="#fde047" font-weight="normal">30m+ · "foots/goed"</text>
+<rect x="14" y="216" width="672" height="90" rx="12" fill="#1e293b" stroke="#fde047" stroke-width="3"/>
+<text x="350" y="254" fill="#fde047" text-anchor="middle">Berko (1958): 1 Wug → 2 Wugs!</text>
+<text x="350" y="292" fill="#4ade80" font-weight="normal" text-anchor="middle">Proves internal rules, NOT imitation</text>
 </g>
 </svg>"""
 
-D_CHOMSKY = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="18" width="236" height="184" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="134" y="40" fill="#4ade80" font-size="12">CHOMSKY: NATIVIST LAD</text>
-<text x="134" y="66" fill="#fde047">Innate Universal Grammar</text>
-<text x="134" y="90" fill="#cbd5e1" font-weight="normal">Poverty of Stimulus: messy input</text>
-<text x="134" y="110" fill="#cbd5e1" font-weight="normal">yet rapid syntax mastery!</text>
-<rect x="34" y="128" width="200" height="56" rx="6" fill="#0f172a" stroke="#f472b6"/>
-<text x="134" y="148" fill="#f472b6">Critical Period (Lenneberg)</text>
-<text x="134" y="168" fill="#cbd5e1" font-weight="normal" font-size="10">Genie: late exposure → weak grammar</text>
-<rect x="268" y="18" width="236" height="184" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="386" y="40" fill="#38bdf8" font-size="12">SENGHAS (1995) NICARAGUA</text>
-<text x="386" y="66" fill="#fde047">Deaf School Sign Emergence</text>
-<rect x="288" y="82" width="196" height="44" rx="6" fill="#0f172a" stroke="#94a3b8"/>
-<text x="386" y="102" fill="#cbd5e1" font-size="10">Older Cohort 1: Simple pidgin signs</text>
-<text x="386" y="118" fill="#94a3b8" font-weight="normal" font-size="9">(Entered later in childhood)</text>
-<rect x="288" y="136" width="196" height="50" rx="6" fill="#064e3b" stroke="#4ade80"/>
-<text x="386" y="156" fill="#4ade80" font-size="10">Younger Cohort 2: Full grammar!</text>
-<text x="386" y="174" fill="#f8fafc" font-weight="normal" font-size="9">Children INVENTED spatial inflections!</text>
+D_CHOMSKY = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="178" y="56" fill="#4ade80">CHOMSKY: LAD</text>
+<text x="178" y="102" fill="#fde047">Innate Grammar</text>
+<text x="178" y="148" fill="#cbd5e1" font-weight="normal">Poverty of stimulus</text>
+<rect x="28" y="178" width="300" height="112" rx="10" fill="#0f172a" stroke="#f472b6" stroke-width="2"/>
+<text x="178" y="222" fill="#f472b6">Critical Period</text>
+<text x="178" y="268" fill="#cbd5e1" font-weight="normal">Genie: weak syntax</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="522" y="56" fill="#38bdf8">SENGHAS (1995)</text>
+<text x="522" y="102" fill="#fde047">Nicaraguan Sign</text>
+<rect x="372" y="122" width="300" height="74" rx="8" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
+<text x="522" y="170" fill="#cbd5e1" font-weight="normal">Cohort 1: Pidgin</text>
+<rect x="372" y="210" width="300" height="80" rx="8" fill="#064e3b" stroke="#4ade80" stroke-width="2"/>
+<text x="522" y="260" fill="#4ade80">Cohort 2: Full rules!</text>
 </g>
 </svg>"""
 
-D_THEORIES_LANG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="18" width="236" height="184" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="2"/>
-<text x="134" y="40" fill="#fb923c">SKINNER &amp; GOLDSTEIN (2003)</text>
-<text x="134" y="64" fill="#f8fafc" font-weight="normal">Operant reinforcement + shaping</text>
-<text x="134" y="84" fill="#cbd5e1" font-weight="normal">Bandura imitation of models</text>
-<rect x="32" y="100" width="204" height="84" rx="6" fill="#0f172a" stroke="#fb923c"/>
-<text x="134" y="122" fill="#fde047" font-size="10">Goldstein, King &amp; West (2003)</text>
-<text x="134" y="142" fill="#4ade80" font-weight="normal" font-size="10">Contingent mum smiles/touch →</text>
-<text x="134" y="160" fill="#f8fafc" font-weight="normal" font-size="10">infants shift to mature babbling!</text>
-<text x="134" y="176" fill="#fca5a5" font-weight="normal" font-size="9">(Non-contingent control did not)</text>
-<rect x="268" y="18" width="236" height="184" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
-<text x="386" y="40" fill="#a78bfa">PIAGET (HEWITT) &amp; BRUNER LASS</text>
-<text x="386" y="64" fill="#38bdf8">Piaget: Schemas BEFORE words</text>
-<text x="386" y="84" fill="#cbd5e1" font-weight="normal" font-size="10">Object permanence → "All gone!"</text>
-<text x="386" y="102" fill="#cbd5e1" font-weight="normal" font-size="10">Hewitt (2022): Action schemas → talk</text>
-<line x1="286" y1="118" x2="486" y2="118" stroke="#475569"/>
-<text x="386" y="140" fill="#4ade80">Bruner: Interactionist LASS</text>
-<text x="386" y="160" fill="#f8fafc" font-weight="normal" font-size="10">Scaffolding · Child-directed speech</text>
-<text x="386" y="180" fill="#fde047" font-size="10">Innate LAD + Social LASS partner up!</text>
+D_THEORIES_LANG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#fb923c" stroke-width="3"/>
+<text x="178" y="56" fill="#fb923c">SKINNER &amp; GOLD.</text>
+<text x="178" y="102" fill="#f8fafc" font-weight="normal">Operant shaping</text>
+<rect x="28" y="128" width="300" height="162" rx="10" fill="#0f172a" stroke="#fb923c" stroke-width="2"/>
+<text x="178" y="172" fill="#fde047">Goldstein (2003)</text>
+<text x="178" y="220" fill="#4ade80" font-weight="normal">Contingent smiles</text>
+<text x="178" y="264" fill="#f8fafc" font-weight="normal">→ Mature babbling!</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="3"/>
+<text x="522" y="56" fill="#a78bfa">PIAGET &amp; BRUNER</text>
+<text x="522" y="102" fill="#38bdf8">Piaget (Hewitt)</text>
+<text x="522" y="144" fill="#cbd5e1" font-weight="normal">Schemas → Words</text>
+<line x1="378" y1="168" x2="666" y2="168" stroke="#475569" stroke-width="2"/>
+<text x="522" y="212" fill="#4ade80">Bruner LASS</text>
+<text x="522" y="256" fill="#f8fafc" font-weight="normal">Scaffolding + CDS</text>
+<text x="522" y="294" fill="#fde047">LAD + LASS team</text>
 </g>
 </svg>"""
 
-D_HOCKETT = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<text x="260" y="22" fill="#fde047">HOCKETT'S DESIGN FEATURES: ANIMALS VS HUMANS</text>
-<rect x="18" y="36" width="484" height="32" fill="#1e293b"/>
-<text x="110" y="56" fill="#cbd5e1">Design Feature</text>
-<text x="265" y="56" fill="#fde047">Bees (Waggle)</text>
-<text x="375" y="56" fill="#fb923c">Apes (Kanzi)</text>
-<text x="462" y="56" fill="#4ade80">Humans</text>
-<text x="110" y="88" fill="#f8fafc">Semanticity (meaning)</text>
-<text x="265" y="88" fill="#4ade80">Yes (nectar)</text>
-<text x="375" y="88" fill="#4ade80">Yes (symbols)</text>
-<text x="462" y="88" fill="#4ade80">Rich</text>
-<text x="110" y="118" fill="#f8fafc">Displacement (absent)</text>
-<text x="265" y="118" fill="#fde047">Nectar only</text>
-<text x="375" y="118" fill="#94a3b8">Minimal</text>
-<text x="462" y="118" fill="#4ade80">Past/Future</text>
-<text x="110" y="148" fill="#f8fafc">Productivity (infinite)</text>
-<text x="265" y="148" fill="#ef4444">Closed</text>
-<text x="375" y="148" fill="#fb923c">Limited</text>
-<text x="462" y="148" fill="#4ade80">Infinite!</text>
-<text x="110" y="178" fill="#f8fafc">Recursive Syntax</text>
-<text x="265" y="178" fill="#ef4444">No</text>
-<text x="375" y="178" fill="#ef4444">Weak</text>
-<text x="462" y="178" fill="#4ade80">Full rules!</text>
-<text x="260" y="206" fill="#38bdf8" font-weight="normal" font-size="10">Von Frisch: Bee dance angle = sun direction · waggle length = distance</text>
+D_HOCKETT = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<rect x="14" y="14" width="672" height="48" rx="8" fill="#1e293b"/>
+<text x="30" y="48" fill="#cbd5e1">FEATURE</text>
+<text x="356" y="48" fill="#fde047" text-anchor="middle">BEES</text>
+<text x="484" y="48" fill="#fb923c" text-anchor="middle">APES</text>
+<text x="614" y="48" fill="#4ade80" text-anchor="middle">HUMAN</text>
+<text x="30" y="106" fill="#f8fafc">Semanticity</text>
+<text x="356" y="106" fill="#4ade80" text-anchor="middle">Yes</text>
+<text x="484" y="106" fill="#4ade80" text-anchor="middle">Yes</text>
+<text x="614" y="106" fill="#4ade80" text-anchor="middle">Rich</text>
+<text x="30" y="158" fill="#f8fafc">Displacement</text>
+<text x="356" y="158" fill="#fde047" text-anchor="middle">Nectar</text>
+<text x="484" y="158" fill="#94a3b8" text-anchor="middle">Low</text>
+<text x="614" y="158" fill="#4ade80" text-anchor="middle">Full</text>
+<text x="30" y="210" fill="#f8fafc">Productivity</text>
+<text x="356" y="210" fill="#ef4444" text-anchor="middle">Closed</text>
+<text x="484" y="210" fill="#fb923c" text-anchor="middle">Limit</text>
+<text x="614" y="210" fill="#4ade80" text-anchor="middle">Infinite</text>
+<text x="30" y="262" fill="#f8fafc">Syntax</text>
+<text x="356" y="262" fill="#ef4444" text-anchor="middle">No</text>
+<text x="484" y="262" fill="#ef4444" text-anchor="middle">Weak</text>
+<text x="614" y="262" fill="#4ade80" text-anchor="middle">Rules!</text>
+<text x="350" y="306" fill="#38bdf8" font-weight="normal" text-anchor="middle">Von Frisch: Waggle angle + length</text>
 </g>
 </svg>"""
 

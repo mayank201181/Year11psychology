@@ -8,100 +8,91 @@ EP = dict(
             "Dr. Synapse, Vani, and Examiner Chen overhaul his operationalisation, hypotheses, designs, sampling, self-reports, observations, correlations, ethics, validity, stats, and graphs."
 )
 
-D_VARS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<text x="260" y="20" fill="#fde047">OPERATIONALISATION, HYPOTHESES &amp; COUNTERBALANCING</text>
-<rect x="16" y="32" width="236" height="84" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="134" y="52" fill="#38bdf8">OPERATIONALISED VARIABLES</text>
-<text x="134" y="74" fill="#4ade80" font-size="10">IV: 10g chilli vs 0g plain sauce</text>
-<text x="134" y="94" fill="#f472b6" font-size="10">DV: Mood score (1-20 scale)</text>
-<text x="134" y="110" fill="#94a3b8" font-weight="normal" font-size="9">Never write vague "chilli" or "mood"!</text>
-<rect x="268" y="32" width="236" height="84" rx="8" fill="#1e293b" stroke="#fde047" stroke-width="2"/>
-<text x="386" y="52" fill="#fde047">THREE HYPOTHESES</text>
-<text x="386" y="72" fill="#f8fafc" font-weight="normal" font-size="10">Directional (1-tail): states HIGHER</text>
-<text x="386" y="90" fill="#f8fafc" font-weight="normal" font-size="10">Non-directional: states DIFFERENCE</text>
-<text x="386" y="108" fill="#cbd5e1" font-weight="normal" font-size="10">Null: NO diff (any diff = chance)</text>
-<rect x="16" y="130" width="488" height="84" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
-<text x="260" y="150" fill="#a78bfa">EXPERIMENTAL DESIGNS &amp; ORDER EFFECTS</text>
-<text x="260" y="172" fill="#f8fafc" font-weight="normal" font-size="10">Independent (Participant vars → Randomise) · Matched Pairs (Pre-test twins)</text>
-<text x="260" y="192" fill="#4ade80" font-size="10">Repeated Measures → Order Effects! Fix with ABBA Counterbalancing (Half A→B, Half B→A)</text>
+D_VARS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="172" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="178" y="54" fill="#38bdf8">VARIABLES</text>
+<text x="178" y="102" fill="#4ade80">IV: 10g vs 0g chilli</text>
+<text x="178" y="148" fill="#f472b6">DV: Mood (1–20)</text>
+<rect x="358" y="14" width="328" height="172" rx="12" fill="#1e293b" stroke="#fde047" stroke-width="3"/>
+<text x="522" y="54" fill="#fde047">HYPOTHESES</text>
+<text x="522" y="96" fill="#f8fafc" font-weight="normal">1-tail: higher/lower</text>
+<text x="522" y="136" fill="#f8fafc" font-weight="normal">2-tail: difference</text>
+<text x="522" y="174" fill="#cbd5e1" font-weight="normal">Null: no diff (chance)</text>
+<rect x="14" y="200" width="672" height="106" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="3"/>
+<text x="350" y="242" fill="#a78bfa">DESIGNS &amp; COUNTERBALANCING</text>
+<text x="350" y="286" fill="#4ade80">Repeated → Order effects → ABBA fix!</text>
 </g>
 </svg>"""
 
-D_SAMPLING = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="18" width="218" height="194" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="125" y="40" fill="#4ade80">EXPERIMENT TYPES</text>
-<text x="125" y="66" fill="#38bdf8">Lab: Controlled · ↑ Internal</text>
-<text x="125" y="84" fill="#94a3b8" font-weight="normal" font-size="10">(↓ Ecological / mundane realism)</text>
-<text x="125" y="112" fill="#fde047">Field: Real-world · IV manipulated</text>
-<text x="125" y="130" fill="#94a3b8" font-weight="normal" font-size="10">(↑ Ecological, harder control)</text>
-<text x="125" y="158" fill="#f472b6">Natural / Quasi: Natural IV</text>
-<text x="125" y="176" fill="#94a3b8" font-weight="normal" font-size="10">(No random allocation → confound!)</text>
-<rect x="250" y="18" width="254" height="194" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="377" y="40" fill="#38bdf8">5 SAMPLING METHODS</text>
-<text x="266" y="68" fill="#4ade80" text-anchor="start">Random: Equal chance (RNG/hat)</text>
-<text x="266" y="96" fill="#fde047" text-anchor="start">Stratified: Exact % subgroups!</text>
-<text x="266" y="124" fill="#a78bfa" text-anchor="start">Systematic: Every nth name</text>
-<text x="266" y="152" fill="#fb923c" text-anchor="start">Opportunity: Whoever is nearby</text>
-<text x="266" y="180" fill="#f472b6" text-anchor="start">Volunteer: Self-selected (bias!)</text>
+D_SAMPLING = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<rect x="14" y="14" width="302" height="292" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="165" y="54" fill="#4ade80" text-anchor="middle">EXPERIMENTS</text>
+<text x="30" y="108" fill="#38bdf8">Lab: ↑ Internal</text>
+<text x="30" y="158" fill="#fde047">Field: ↑ Ecological</text>
+<text x="30" y="208" fill="#f472b6">Natural: IV occurs</text>
+<text x="30" y="258" fill="#cbd5e1" font-weight="normal">(No random alloc.)</text>
+<rect x="330" y="14" width="356" height="292" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="508" y="54" fill="#38bdf8" text-anchor="middle">5 SAMPLING TYPES</text>
+<text x="348" y="104" fill="#4ade80">Random: Equal RNG</text>
+<text x="348" y="150" fill="#fde047">Stratified: Exact %</text>
+<text x="348" y="196" fill="#a78bfa">Systematic: Every nth</text>
+<text x="348" y="242" fill="#fb923c">Opportunity: Nearby</text>
+<text x="348" y="288" fill="#f472b6">Volunteer: Self-pick</text>
 </g>
 </svg>"""
 
-D_ETHICS_VAL = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="18" width="236" height="184" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="134" y="40" fill="#f472b6">CIE ETHICAL GUIDELINES</text>
-<text x="134" y="66" fill="#4ade80">✔ Informed Consent (16+ / parent)</text>
-<text x="134" y="90" fill="#4ade80">✔ Protection from Harm (no chillis!)</text>
-<text x="134" y="114" fill="#4ade80">✔ Right to Withdraw (self + data)</text>
-<text x="134" y="138" fill="#4ade80">✔ Avoid Deception + Full Debrief</text>
-<text x="134" y="162" fill="#4ade80">✔ Confidentiality &amp; Anonymity</text>
-<text x="134" y="186" fill="#fde047" font-size="10">Presumptive / Prior General Consent</text>
-<rect x="268" y="18" width="236" height="184" rx="8" fill="#1e293b" stroke="#fde047" stroke-width="2"/>
-<text x="386" y="40" fill="#fde047">RELIABILITY VS VALIDITY</text>
-<rect x="286" y="54" width="200" height="58" rx="6" fill="#0f172a" stroke="#38bdf8"/>
-<text x="386" y="74" fill="#38bdf8">RELIABILITY = CONSISTENCY</text>
-<text x="386" y="94" fill="#cbd5e1" font-weight="normal" font-size="10">Test-retest · Inter-observer (≥0.80)</text>
-<rect x="286" y="124" width="200" height="62" rx="6" fill="#0f172a" stroke="#4ade80"/>
-<text x="386" y="144" fill="#4ade80">VALIDITY = ACCURACY (TRUTH)</text>
-<text x="386" y="164" fill="#cbd5e1" font-weight="normal" font-size="10">Internal (no confounds) · Ecological</text>
-<text x="386" y="178" fill="#cbd5e1" font-weight="normal" font-size="10">Population generalisability (GRAVE)</text>
+D_ETHICS_VAL = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="178" y="54" fill="#f472b6" text-anchor="middle">ETHICS (DRIP)</text>
+<text x="30" y="106" fill="#4ade80">✔ Consent (16+)</text>
+<text x="30" y="152" fill="#4ade80">✔ Protect from harm</text>
+<text x="30" y="198" fill="#4ade80">✔ Right to withdraw</text>
+<text x="30" y="244" fill="#4ade80">✔ Debrief deception</text>
+<text x="30" y="290" fill="#fde047">✔ Confidentiality</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#fde047" stroke-width="3"/>
+<text x="522" y="54" fill="#fde047" text-anchor="middle">REL vs VAL</text>
+<rect x="372" y="74" width="300" height="98" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+<text x="522" y="114" fill="#38bdf8" text-anchor="middle">RELIABILITY</text>
+<text x="522" y="156" fill="#cbd5e1" font-weight="normal" text-anchor="middle">Consistent (≥0.80)</text>
+<rect x="372" y="186" width="300" height="104" rx="8" fill="#0f172a" stroke="#4ade80" stroke-width="2"/>
+<text x="522" y="226" fill="#4ade80" text-anchor="middle">VALIDITY</text>
+<text x="522" y="268" fill="#cbd5e1" font-weight="normal" text-anchor="middle">Accurate · Real life</text>
 </g>
 </svg>"""
 
-D_GRAPHS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">
-<text x="260" y="18" fill="#fde047" font-size="11">CHOOSING GRAPHS &amp; AVERAGES (OUTLIERS → USE MEDIAN!)</text>
-<rect x="14" y="28" width="156" height="184" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.8"/>
-<text x="92" y="46" fill="#38bdf8" font-size="11">BAR CHART (GAPS!)</text>
-<path d="M34 166 H152 M34 166 V64" stroke="#94a3b8"/>
-<rect x="46" y="92" width="24" height="74" fill="#38bdf8"/>
-<rect x="82" y="118" width="24" height="48" fill="#38bdf8"/>
-<rect x="118" y="76" width="24" height="90" fill="#38bdf8"/>
-<text x="92" y="186" fill="#f8fafc">Discrete categories</text>
-<text x="92" y="202" fill="#94a3b8" font-weight="normal">Bars NEVER touch</text>
-<rect x="182" y="28" width="156" height="184" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1.8"/>
-<text x="260" y="46" fill="#4ade80" font-size="11">HISTOGRAM (TOUCH!)</text>
-<path d="M202 166 H320 M202 166 V64" stroke="#94a3b8"/>
-<rect x="212" y="126" width="24" height="40" fill="#4ade80" stroke="#0f172a"/>
-<rect x="236" y="78" width="24" height="88" fill="#4ade80" stroke="#0f172a"/>
-<rect x="260" y="96" width="24" height="70" fill="#4ade80" stroke="#0f172a"/>
-<rect x="284" y="138" width="24" height="28" fill="#4ade80" stroke="#0f172a"/>
-<text x="260" y="186" fill="#f8fafc">Continuous intervals</text>
-<text x="260" y="202" fill="#94a3b8" font-weight="normal">0-9, 10-19 · No gaps!</text>
-<rect x="350" y="28" width="156" height="184" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="1.8"/>
-<text x="428" y="46" fill="#f472b6" font-size="11">SCATTERGRAPH</text>
-<path d="M370 166 H488 M370 166 V64" stroke="#94a3b8"/>
-<circle cx="384" cy="150" r="4" fill="#fde047"/><circle cx="402" cy="134" r="4" fill="#fde047"/>
-<circle cx="424" cy="118" r="4" fill="#fde047"/><circle cx="448" cy="96" r="4" fill="#fde047"/>
-<circle cx="472" cy="78" r="4" fill="#fde047"/>
-<text x="428" y="186" fill="#f8fafc">2 Co-variables</text>
-<text x="428" y="202" fill="#ef4444">Correlation ≠ Causation!</text>
+D_GRAPHS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="214" height="238" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="121" y="52" fill="#38bdf8">BAR (Gaps)</text>
+<path d="M40 198 H202 M40 198 V74" stroke="#94a3b8" stroke-width="3"/>
+<rect x="56" y="110" width="32" height="88" fill="#38bdf8"/>
+<rect x="104" y="140" width="32" height="58" fill="#38bdf8"/>
+<rect x="152" y="88" width="32" height="110" fill="#38bdf8"/>
+<text x="121" y="236" fill="#f8fafc" font-weight="normal">Categories</text>
+<rect x="243" y="14" width="214" height="238" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="350" y="52" fill="#4ade80">HISTOGRAM</text>
+<path d="M269 198 H431 M269 198 V74" stroke="#94a3b8" stroke-width="3"/>
+<rect x="284" y="148" width="34" height="50" fill="#4ade80" stroke="#0f172a" stroke-width="2"/>
+<rect x="318" y="92" width="34" height="106" fill="#4ade80" stroke="#0f172a" stroke-width="2"/>
+<rect x="352" y="116" width="34" height="82" fill="#4ade80" stroke="#0f172a" stroke-width="2"/>
+<rect x="386" y="160" width="34" height="38" fill="#4ade80" stroke="#0f172a" stroke-width="2"/>
+<text x="350" y="236" fill="#f8fafc" font-weight="normal">Touching!</text>
+<rect x="472" y="14" width="214" height="238" rx="10" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="579" y="52" fill="#f472b6">SCATTER</text>
+<path d="M498 198 H660 M498 198 V74" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="518" cy="180" r="7" fill="#fde047"/><circle cx="546" cy="158" r="7" fill="#fde047"/>
+<circle cx="576" cy="136" r="7" fill="#fde047"/><circle cx="608" cy="112" r="7" fill="#fde047"/>
+<circle cx="640" cy="90" r="7" fill="#fde047"/>
+<text x="579" y="236" fill="#f8fafc" font-weight="normal">Co-vars</text>
+<rect x="14" y="262" width="672" height="46" rx="8" fill="#1e293b"/>
+<text x="350" y="295" fill="#fde047">Outliers → MEDIAN · Corr ≠ Causation!</text>
 </g>
 </svg>"""
 

@@ -80,8 +80,23 @@ def lint(path):
                 try:
                     root = ET.fromstring(b["diagram"])
                     vb = root.get("viewBox", "")
-                    if not root.tag.endswith("svg") or not vb.startswith("0 0 520 "): errs.append(f"{where}: diagram must be <svg viewBox=\"0 0 520 H\">")
-                    elif not (120 <= float(vb.split()[3]) <= 280): errs.append(f"{where}: diagram height must be 120..280")
+                    parts = vb.split()
+                    if not root.tag.endswith("svg") or len(parts) != 4 or parts[0] != "0" or parts[1] != "0" or parts[2] not in ("520", "700"):
+                        errs.append(f"{where}: diagram must be <svg viewBox=\"0 0 700 H\">")
+                    else:
+                        vb_w, vb_h = float(parts[2]), float(parts[3])
+                        if not (120 <= vb_h <= 340):
+                            errs.append(f"{where}: diagram height must be 120..340")
+                        scale = 700.0 / vb_w
+                        def _walk(el, inherited_fs=None):
+                            fs_attr = el.get("font-size")
+                            cur_fs = float(re.sub(r"[^0-9.]", "", fs_attr)) if fs_attr else inherited_fs
+                            if el.tag.endswith("text"):
+                                if cur_fs is None or cur_fs * scale < 28.0:
+                                    errs.append(f"{where}: SVG text font-size {(cur_fs or 0)*scale:.1f}px < 28px: {(el.text or '')[:30]!r}")
+                            for ch in el:
+                                _walk(ch, cur_fs)
+                        _walk(root)
                     if "xmlns" not in b["diagram"]: errs.append(f"{where}: diagram needs xmlns=\"http://www.w3.org/2000/svg\"")
                     if re.search(r"(href=|<image|<script|url\()", b["diagram"]): errs.append(f"{where}: no external refs/images/scripts in diagram")
                 except ET.ParseError as e:

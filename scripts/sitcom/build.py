@@ -3,6 +3,10 @@ Usage: python3 build.py episodes/<topic>.py out/<topic>
 Produces outdir/timeline.json and outdir/audio.wav
 """
 import sys, os, json, hashlib, re, subprocess
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["OMP_WAIT_POLICY"] = "PASSIVE"
 import numpy as np, soundfile as sf
 
 SR = 24000

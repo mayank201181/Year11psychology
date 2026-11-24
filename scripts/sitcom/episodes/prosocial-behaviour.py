@@ -8,93 +8,74 @@ EP = dict(
             "Dr. Synapse, Vani, and Examiner Chen unpack Latané and Darley, Piliavin's subway study, Levine, kin selection, Rushton's twins, Batson's empathy-altruism, and Prot's prosocial media."
 )
 
-D_BYSTANDER = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240">
-<rect width="520" height="240" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold">
-<text x="165" y="20" fill="#fde047" text-anchor="middle">LATANÉ &amp; DARLEY 5-STEP MODEL</text>
-<rect x="18" y="30" width="294" height="30" rx="5" fill="#1e293b" stroke="#38bdf8"/>
-<text x="28" y="49" fill="#38bdf8">1. Notice the event</text>
-<rect x="18" y="68" width="294" height="30" rx="5" fill="#1e293b" stroke="#f472b6"/>
-<text x="28" y="87" fill="#f472b6">2. Interpret as emergency (≠ Pluralistic Ignorance)</text>
-<rect x="18" y="106" width="294" height="30" rx="5" fill="#1e293b" stroke="#fb923c"/>
-<text x="28" y="125" fill="#fb923c">3. Assume responsibility (≠ Diffusion!)</text>
-<rect x="18" y="144" width="294" height="30" rx="5" fill="#1e293b" stroke="#a78bfa"/>
-<text x="28" y="163" fill="#a78bfa">4. Know how to help (Competence)</text>
-<rect x="18" y="182" width="294" height="30" rx="5" fill="#1e293b" stroke="#4ade80"/>
-<text x="28" y="201" fill="#4ade80">5. Decide to implement help → ACTION!</text>
-<text x="420" y="38" fill="#cbd5e1" text-anchor="middle">1968 Seizure Study</text>
-<rect x="364" y="62" width="44" height="136" fill="#4ade80"/>
-<rect x="434" y="148" width="44" height="50" fill="#ef4444"/>
-<text x="386" y="56" fill="#4ade80" text-anchor="middle">85%</text>
-<text x="456" y="142" fill="#ef4444" text-anchor="middle">31%</text>
-<text x="386" y="216" fill="#cbd5e1" text-anchor="middle" font-size="10">Alone</text>
-<text x="456" y="216" fill="#cbd5e1" text-anchor="middle" font-size="10">Group of 6</text>
+D_BYSTANDER = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<text x="235" y="40" fill="#fde047" text-anchor="middle">LATANÉ &amp; DARLEY 5 STEPS</text>
+<text x="26" y="90" fill="#38bdf8">1. Notice event</text>
+<text x="26" y="142" fill="#f472b6">2. Interpret emergency</text>
+<text x="26" y="194" fill="#fb923c">3. Assume responsibility</text>
+<text x="26" y="246" fill="#a78bfa">4. Know how to help</text>
+<text x="26" y="298" fill="#4ade80">5. Decide → ACTION!</text>
+<text x="576" y="40" fill="#cbd5e1" text-anchor="middle">1968 Study</text>
+<rect x="488" y="94" width="66" height="162" rx="6" fill="#4ade80"/>
+<rect x="594" y="196" width="66" height="60" rx="6" fill="#ef4444"/>
+<text x="521" y="84" fill="#4ade80" text-anchor="middle">85%</text>
+<text x="627" y="186" fill="#ef4444" text-anchor="middle">31%</text>
+<text x="521" y="296" fill="#cbd5e1" text-anchor="middle">Alone</text>
+<text x="627" y="296" fill="#cbd5e1" text-anchor="middle">Grp 6</text>
 </g>
 </svg>"""
 
-D_PILIAVIN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<text x="260" y="22" fill="#fde047">PILIAVIN ET AL. (1969) SUBWAY COST-REWARD MODEL</text>
-<rect x="20" y="38" width="230" height="82" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="135" y="60" fill="#4ade80" font-size="12">ILL VICTIM (CANE): 95% Help</text>
-<text x="135" y="82" fill="#cbd5e1" font-weight="normal">Low cost of helping</text>
-<text x="135" y="102" fill="#cbd5e1" font-weight="normal">High guilt cost of NOT helping</text>
-<rect x="270" y="38" width="230" height="82" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="2"/>
-<text x="385" y="60" fill="#fb923c" font-size="12">DRUNK VICTIM: 50% Help</text>
-<text x="385" y="82" fill="#cbd5e1" font-weight="normal">Higher risk / disgust cost</text>
-<text x="385" y="102" fill="#cbd5e1" font-weight="normal">Perceived blame lowers guilt</text>
-<rect x="20" y="136" width="480" height="74" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.8"/>
-<text x="260" y="158" fill="#38bdf8">SITUATIONAL &amp; CULTURAL FACTORS (LEVINE ET AL. 2001)</text>
-<text x="260" y="180" fill="#f8fafc" font-weight="normal">Good mood · Low time pressure · In-group similarity boost helping</text>
-<text x="260" y="198" fill="#fde047" font-weight="normal">23 Cities: Rio &amp; simpático cultures highest · Fast big cities lower</text>
+D_PILIAVIN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<text x="350" y="40" fill="#fde047">PILIAVIN (1969) COST-REWARD</text>
+<rect x="14" y="58" width="328" height="136" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="178" y="100" fill="#4ade80">ILL (CANE): 95%</text>
+<text x="178" y="142" fill="#cbd5e1" font-weight="normal">Low cost to help</text>
+<text x="178" y="178" fill="#cbd5e1" font-weight="normal">High guilt if ignored</text>
+<rect x="358" y="58" width="328" height="136" rx="12" fill="#1e293b" stroke="#fb923c" stroke-width="3"/>
+<text x="522" y="100" fill="#fb923c">DRUNK: 50%</text>
+<text x="522" y="142" fill="#cbd5e1" font-weight="normal">Higher risk/disgust</text>
+<text x="522" y="178" fill="#cbd5e1" font-weight="normal">Blame lowers guilt</text>
+<rect x="14" y="210" width="672" height="96" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="350" y="250" fill="#38bdf8">LEVINE (2001): 23 CITIES</text>
+<text x="350" y="290" fill="#fde047" font-weight="normal">Simpático high · Fast big cities low</text>
 </g>
 </svg>"""
 
-D_BIO = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="18" y="20" width="154" height="180" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="95" y="44" fill="#4ade80">KIN SELECTION</text>
-<text x="95" y="72" fill="#fde047">Hamilton's Rule</text>
-<text x="95" y="98" fill="#cbd5e1" font-weight="normal">Help close relatives</text>
-<text x="95" y="118" fill="#cbd5e1" font-weight="normal">50% sibling genes</text>
-<text x="95" y="148" fill="#4ade80">Inclusive Fitness</text>
-<text x="95" y="172" fill="#94a3b8" font-weight="normal" font-size="10">Shared alleles survive</text>
-<rect x="184" y="20" width="152" height="180" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="260" y="44" fill="#38bdf8">RECIPROCAL</text>
-<text x="260" y="72" fill="#fde047">Trivers (1971)</text>
-<text x="260" y="98" fill="#cbd5e1" font-weight="normal">Help non-relatives</text>
-<text x="260" y="118" fill="#cbd5e1" font-weight="normal">when favour returned</text>
-<text x="260" y="148" fill="#38bdf8">Mutual Survival</text>
-<text x="260" y="172" fill="#94a3b8" font-weight="normal" font-size="10">Cheaters get shunned</text>
-<rect x="348" y="20" width="154" height="180" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="425" y="44" fill="#f472b6">RUSHTON TWINS</text>
-<rect x="378" y="74" width="34" height="86" fill="#f472b6"/>
-<rect x="436" y="118" width="34" height="42" fill="#64748b"/>
-<text x="395" y="68" fill="#f472b6" font-size="10">MZ</text>
-<text x="453" y="112" fill="#cbd5e1" font-size="10">DZ</text>
-<text x="425" y="182" fill="#fde047" font-size="10">~50% Heritable + Oxytocin</text>
+D_BIO = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<rect x="16" y="16" width="668" height="86" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="34" y="54" fill="#4ade80">KIN SELECTION (Hamilton)</text>
+<text x="34" y="90" fill="#cbd5e1" font-weight="normal">Help relatives (50% genes) → Inclusive fitness</text>
+<rect x="16" y="116" width="668" height="86" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="34" y="154" fill="#38bdf8">RECIPROCAL (Trivers 1971)</text>
+<text x="34" y="190" fill="#cbd5e1" font-weight="normal">Help non-kin when favour returned later</text>
+<rect x="16" y="216" width="668" height="86" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="34" y="254" fill="#f472b6">RUSHTON TWINS (MZ &gt; DZ)</text>
+<text x="34" y="290" fill="#fde047" font-weight="normal">~50% heritable altruism + Oxytocin bonding</text>
 </g>
 </svg>"""
 
-D_EMPATHY = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<text x="260" y="22" fill="#fde047">PSYCHOLOGICAL, SOCIAL LEARNING &amp; MEDIA INFLUENCES</text>
-<rect x="18" y="36" width="234" height="104" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="135" y="56" fill="#4ade80">BATSON: EMPATHY-ALTRUISM</text>
-<text x="135" y="80" fill="#f8fafc" font-weight="normal">Empathic concern → True Altruism</text>
-<text x="135" y="100" fill="#94a3b8" font-weight="normal">(Helps even when escape is easy)</text>
-<text x="135" y="122" fill="#fb923c" font-weight="normal">Personal distress → Egoistic escape</text>
-<rect x="268" y="36" width="234" height="104" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
-<text x="385" y="56" fill="#a78bfa">SOCIAL LEARNING &amp; PARENTS</text>
-<text x="385" y="80" fill="#f8fafc" font-weight="normal">Bandura: Role models + praise</text>
-<text x="385" y="100" fill="#cbd5e1" font-weight="normal">Vicarious reinforcement</text>
-<text x="385" y="122" fill="#38bdf8" font-weight="normal">Warmth + Inductive discipline</text>
-<rect x="18" y="154" width="484" height="58" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="260" y="176" fill="#38bdf8">PROT ET AL. (2014): PROSOCIAL MEDIA ACROSS CULTURES</text>
-<text x="260" y="198" fill="#fde047" font-weight="normal">Prosocial games/TV → ↑ Empathy → ↑ Real-world helping over 2 years</text>
+D_EMPATHY = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="178" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="178" y="56" fill="#4ade80">BATSON</text>
+<text x="178" y="100" fill="#f8fafc" font-weight="normal">Empathy → Altruism</text>
+<text x="178" y="142" fill="#94a3b8" font-weight="normal">(Even if easy escape)</text>
+<text x="178" y="180" fill="#fb923c" font-weight="normal">Distress → Egoistic</text>
+<rect x="358" y="14" width="328" height="178" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="3"/>
+<text x="522" y="56" fill="#a78bfa">SOCIAL LEARNING</text>
+<text x="522" y="100" fill="#f8fafc" font-weight="normal">Bandura role models</text>
+<text x="522" y="142" fill="#cbd5e1" font-weight="normal">Vicarious praise</text>
+<text x="522" y="180" fill="#38bdf8" font-weight="normal">Inductive parents</text>
+<rect x="14" y="206" width="672" height="100" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="350" y="248" fill="#38bdf8">PROT ET AL. (2014) MEDIA</text>
+<text x="350" y="290" fill="#fde047" font-weight="normal">Prosocial games/TV → Empathy ↑ → Help ↑</text>
 </g>
 </svg>"""
 

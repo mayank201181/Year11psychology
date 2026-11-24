@@ -8,96 +8,81 @@ EP = dict(
             "Dr. Synapse, Vani, and Examiner Chen unpack Boniecki and Moore, Maslow's pyramid, Self-Determination Theory and Calvo, Hull's drive-reduction, Merchant's nostalgic ads, and SMART goals."
 )
 
-D_TOKENS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="18" width="234" height="194" rx="8" fill="#1e293b" stroke="#fde047" stroke-width="2"/>
-<text x="133" y="40" fill="#fde047">BONIECKI &amp; MOORE (2003) TOKENS</text>
-<path d="M44 176 H226 M44 176 V64" stroke="#94a3b8" stroke-width="1.5"/>
-<rect x="60" y="138" width="38" height="38" fill="#64748b"/>
-<rect x="116" y="74" width="38" height="102" fill="#4ade80"/>
-<rect x="172" y="136" width="38" height="40" fill="#ef4444"/>
-<text x="79" y="192" fill="#cbd5e1" font-size="9">Baseline</text>
-<text x="135" y="192" fill="#4ade80" font-size="9">Tokens ON</text>
-<text x="191" y="192" fill="#ef4444" font-size="9">Removed</text>
-<text x="133" y="206" fill="#94a3b8" font-weight="normal" font-size="9">Participation doubled, then fell back</text>
-<rect x="268" y="18" width="236" height="194" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="386" y="40" fill="#f472b6">OVERJUSTIFICATION EFFECT</text>
-<rect x="288" y="56" width="196" height="36" rx="6" fill="#064e3b"/>
-<text x="386" y="78" fill="#4ade80">Pure Intrinsic Joy (Sketching)</text>
-<text x="386" y="108" fill="#fde047" font-size="10">↓ Add expected cash / tangible bribe ↓</text>
-<rect x="288" y="118" width="196" height="36" rx="6" fill="#7f1d1d"/>
-<text x="386" y="140" fill="#fca5a5">Remove bribe → Interest drops!</text>
-<text x="386" y="176" fill="#38bdf8" font-size="10">Tip: Sincere verbal competence praise</text>
-<text x="386" y="194" fill="#cbd5e1" font-weight="normal" font-size="10">protects intrinsic motivation!</text>
+D_TOKENS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#fde047" stroke-width="3"/>
+<text x="178" y="54" fill="#fde047">BONIECKI (2003)</text>
+<path d="M52 246 H308 M52 246 V86" stroke="#94a3b8" stroke-width="3"/>
+<rect x="74" y="194" width="54" height="52" fill="#64748b"/>
+<rect x="152" y="102" width="54" height="144" fill="#4ade80"/>
+<rect x="230" y="190" width="54" height="56" fill="#ef4444"/>
+<text x="101" y="286" fill="#cbd5e1">Base</text>
+<text x="179" y="286" fill="#4ade80">Tok</text>
+<text x="257" y="286" fill="#ef4444">Off</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="522" y="54" fill="#f472b6">OVERJUSTIFICATION</text>
+<rect x="374" y="78" width="296" height="58" rx="8" fill="#064e3b"/>
+<text x="522" y="116" fill="#4ade80">Intrinsic Joy</text>
+<text x="522" y="168" fill="#fde047">↓ Add cash bribe ↓</text>
+<rect x="374" y="186" width="296" height="58" rx="8" fill="#7f1d1d"/>
+<text x="522" y="224" fill="#fca5a5">Interest drops!</text>
+<text x="522" y="286" fill="#38bdf8" font-weight="normal">Praise protects joy</text>
 </g>
 </svg>"""
 
-D_MASLOW = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<text x="200" y="20" fill="#fde047">MASLOW'S HIERARCHY OF NEEDS (1943)</text>
-<polygon points="200,32 252,68 148,68" fill="#a78bfa" stroke="#f8fafc"/>
-<text x="200" y="58" fill="#fff" font-size="9">Self-Actualisation</text>
-<polygon points="148,72 252,72 284,106 116,106" fill="#f472b6" stroke="#f8fafc"/>
-<text x="200" y="94" fill="#fff">4. Esteem (Respect, Mastery)</text>
-<polygon points="116,110 284,110 316,144 84,144" fill="#4ade80" stroke="#f8fafc"/>
-<text x="200" y="132" fill="#0f172a">3. Love &amp; Belonging (Friends, Family)</text>
-<polygon points="84,148 316,148 348,182 52,182" fill="#38bdf8" stroke="#f8fafc"/>
-<text x="200" y="170" fill="#0f172a">2. Safety (Security, Shelter, Stability)</text>
-<polygon points="52,186 348,186 380,220 20,220" fill="#fde047" stroke="#f8fafc"/>
-<text x="200" y="208" fill="#0f172a">1. Physiological (Food, Water, Sleep)</text>
-<text x="446" y="54" fill="#a78bfa">GROWTH (B)</text>
-<text x="446" y="72" fill="#cbd5e1" font-weight="normal" font-size="10">Grows stronger!</text>
-<path d="M392 84 V216" stroke="#fb923c" stroke-width="2"/>
-<text x="448" y="144" fill="#fb923c">DEFICIENCY (D)</text>
-<text x="448" y="162" fill="#cbd5e1" font-weight="normal" font-size="10">Fades once met</text>
-<text x="448" y="196" fill="#94a3b8" font-weight="normal" font-size="9">Critique: Western</text>
-<text x="448" y="210" fill="#94a3b8" font-weight="normal" font-size="9">individualism bias</text>
+D_MASLOW = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="130" y="14" width="440" height="52" rx="10" fill="#a78bfa"/>
+<rect x="100" y="74" width="500" height="52" rx="10" fill="#f472b6"/>
+<rect x="70" y="134" width="560" height="52" rx="10" fill="#4ade80"/>
+<rect x="42" y="194" width="616" height="52" rx="10" fill="#38bdf8"/>
+<rect x="16" y="254" width="668" height="52" rx="10" fill="#fde047"/>
+<text x="350" y="50" fill="#0f172a">5. Self-Actualisation (Growth)</text>
+<text x="350" y="110" fill="#fff">4. Esteem (Respect, Mastery)</text>
+<text x="350" y="170" fill="#0f172a">3. Love &amp; Belonging (Social)</text>
+<text x="350" y="230" fill="#0f172a">2. Safety (Security, Shelter)</text>
+<text x="350" y="290" fill="#0f172a">1. Physiological (Food, Sleep)</text>
 </g>
 </svg>"""
 
-D_SDT = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<text x="260" y="22" fill="#fde047">DECI &amp; RYAN: SELF-DETERMINATION THEORY (SDT)</text>
-<rect x="18" y="38" width="152" height="84" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="94" y="62" fill="#38bdf8" font-size="12">AUTONOMY</text>
-<text x="94" y="84" fill="#f8fafc" font-weight="normal">Volition &amp; choice</text>
-<text x="94" y="104" fill="#94a3b8" font-weight="normal" font-size="10">(NOT working alone!)</text>
-<rect x="184" y="38" width="152" height="84" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="260" y="62" fill="#4ade80" font-size="12">COMPETENCE</text>
-<text x="260" y="84" fill="#f8fafc" font-weight="normal">Mastery &amp; skill</text>
-<text x="260" y="104" fill="#94a3b8" font-weight="normal" font-size="10">Optimal challenge</text>
-<rect x="350" y="38" width="152" height="84" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="426" y="62" fill="#f472b6" font-size="12">RELATEDNESS</text>
-<text x="426" y="84" fill="#f8fafc" font-weight="normal">Warm belonging</text>
-<text x="426" y="104" fill="#94a3b8" font-weight="normal" font-size="10">Mutual care</text>
-<rect x="24" y="140" width="472" height="62" rx="8" fill="#1e293b" stroke="#fde047" stroke-width="1.8"/>
-<text x="260" y="162" fill="#fde047">CALVO ET AL. (2010): TEENAGE FOOTBALL PLAYERS</text>
-<text x="260" y="184" fill="#cbd5e1" font-weight="normal">Thwarted Autonomy + Relatedness + Competence → Burnout &amp; Sport Dropout!</text>
+D_SDT = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<text x="350" y="40" fill="#fde047">SELF-DETERMINATION THEORY (SDT)</text>
+<rect x="14" y="58" width="214" height="126" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="121" y="102" fill="#38bdf8">AUTONOMY</text>
+<text x="121" y="152" fill="#f8fafc" font-weight="normal">Free choice</text>
+<rect x="243" y="58" width="214" height="126" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="350" y="102" fill="#4ade80">COMPETENCE</text>
+<text x="350" y="152" fill="#f8fafc" font-weight="normal">Skill mastery</text>
+<rect x="472" y="58" width="214" height="126" rx="10" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="579" y="102" fill="#f472b6">RELATED.</text>
+<text x="579" y="152" fill="#f8fafc" font-weight="normal">Belonging</text>
+<rect x="14" y="200" width="672" height="104" rx="12" fill="#1e293b" stroke="#fde047" stroke-width="3"/>
+<text x="350" y="242" fill="#fde047">CALVO (2010): TEEN FOOTBALLERS</text>
+<text x="350" y="286" fill="#cbd5e1" font-weight="normal">Thwarted needs → Burnout &amp; Dropout!</text>
 </g>
 </svg>"""
 
-D_DRIVE_SMART = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="16" width="238" height="196" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="2"/>
-<text x="135" y="38" fill="#fb923c">HULL (1943) &amp; MERCHANT (2013)</text>
-<text x="135" y="62" fill="#f8fafc" font-size="10">Need → Drive → Action → Homeostasis</text>
-<text x="135" y="82" fill="#94a3b8" font-weight="normal" font-size="10">Primary (food) vs Secondary (money)</text>
-<text x="135" y="102" fill="#fca5a5" font-weight="normal" font-size="10">Limit: Fails to explain skydiving!</text>
-<line x1="32" y1="118" x2="238" y2="118" stroke="#475569"/>
-<text x="135" y="140" fill="#f472b6">Merchant et al. (2013) Nostalgia</text>
-<text x="135" y="162" fill="#cbd5e1" font-weight="normal" font-size="10">Nostalgic ads → warm past memories</text>
-<text x="135" y="182" fill="#4ade80" font-weight="normal" font-size="10">+ guilt relief → ↑ Charity donations!</text>
-<rect x="268" y="16" width="236" height="196" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="386" y="38" fill="#4ade80">LOCKE &amp; LATHAM: SMART GOALS</text>
-<text x="294" y="68" fill="#fde047" text-anchor="start">S · Specific (exact topic &amp; task)</text>
-<text x="294" y="96" fill="#38bdf8" text-anchor="start">M · Measurable (track score)</text>
-<text x="294" y="124" fill="#4ade80" text-anchor="start">A · Achievable (stretching)</text>
-<text x="294" y="152" fill="#a78bfa" text-anchor="start">R · Relevant (fits CIE 0266)</text>
-<text x="294" y="180" fill="#f472b6" text-anchor="start">T · Time-bound (clear deadline)</text>
+D_DRIVE_SMART = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#fb923c" stroke-width="3"/>
+<text x="178" y="54" fill="#fb923c" text-anchor="middle">HULL &amp; MERCHANT</text>
+<text x="178" y="102" fill="#f8fafc" text-anchor="middle">Need → Drive</text>
+<text x="178" y="146" fill="#cbd5e1" font-weight="normal" text-anchor="middle">→ Homeostasis</text>
+<line x1="34" y1="170" x2="322" y2="170" stroke="#475569" stroke-width="2"/>
+<text x="178" y="216" fill="#f472b6" text-anchor="middle">Merchant (2013)</text>
+<text x="178" y="264" fill="#4ade80" font-weight="normal" text-anchor="middle">Nostalgia → Gifts ↑</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="522" y="54" fill="#4ade80" text-anchor="middle">SMART GOALS</text>
+<text x="384" y="104" fill="#fde047">S · Specific</text>
+<text x="384" y="150" fill="#38bdf8">M · Measurable</text>
+<text x="384" y="196" fill="#4ade80">A · Achievable</text>
+<text x="384" y="242" fill="#a78bfa">R · Relevant</text>
+<text x="384" y="288" fill="#f472b6">T · Time-bound</text>
 </g>
 </svg>"""
 

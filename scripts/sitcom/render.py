@@ -86,7 +86,7 @@ async def main():
                     "ffmpeg", "-y", "-loglevel", "error",
                     "-f", "image2pipe", "-framerate", str(fps), "-c:v", "mjpeg", "-i", "-",
                     "-vf", "scale=in_range=full:out_range=tv,format=yuv420p",
-                    "-c:v", "libx264", "-preset", "ultrafast", "-crf", "28",
+                    "-c:v", "libx264", "-preset", "veryfast", "-threads", "2", "-crf", "25",
                     "-pix_fmt", "yuv420p", "-color_range", "tv", "-tune", "animation", seg,
                 ],
                 stdin=subprocess.PIPE,

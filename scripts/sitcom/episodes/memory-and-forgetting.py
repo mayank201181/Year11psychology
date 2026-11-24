@@ -8,99 +8,83 @@ EP = dict(
             "Dr. Synapse, Vani, and Examiner Chen unpack Murdock's serial position curve, Multi-Store and Working Memory, Craik and Tulving, Bartlett's schemas, forgetting, and patient H.M."
 )
 
-D_MSM = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240">
-<rect width="520" height="240" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="20" width="110" height="58" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="71" y="42" fill="#38bdf8">SENSORY</text>
-<text x="71" y="58" fill="#cbd5e1" font-weight="normal">Modality · &lt;1 s</text>
-<path d="M126 49 H182" stroke="#fde047" stroke-width="2"/>
-<text x="154" y="42" fill="#fde047" font-size="10">Attention</text>
-<rect x="182" y="20" width="132" height="58" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
-<text x="248" y="42" fill="#a78bfa">SHORT-TERM</text>
-<text x="248" y="58" fill="#cbd5e1" font-weight="normal">7±2 · Acoustic · 18-30s</text>
-<path d="M314 49 H376" stroke="#4ade80" stroke-width="2"/>
-<text x="345" y="42" fill="#4ade80" font-size="10">Rehearsal</text>
-<rect x="376" y="20" width="128" height="58" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="440" y="42" fill="#4ade80">LONG-TERM</text>
-<text x="440" y="58" fill="#cbd5e1" font-weight="normal">Unlimited · Semantic</text>
+D_MSM = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="194" height="104" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="111" y="54" fill="#38bdf8">SENSORY</text>
+<text x="111" y="96" fill="#cbd5e1" font-weight="normal">&lt;1 s</text>
+<path d="M208 66 H244" stroke="#fde047" stroke-width="4"/>
+<rect x="244" y="14" width="212" height="104" rx="10" fill="#1e293b" stroke="#a78bfa" stroke-width="3"/>
+<text x="350" y="54" fill="#a78bfa">STM (7±2)</text>
+<text x="350" y="96" fill="#cbd5e1" font-weight="normal">18–30s Acous.</text>
+<path d="M456 66 H492" stroke="#4ade80" stroke-width="4"/>
+<rect x="492" y="14" width="194" height="104" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="589" y="54" fill="#4ade80">LTM (∞)</text>
+<text x="589" y="96" fill="#cbd5e1" font-weight="normal">Semantic</text>
 </g>
-<path d="M60 112 V212 H470" stroke="#94a3b8" stroke-width="2" fill="none"/>
-<path d="M75 124 Q130 198 255 202 Q380 198 455 120" stroke="#f472b6" stroke-width="4" fill="none"/>
-<g font-family="sans-serif" font-size="12" font-weight="bold">
-<text x="82" y="118" fill="#4ade80">Primacy (LTM)</text>
-<text x="265" y="186" fill="#94a3b8" text-anchor="middle">Middle forgotten</text>
-<text x="450" y="114" fill="#a78bfa" text-anchor="end">Recency (STM)</text>
-<text x="265" y="230" fill="#fde047" text-anchor="middle">Murdock (1962) Serial Position Curve</text>
+<path d="M56 142 V264 H646" stroke="#94a3b8" stroke-width="3" fill="none"/>
+<path d="M76 156 Q160 250 350 252 Q540 250 626 154" stroke="#f472b6" stroke-width="5" fill="none"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<text x="84" y="160" fill="#4ade80">Primacy (LTM)</text>
+<text x="618" y="160" fill="#a78bfa" text-anchor="end">Recency (STM)</text>
+<text x="350" y="302" fill="#fde047" text-anchor="middle">Murdock (1962) Serial Position Curve</text>
 </g>
 </svg>"""
 
-D_WMM = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240">
-<rect width="520" height="240" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="95" y="14" width="160" height="40" rx="8" fill="#3b0764" stroke="#fde047" stroke-width="2"/>
-<text x="175" y="38" fill="#fde047">CENTRAL EXECUTIVE</text>
-<path d="M130 54 L65 86 M175 54 V86 M220 54 L285 86" stroke="#cbd5e1" stroke-width="1.8"/>
-<rect x="12" y="86" width="104" height="58" rx="7" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="64" y="108" fill="#38bdf8">Phonological</text>
-<text x="64" y="126" fill="#cbd5e1" font-weight="normal">Inner ear + voice</text>
-<rect x="124" y="86" width="102" height="58" rx="7" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="175" y="108" fill="#f472b6">Episodic Buffer</text>
-<text x="175" y="126" fill="#cbd5e1" font-weight="normal">Integrates info</text>
-<rect x="234" y="86" width="104" height="58" rx="7" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="286" y="108" fill="#4ade80">Visuo-Spatial</text>
-<text x="286" y="126" fill="#cbd5e1" font-weight="normal">Inner eye</text>
-<rect x="64" y="168" width="222" height="36" rx="7" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
-<text x="175" y="190" fill="#a78bfa">LONG-TERM MEMORY</text>
-<path d="M64 144 V168 M175 144 V168 M286 144 V168" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
-</g>
-<g font-family="sans-serif" font-size="11" font-weight="bold">
-<text x="432" y="30" fill="#fde047" text-anchor="middle">Craik &amp; Tulving</text>
-<rect x="366" y="158" width="36" height="46" fill="#64748b"/>
-<rect x="414" y="116" width="36" height="88" fill="#38bdf8"/>
-<rect x="462" y="54" width="36" height="150" fill="#4ade80"/>
-<text x="384" y="220" fill="#cbd5e1" text-anchor="middle" font-size="10">Visual</text>
-<text x="432" y="220" fill="#cbd5e1" text-anchor="middle" font-size="10">Rhyme</text>
-<text x="480" y="220" fill="#4ade80" text-anchor="middle" font-size="10">Semantic</text>
+D_WMM = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="16" y="14" width="424" height="54" rx="10" fill="#3b0764" stroke="#fde047" stroke-width="3"/>
+<text x="228" y="52" fill="#fde047">CENTRAL EXECUTIVE</text>
+<rect x="16" y="84" width="424" height="52" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="228" y="120" fill="#38bdf8">Phonological Loop (Sound)</text>
+<rect x="16" y="148" width="424" height="52" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="228" y="184" fill="#4ade80">Visuo-Spatial (Inner Eye)</text>
+<rect x="16" y="212" width="424" height="52" rx="10" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="228" y="248" fill="#f472b6">Episodic Buffer ↔ LTM</text>
+<text x="228" y="302" fill="#cbd5e1">Baddeley &amp; Hitch WMM</text>
+<text x="572" y="48" fill="#fde047">Levels</text>
+<rect x="470" y="198" width="52" height="62" rx="4" fill="#64748b"/>
+<rect x="544" y="142" width="52" height="118" rx="4" fill="#38bdf8"/>
+<rect x="618" y="72" width="52" height="188" rx="4" fill="#4ade80"/>
+<text x="496" y="300" fill="#cbd5e1">Vis</text>
+<text x="570" y="300" fill="#38bdf8">Rhy</text>
+<text x="644" y="300" fill="#4ade80">Sem</text>
 </g>
 </svg>"""
 
-D_FORGET = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="12" font-weight="bold">
-<rect x="20" y="20" width="225" height="84" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="2"/>
-<text x="132" y="42" fill="#fb923c" text-anchor="middle">PROACTIVE INTERFERENCE</text>
-<text x="132" y="66" fill="#f8fafc" text-anchor="middle">OLD memory → blocks NEW</text>
-<text x="132" y="88" fill="#94a3b8" font-size="11" font-weight="normal" text-anchor="middle">Old PIN ruins learning new PIN</text>
-<rect x="275" y="20" width="225" height="84" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="387" y="42" fill="#f472b6" text-anchor="middle">RETROACTIVE INTERFERENCE</text>
-<text x="387" y="66" fill="#f8fafc" text-anchor="middle">NEW memory → wipes OLD</text>
-<text x="387" y="88" fill="#94a3b8" font-size="11" font-weight="normal" text-anchor="middle">New Spanish overwrites old French</text>
-<rect x="20" y="122" width="480" height="80" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="260" y="145" fill="#38bdf8" text-anchor="middle">BARTLETT: RECONSTRUCTIVE SCHEMAS (War of the Ghosts)</text>
-<text x="260" y="168" fill="#fde047" text-anchor="middle" font-size="11">Canoes → Boats · Seal hunting → Fishing · Ghosts dropped</text>
-<text x="260" y="188" fill="#cbd5e1" text-anchor="middle" font-size="11" font-weight="normal">Assimilation · Levelling · Sharpening · Confabulation</text>
+D_FORGET = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="148" rx="12" fill="#1e293b" stroke="#fb923c" stroke-width="3"/>
+<text x="178" y="56" fill="#fb923c">PROACTIVE</text>
+<text x="178" y="102" fill="#f8fafc">OLD → blocks NEW</text>
+<text x="178" y="142" fill="#cbd5e1" font-weight="normal">Old PIN ruins new</text>
+<rect x="358" y="14" width="328" height="148" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="522" y="56" fill="#f472b6">RETROACTIVE</text>
+<text x="522" y="102" fill="#f8fafc">NEW → wipes OLD</text>
+<text x="522" y="142" fill="#cbd5e1" font-weight="normal">Spanish wipes French</text>
+<rect x="14" y="176" width="672" height="130" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="350" y="218" fill="#38bdf8">BARTLETT: RECONSTRUCTIVE SCHEMAS</text>
+<text x="350" y="258" fill="#fde047">Canoes → Boats · Ghosts dropped</text>
+<text x="350" y="294" fill="#cbd5e1" font-weight="normal">Assimilation · Levelling · Sharpening</text>
 </g>
 </svg>"""
 
-D_BRAIN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<ellipse cx="145" cy="108" rx="105" ry="74" fill="#1e293b" stroke="#cbd5e1" stroke-width="2"/>
-<circle cx="78" cy="92" r="24" fill="#38bdf8" fill-opacity="0.35" stroke="#38bdf8" stroke-width="2"/>
-<ellipse cx="152" cy="116" rx="28" ry="15" fill="#4ade80" fill-opacity="0.4" stroke="#4ade80" stroke-width="2"/>
-<circle cx="122" cy="126" r="11" fill="#f472b6" fill-opacity="0.5" stroke="#f472b6" stroke-width="2"/>
-<ellipse cx="215" cy="162" rx="34" ry="22" fill="#fde047" fill-opacity="0.35" stroke="#fde047" stroke-width="2"/>
-<g font-family="sans-serif" font-size="12" font-weight="bold">
-<text x="280" y="36" fill="#38bdf8">Prefrontal: Working memory</text>
-<text x="280" y="64" fill="#4ade80">Hippocampus: Episodic LTM</text>
-<text x="280" y="92" fill="#f472b6">Amygdala: Emotional tags</text>
-<text x="280" y="120" fill="#fde047">Cerebellum: Procedural skills</text>
-<path d="M280 156 H495" stroke="#94a3b8" stroke-width="2"/>
-<line x1="388" y1="142" x2="388" y2="172" stroke="#ef4444" stroke-width="3"/>
-<text x="388" y="138" fill="#ef4444" text-anchor="middle" font-size="11">H.M. Surgery</text>
-<text x="330" y="190" fill="#fb923c" text-anchor="middle" font-size="11">← Retrograde</text>
-<text x="446" y="190" fill="#4ade80" text-anchor="middle" font-size="11">Anterograde →</text>
-<text x="388" y="212" fill="#cbd5e1" text-anchor="middle" font-size="10" font-weight="normal">Milner et al. (1968): No new episodic LTM</text>
+D_BRAIN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<rect x="16" y="10" width="668" height="172" rx="12" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+<text x="36" y="48" fill="#38bdf8">Prefrontal: Working memory</text>
+<text x="36" y="88" fill="#4ade80">Hippocampus: Episodic LTM</text>
+<text x="36" y="128" fill="#f472b6">Amygdala: Emotional tags</text>
+<text x="36" y="168" fill="#fde047">Cerebellum: Procedural skills</text>
+<path d="M40 256 H660" stroke="#94a3b8" stroke-width="4"/>
+<line x1="350" y1="238" x2="350" y2="274" stroke="#ef4444" stroke-width="5"/>
+<text x="350" y="226" fill="#ef4444" text-anchor="middle">H.M. Surgery</text>
+<text x="175" y="302" fill="#fb923c" text-anchor="middle">← Retrograde</text>
+<text x="525" y="302" fill="#4ade80" text-anchor="middle">Anterograde →</text>
 </g>
 </svg>"""
 

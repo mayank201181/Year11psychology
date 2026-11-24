@@ -8,93 +8,89 @@ EP = dict(
             "Dr. Synapse, Vani, and Examiner Chen decode NREM and REM EEG waves, the SCN and melatonin, Oswald versus Meddis, sleep hygiene, and Freud versus Hobson and McCarley."
 )
 
-D_HYPNO = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240">
-<rect width="520" height="240" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold">
-<text x="260" y="20" fill="#fde047" text-anchor="middle">90-MIN ULTRADIAN SLEEP CYCLE &amp; EEG WAVES</text>
-<path d="M72 34 V186 H496" stroke="#94a3b8" stroke-width="1.8" fill="none"/>
-<text x="64" y="48" fill="#f87171" text-anchor="end">Wake</text>
-<text x="64" y="78" fill="#f472b6" text-anchor="end">REM</text>
-<text x="64" y="110" fill="#38bdf8" text-anchor="end">N1 Theta</text>
-<text x="64" y="142" fill="#a78bfa" text-anchor="end">N2 Spindle</text>
-<text x="64" y="174" fill="#4ade80" text-anchor="end">N3 Delta</text>
-<path d="M75 46 H95 V110 H112 V142 H130 V174 H168 V142 H182 V76 H204 V110 H220 V142 H242 V174 H268 V76 H302 V142 H336 V76 H382 V110 H412 V76 H468 V46 H490" stroke="#38bdf8" stroke-width="3" fill="none"/>
-<rect x="182" y="68" width="22" height="14" fill="#f472b6"/>
-<rect x="268" y="68" width="34" height="14" fill="#f472b6"/>
-<rect x="336" y="68" width="46" height="14" fill="#f472b6"/>
-<rect x="412" y="68" width="56" height="14" fill="#f472b6"/>
-<text x="150" y="206" fill="#4ade80" text-anchor="middle">Early night: deep N3 SWS</text>
-<text x="400" y="206" fill="#f472b6" text-anchor="middle">Late night: longer REM</text>
-<text x="280" y="228" fill="#cbd5e1" text-anchor="middle" font-weight="normal">REM = Paradoxical: fast Beta-like EEG + Muscle Atonia</text>
+D_HYPNO = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold">
+<text x="350" y="38" fill="#fde047" text-anchor="middle">90-MIN ULTRADIAN SLEEP CYCLES</text>
+<path d="M160 54 V246 H676" stroke="#94a3b8" stroke-width="3" fill="none"/>
+<text x="150" y="82" fill="#f87171" text-anchor="end">Wake</text>
+<text x="150" y="122" fill="#f472b6" text-anchor="end">REM</text>
+<text x="150" y="162" fill="#38bdf8" text-anchor="end">N1 Theta</text>
+<text x="150" y="202" fill="#a78bfa" text-anchor="end">N2 Spind.</text>
+<text x="150" y="242" fill="#4ade80" text-anchor="end">N3 Delta</text>
+<path d="M164 74 H192 V154 H216 V194 H238 V234 H284 V194 H304 V114 H336 V154 H360 V194 H386 V234 H418 V114 H462 V194 H504 V114 H562 V154 H596 V114 H656 V74 H672" stroke="#38bdf8" stroke-width="4.5" fill="none"/>
+<rect x="304" y="102" width="32" height="20" fill="#f472b6"/>
+<rect x="418" y="102" width="44" height="20" fill="#f472b6"/>
+<rect x="504" y="102" width="58" height="20" fill="#f472b6"/>
+<rect x="596" y="102" width="60" height="20" fill="#f472b6"/>
+<text x="350" y="296" fill="#fde047" text-anchor="middle">Early: Deep N3 SWS · Late: Longer REM</text>
 </g>
 </svg>"""
 
-D_SCN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<text x="260" y="22" fill="#fde047">24-HOUR CIRCADIAN SLEEP-WAKE SYSTEM</text>
-<rect x="18" y="54" width="102" height="64" rx="8" fill="#1e293b" stroke="#fde047" stroke-width="2"/>
-<text x="69" y="78" fill="#fde047">ZEITGEBER</text>
-<text x="69" y="98" fill="#cbd5e1" font-weight="normal">Light hits retina</text>
-<path d="M120 86 H156" stroke="#fde047" stroke-width="2.5"/>
-<rect x="156" y="54" width="124" height="64" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="218" y="78" fill="#38bdf8">SCN PACEMAKER</text>
-<text x="218" y="98" fill="#cbd5e1" font-weight="normal">Hypothalamus</text>
-<path d="M280 86 H316" stroke="#a78bfa" stroke-width="2.5"/>
-<rect x="316" y="54" width="100" height="64" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
-<text x="366" y="78" fill="#a78bfa">PINEAL GLAND</text>
-<text x="366" y="98" fill="#cbd5e1" font-weight="normal">Darkness signal</text>
-<path d="M416 86 H440" stroke="#4ade80" stroke-width="2.5"/>
-<rect x="440" y="54" width="66" height="64" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="473" y="78" fill="#4ade80">SLEEP</text>
-<text x="473" y="98" fill="#cbd5e1" font-weight="normal" font-size="10">Melatonin</text>
-<rect x="40" y="144" width="440" height="54" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="1.5"/>
-<text x="260" y="166" fill="#f472b6">Endogenous Pacemaker (SCN) + Exogenous Zeitgebers (Light, Meals)</text>
-<text x="260" y="186" fill="#cbd5e1" font-weight="normal">Mismatch → Jet lag &amp; shift-work insomnia · Blue light suppresses melatonin</text>
+D_SCN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<text x="350" y="40" fill="#fde047">24-HR CIRCADIAN RHYTHM</text>
+<rect x="14" y="60" width="206" height="108" rx="10" fill="#1e293b" stroke="#fde047" stroke-width="3"/>
+<text x="117" y="102" fill="#fde047">LIGHT</text>
+<text x="117" y="144" fill="#cbd5e1" font-weight="normal">Zeitgeber</text>
+<path d="M220 114 H246" stroke="#fde047" stroke-width="4"/>
+<rect x="246" y="60" width="208" height="108" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="350" y="102" fill="#38bdf8">SCN</text>
+<text x="350" y="144" fill="#cbd5e1" font-weight="normal">Pacemaker</text>
+<path d="M454 114 H480" stroke="#a78bfa" stroke-width="4"/>
+<rect x="480" y="60" width="206" height="108" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="583" y="102" fill="#4ade80">PINEAL</text>
+<text x="583" y="144" fill="#cbd5e1" font-weight="normal">Melatonin</text>
+<rect x="14" y="188" width="672" height="116" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="350" y="234" fill="#f472b6">Endogenous SCN + Exogenous Light</text>
+<text x="350" y="280" fill="#cbd5e1" font-weight="normal">Blue light blocks melatonin → Jet lag</text>
 </g>
 </svg>"""
 
-D_RESTORE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">
-<rect x="18" y="20" width="234" height="178" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="135" y="44" fill="#4ade80">OSWALD (1966) RESTORATION</text>
-<rect x="34" y="60" width="202" height="54" rx="6" fill="#0f172a" stroke="#38bdf8"/>
-<text x="135" y="80" fill="#38bdf8" font-size="11">NREM Stage 3 (SWS) = BODY</text>
-<text x="135" y="100" fill="#cbd5e1" font-size="10" font-weight="normal">Growth hormone · Tissue repair</text>
-<rect x="34" y="126" width="202" height="54" rx="6" fill="#0f172a" stroke="#f472b6"/>
-<text x="135" y="146" fill="#f472b6" font-size="11">REM Sleep = BRAIN</text>
-<text x="135" y="166" fill="#cbd5e1" font-size="10" font-weight="normal">Neurotransmitters · Brain protein</text>
-<rect x="268" y="20" width="234" height="178" rx="10" fill="#1e293b" stroke="#fde047" stroke-width="2"/>
-<text x="385" y="44" fill="#fde047">MEDDIS (1975) EVOLUTIONARY</text>
-<rect x="284" y="60" width="202" height="54" rx="6" fill="#0f172a" stroke="#fb923c"/>
-<text x="385" y="80" fill="#fb923c" font-size="11">PREDATOR AVOIDANCE</text>
-<text x="385" y="100" fill="#cbd5e1" font-size="10" font-weight="normal">Stay still &amp; hidden in dark</text>
-<rect x="284" y="126" width="202" height="54" rx="6" fill="#0f172a" stroke="#a78bfa"/>
-<text x="385" y="146" fill="#a78bfa" font-size="11">ENERGY CONSERVATION</text>
-<text x="385" y="166" fill="#cbd5e1" font-size="10" font-weight="normal">Adapted to ecological niche</text>
+D_RESTORE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="178" y="56" fill="#4ade80">OSWALD (1966)</text>
+<text x="178" y="96" fill="#a7f3d0">Restoration</text>
+<rect x="28" y="114" width="300" height="82" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+<text x="178" y="148" fill="#38bdf8">N3 SWS = BODY</text>
+<text x="178" y="184" fill="#cbd5e1" font-weight="normal">Growth hormone</text>
+<rect x="28" y="208" width="300" height="82" rx="8" fill="#0f172a" stroke="#f472b6" stroke-width="2"/>
+<text x="178" y="242" fill="#f472b6">REM = BRAIN</text>
+<text x="178" y="278" fill="#cbd5e1" font-weight="normal">Neurotransmitters</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#fde047" stroke-width="3"/>
+<text x="522" y="56" fill="#fde047">MEDDIS (1975)</text>
+<text x="522" y="96" fill="#fde68a">Evolutionary</text>
+<rect x="372" y="114" width="300" height="82" rx="8" fill="#0f172a" stroke="#fb923c" stroke-width="2"/>
+<text x="522" y="148" fill="#fb923c">AVOID PREDATORS</text>
+<text x="522" y="184" fill="#cbd5e1" font-weight="normal">Hide still in dark</text>
+<rect x="372" y="208" width="300" height="82" rx="8" fill="#0f172a" stroke="#a78bfa" stroke-width="2"/>
+<text x="522" y="242" fill="#a78bfa">SAVE ENERGY</text>
+<text x="522" y="278" fill="#cbd5e1" font-weight="normal">Fits niche</text>
 </g>
 </svg>"""
 
-D_DREAMS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="18" width="236" height="192" rx="10" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="134" y="40" fill="#f472b6" font-size="12">FREUD (1900): WISH-FULFILMENT</text>
-<rect x="34" y="54" width="200" height="38" rx="6" fill="#3b0764"/>
-<text x="134" y="77" fill="#fde047">LATENT CONTENT (Hidden wish)</text>
-<text x="134" y="112" fill="#cbd5e1" font-size="10">↓ Dreamwork: Symbolism, Displacement ↓</text>
-<rect x="34" y="124" width="200" height="38" rx="6" fill="#0c4a6e"/>
-<text x="134" y="147" fill="#38bdf8">MANIFEST CONTENT (Surface story)</text>
-<text x="134" y="188" fill="#94a3b8" font-weight="normal" font-size="10">Critique: Unfalsifiable &amp; subjective</text>
-<rect x="268" y="18" width="236" height="192" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="386" y="40" fill="#4ade80" font-size="12">HOBSON &amp; McCARLEY (1977)</text>
-<rect x="286" y="54" width="200" height="38" rx="6" fill="#064e3b"/>
-<text x="386" y="77" fill="#4ade80">ACTIVATION: Pons fires in REM</text>
-<text x="386" y="112" fill="#cbd5e1" font-size="10">↑ Random neural signals rise ↑</text>
-<rect x="286" y="124" width="200" height="38" rx="6" fill="#1e3a8a"/>
-<text x="386" y="147" fill="#7dd3fc">SYNTHESIS: Cortex builds story</text>
-<text x="386" y="188" fill="#fde047" font-weight="normal" font-size="10">Iorio et al.: Waking stress shapes dreams</text>
+D_DREAMS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="178" y="56" fill="#f472b6">FREUD (1900)</text>
+<rect x="28" y="76" width="300" height="60" rx="8" fill="#3b0764"/>
+<text x="178" y="116" fill="#fde047">Latent (hidden)</text>
+<text x="178" y="168" fill="#cbd5e1" font-weight="normal">↓ Dreamwork ↓</text>
+<rect x="28" y="184" width="300" height="60" rx="8" fill="#0c4a6e"/>
+<text x="178" y="224" fill="#38bdf8">Manifest (story)</text>
+<text x="178" y="286" fill="#fca5a5" font-weight="normal">Unfalsifiable!</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="522" y="56" fill="#4ade80">HOBSON &amp; McC.</text>
+<rect x="372" y="76" width="300" height="60" rx="8" fill="#064e3b"/>
+<text x="522" y="116" fill="#4ade80">Activation: Pons</text>
+<text x="522" y="168" fill="#cbd5e1" font-weight="normal">↑ Random firing ↑</text>
+<rect x="372" y="184" width="300" height="60" rx="8" fill="#1e3a8a"/>
+<text x="522" y="224" fill="#7dd3fc">Synthesis: Cortex</text>
+<text x="522" y="286" fill="#fde047" font-weight="normal">Iorio: stress links</text>
 </g>
 </svg>"""
 

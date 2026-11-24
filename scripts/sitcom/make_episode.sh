@@ -15,7 +15,7 @@ for T in "$@"; do
   S0=$(date +%s)
   echo "=== $T: lint"
   "$PY" lint_episode.py "episodes/$T.py"
-  if [ ! -s "out/$T/audio.wav" ] || [ ! -s "out/$T/timeline.json" ] || [ "episodes/$T.py" -nt "out/$T/timeline.json" ]; then
+  if [ ! -s "out/$T/audio.wav" ] || [ ! -s "out/$T/timeline.json" ] || [ "episodes/$T.py" -nt "out/$T/timeline.json" ] || [ "build.py" -nt "out/$T/timeline.json" ]; then
     echo "=== $T: voices + timeline"
     "$PY" build.py "episodes/$T.py" "out/$T"
     stamp "voices done"

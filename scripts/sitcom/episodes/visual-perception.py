@@ -8,103 +8,96 @@ EP = dict(
             "Dr. Synapse, Vani, and Examiner Chen unpack depth cues, Gestalt laws, Gibson and Walk versus Gregory and Haber and Levin, perceptual set, and Bremner's Himba study."
 )
 
-D_DEPTH = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold">
-<text x="260" y="20" fill="#fde047" text-anchor="middle">SENSATION (Retina) → PERCEPTION (Brain) &amp; DEPTH CUES</text>
-<rect x="18" y="34" width="246" height="178" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="141" y="54" fill="#38bdf8" text-anchor="middle">MONOCULAR CUES (One Eye)</text>
-<path d="M44 188 L122 82 M238 188 L160 82" stroke="#94a3b8" stroke-width="2"/>
-<line x1="92" y1="126" x2="190" y2="126" stroke="#fde047" stroke-width="3"/>
-<line x1="68" y1="164" x2="214" y2="164" stroke="#4ade80" stroke-width="3"/>
-<circle cx="88" cy="96" r="14" fill="#f472b6"/>
-<rect x="94" y="92" width="26" height="26" fill="#a78bfa"/>
-<text x="141" y="202" fill="#cbd5e1" text-anchor="middle" font-weight="normal" font-size="10">Linear perspective · Occlusion · Relative size</text>
-<rect x="280" y="34" width="222" height="178" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="391" y="54" fill="#4ade80" text-anchor="middle">BINOCULAR CUES (Two Eyes)</text>
-<circle cx="346" cy="148" r="16" fill="#0f172a" stroke="#fde047" stroke-width="2"/>
-<circle cx="436" cy="148" r="16" fill="#0f172a" stroke="#fde047" stroke-width="2"/>
-<circle cx="391" cy="84" r="9" fill="#ef4444"/>
-<path d="M346 132 L391 84 L436 132" stroke="#4ade80" stroke-width="2" stroke-dasharray="4 3"/>
-<text x="391" y="182" fill="#f8fafc" text-anchor="middle" font-size="10">Retinal Disparity (2 views)</text>
-<text x="391" y="200" fill="#cbd5e1" text-anchor="middle" font-weight="normal" font-size="10">Convergence (eye muscle angle)</text>
+D_DEPTH = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="178" y="54" fill="#38bdf8">MONOCULAR (1 Eye)</text>
+<path d="M52 204 L152 82 M304 204 L204 82" stroke="#94a3b8" stroke-width="3"/>
+<line x1="112" y1="126" x2="244" y2="126" stroke="#fde047" stroke-width="5"/>
+<line x1="82" y1="176" x2="274" y2="176" stroke="#4ade80" stroke-width="5"/>
+<text x="178" y="246" fill="#cbd5e1" font-weight="normal">Linear perspective</text>
+<text x="178" y="286" fill="#cbd5e1" font-weight="normal">Occlusion · Rel. size</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="522" y="54" fill="#4ade80">BINOCULAR (2 Eyes)</text>
+<circle cx="460" cy="176" r="24" fill="#0f172a" stroke="#fde047" stroke-width="3"/>
+<circle cx="584" cy="176" r="24" fill="#0f172a" stroke="#fde047" stroke-width="3"/>
+<circle cx="522" cy="96" r="14" fill="#ef4444"/>
+<path d="M460 152 L522 96 L584 152" stroke="#4ade80" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="522" y="246" fill="#f8fafc" font-weight="normal">Retinal Disparity</text>
+<text x="522" y="286" fill="#cbd5e1" font-weight="normal">Convergence angle</text>
 </g>
 </svg>"""
 
-D_ILLUSIONS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230">
-<rect width="520" height="230" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="18" width="234" height="194" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="133" y="40" fill="#f472b6">MÜLLER-LYER &amp; PONZO</text>
-<g stroke="#38bdf8" stroke-width="3" fill="none">
-<path d="M68 78 H198 M84 66 L68 78 L84 90 M182 66 L198 78 L182 90"/>
-<path d="M68 122 H198 M52 110 L68 122 L52 134 M214 110 L198 122 L214 134"/>
+D_ILLUSIONS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="178" y="54" fill="#f472b6">MÜLLER-LYER</text>
+<g stroke="#38bdf8" stroke-width="5" fill="none">
+<path d="M88 106 H268 M112 86 L88 106 L112 126 M244 86 L268 106 L244 126"/>
+<path d="M88 176 H268 M64 156 L88 176 L64 196 M292 156 L268 176 L292 196"/>
 </g>
-<text x="133" y="154" fill="#fde047" font-size="10">Both shafts are EXACTLY 130 px!</text>
-<text x="133" y="176" fill="#cbd5e1" font-weight="normal" font-size="10">Misplaced size-constancy scaling</text>
-<text x="133" y="196" fill="#94a3b8" font-weight="normal" font-size="10">(Corners &amp; converging railway lines)</text>
-<rect x="268" y="18" width="236" height="194" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
-<text x="386" y="40" fill="#a78bfa">GESTALT PRINCIPLES</text>
-<circle cx="322" cy="86" r="16" fill="#4ade80"/>
-<circle cx="386" cy="86" r="16" fill="#4ade80"/>
-<circle cx="354" cy="138" r="16" fill="#4ade80"/>
-<polygon points="322,86 386,86 354,138" fill="#0f172a"/>
+<text x="178" y="242" fill="#fde047">Equal length!</text>
+<text x="178" y="284" fill="#cbd5e1" font-weight="normal">Size constancy error</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="3"/>
+<text x="522" y="54" fill="#a78bfa">GESTALT LAWS</text>
+<circle cx="446" cy="112" r="24" fill="#4ade80"/>
+<circle cx="534" cy="112" r="24" fill="#4ade80"/>
+<circle cx="490" cy="182" r="24" fill="#4ade80"/>
+<polygon points="446,112 534,112 490,182" fill="#0f172a"/>
 <g fill="#fde047">
-<circle cx="436" cy="76" r="6"/><circle cx="452" cy="76" r="6"/>
-<circle cx="436" cy="96" r="6"/><circle cx="452" cy="96" r="6"/>
-<circle cx="480" cy="76" r="6"/><circle cx="480" cy="96" r="6"/>
+<circle cx="596" cy="100" r="10"/><circle cx="622" cy="100" r="10"/>
+<circle cx="596" cy="130" r="10"/><circle cx="622" cy="130" r="10"/>
+<circle cx="658" cy="100" r="10"/><circle cx="658" cy="130" r="10"/>
 </g>
-<text x="386" y="172" fill="#f8fafc" font-size="10">Closure · Proximity · Similarity</text>
-<text x="386" y="194" fill="#cbd5e1" font-weight="normal" font-size="10">Figure-Ground (Rubin) · Necker Cube</text>
-</g>
-</svg>"""
-
-D_THEORIES = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="16" y="18" width="236" height="184" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
-<text x="134" y="40" fill="#4ade80" font-size="12">GIBSON: DIRECT (BOTTOM-UP)</text>
-<text x="134" y="64" fill="#fde047">Data-driven · No schemas needed</text>
-<text x="134" y="88" fill="#cbd5e1" font-weight="normal">Optic array · Optic flow · Affordances</text>
-<rect x="34" y="106" width="200" height="78" rx="6" fill="#0f172a" stroke="#4ade80"/>
-<text x="134" y="128" fill="#4ade80">Gibson &amp; Walk (1960) Visual Cliff</text>
-<text x="134" y="150" fill="#f8fafc" font-weight="normal" font-size="10">6-14m infants refuse deep glass side</text>
-<text x="134" y="168" fill="#94a3b8" font-weight="normal" font-size="10">→ Early / innate depth perception</text>
-<rect x="268" y="18" width="236" height="184" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="386" y="40" fill="#386df8" fill-opacity="0"/>
-<text x="386" y="40" fill="#38bdf8" font-size="12">GREGORY: CONSTRUCTIVIST (TOP-DOWN)</text>
-<text x="386" y="64" fill="#fde047">Schema-driven · Hypothesis testing</text>
-<text x="386" y="88" fill="#cbd5e1" font-weight="normal">Brain fills gaps from past experience</text>
-<rect x="286" y="106" width="200" height="78" rx="6" fill="#0f172a" stroke="#38bdf8"/>
-<text x="386" y="128" fill="#38bdf8">Haber &amp; Levin (2001) + Illusions</text>
-<text x="386" y="150" fill="#f8fafc" font-weight="normal" font-size="10">Familiar objects → accurate distance</text>
-<text x="386" y="168" fill="#94a3b8" font-weight="normal" font-size="10">Explains 2D illusions via schemas!</text>
+<text x="522" y="242" fill="#f8fafc">Closure · Proximity</text>
+<text x="522" y="284" fill="#cbd5e1" font-weight="normal">Figure-Ground</text>
 </g>
 </svg>"""
 
-D_SET = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" fill="#0f172a"/>
-<g font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="18" y="18" width="224" height="184" rx="8" fill="#1e293b" stroke="#fde047" stroke-width="2"/>
-<text x="130" y="40" fill="#fde047">PERCEPTUAL SET (EXPECTATION)</text>
-<text x="130" y="72" fill="#94a3b8" font-size="14">A</text>
-<text x="74" y="108" fill="#38bdf8" font-size="14">12</text>
-<text x="130" y="108" fill="#f8fafc" font-size="18">I3</text>
-<text x="186" y="108" fill="#38bdf8" font-size="14">14</text>
-<text x="130" y="144" fill="#94a3b8" font-size="14">C</text>
-<text x="130" y="172" fill="#cbd5e1" font-weight="normal" font-size="10">Bruner &amp; Minturn: B or 13?</text>
-<text x="130" y="190" fill="#cbd5e1" font-weight="normal" font-size="10">+ Hunger (Gilchrist) &amp; Emotion</text>
-<rect x="260" y="18" width="242" height="184" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
-<text x="381" y="40" fill="#f472b6">BREMNER ET AL. (2016) CULTURE</text>
-<circle cx="332" cy="106" r="11" fill="#fde047"/>
-<circle cx="304" cy="106" r="14" fill="none" stroke="#94a3b8" stroke-width="2"/>
-<circle cx="360" cy="106" r="14" fill="none" stroke="#94a3b8" stroke-width="2"/>
-<circle cx="434" cy="106" r="11" fill="#fde047"/>
-<circle cx="414" cy="106" r="5" fill="none" stroke="#94a3b8" stroke-width="2"/>
-<circle cx="454" cy="106" r="5" fill="none" stroke="#94a3b8" stroke-width="2"/>
-<text x="381" y="156" fill="#f8fafc" font-size="10">Ebbinghaus Illusion: UK fooled strongly</text>
-<text x="381" y="176" fill="#4ade80" font-size="10">Rural Himba (Namibia) much less fooled!</text>
-<text x="381" y="194" fill="#cbd5e1" font-weight="normal" font-size="10">Local vs holistic visual environment</text>
+D_THEORIES = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="3"/>
+<text x="178" y="56" fill="#4ade80">GIBSON (Direct)</text>
+<text x="178" y="96" fill="#fde047">Bottom-Up · Innate</text>
+<text x="178" y="142" fill="#cbd5e1" font-weight="normal">Optic flow + array</text>
+<rect x="28" y="168" width="300" height="122" rx="10" fill="#0f172a" stroke="#4ade80" stroke-width="2"/>
+<text x="178" y="214" fill="#4ade80">Visual Cliff (1960)</text>
+<text x="178" y="262" fill="#f8fafc" font-weight="normal">Infants avoid drop</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="522" y="56" fill="#38bdf8">GREGORY (Constr.)</text>
+<text x="522" y="96" fill="#fde047">Top-Down · Schemas</text>
+<text x="522" y="142" fill="#cbd5e1" font-weight="normal">Hypothesis testing</text>
+<rect x="372" y="168" width="300" height="122" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+<text x="522" y="214" fill="#38bdf8">Haber &amp; Levin</text>
+<text x="522" y="262" fill="#f8fafc" font-weight="normal">Explains illusions!</text>
+</g>
+</svg>"""
+
+D_SET = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<g font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#fde047" stroke-width="3"/>
+<text x="178" y="54" fill="#fde047">PERCEPTUAL SET</text>
+<text x="178" y="102" fill="#94a3b8" font-size="30">A</text>
+<text x="98" y="150" fill="#38bdf8" font-size="30">12</text>
+<text x="178" y="150" fill="#f8fafc" font-size="34">I3</text>
+<text x="258" y="150" fill="#38bdf8" font-size="30">14</text>
+<text x="178" y="198" fill="#94a3b8" font-size="30">C</text>
+<text x="178" y="246" fill="#cbd5e1" font-weight="normal">Bruner: B or 13?</text>
+<text x="178" y="286" fill="#cbd5e1" font-weight="normal">Expectation · Mood</text>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+<text x="522" y="54" fill="#f472b6">BREMNER (2016)</text>
+<circle cx="456" cy="144" r="16" fill="#fde047"/>
+<circle cx="412" cy="144" r="22" fill="none" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="500" cy="144" r="22" fill="none" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="598" cy="144" r="16" fill="#fde047"/>
+<circle cx="566" cy="144" r="9" fill="none" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="630" cy="144" r="9" fill="none" stroke="#94a3b8" stroke-width="3"/>
+<text x="522" y="236" fill="#f8fafc">UK fooled strongly</text>
+<text x="522" y="282" fill="#4ade80">Himba less fooled!</text>
 </g>
 </svg>"""
 
