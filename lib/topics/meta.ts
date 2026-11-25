@@ -23,6 +23,10 @@ export interface TopicMeta {
   title: string;
   strand: Strand;
   icon: string;
+  /** Which IGCSE year normally teaches this topic (Year 10 vs Year 11). */
+  courseYear: 10 | 11;
+  /** Teaching order used when ?year=10 is active (1..N). */
+  courseOrder: number;
   /** Which CIE 0266 syllabus component & core studies this topic covers. */
   curriculum: string;
   sections: SectionPlan[];
@@ -42,6 +46,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Topic 1: Memory & Forgetting",
     strand: "Paper 1: Cognition, Behaviour & Experiments",
     icon: "🧠",
+    courseYear: 10,
+    courseOrder: 2,
     curriculum: "CIE 0266 Paper 1 — Multi-Store Model (Atkinson & Shiffrin; Murdock 1962), Working Memory (Baddeley & Hitch) & Levels of Processing (Craik & Tulving 1975), Reconstructive Schemas (Bartlett), Forgetting, Brain & Amnesia (Milner et al. 1968 on H.M.)",
     sections: [
       {
@@ -76,6 +82,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Topic 2: Sleep & Dreams",
     strand: "Paper 1: Cognition, Behaviour & Experiments",
     icon: "🌙",
+    courseYear: 10,
+    courseOrder: 3,
     curriculum: "CIE 0266 Paper 1 — NREM & REM Sleep Stages, Ultradian & Circadian Rhythms (SCN & Melatonin), Restoration (Robinson et al. 2018) vs Evolutionary Theories, Insomnia & Sleep Hygiene, Freud (Iorio et al. 2020) vs Activation-Synthesis (Hobson & McCarley; Williams et al. 1992)",
     sections: [
       {
@@ -110,6 +118,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Topic 3: Prosocial Behaviour",
     strand: "Paper 1: Cognition, Behaviour & Experiments",
     icon: "🤝",
+    courseYear: 10,
+    courseOrder: 4,
     curriculum: "CIE 0266 Paper 1 — Bystander Apathy & Intervention (Latané & Darley), Cost-Reward Model (Piliavin; Levine et al. 2005 & 2001), Biological/Kin Selection (Rushton 2004 & 1986) vs Empathy-Altruism & Social Learning, Media & Parental Influences (Prot et al. 2014)",
     sections: [
       {
@@ -148,6 +158,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Topic 4: Visual Perception",
     strand: "Paper 2: Perception, Development & Non-Experimental",
     icon: "👁️",
+    courseYear: 11,
+    courseOrder: 5,
     curriculum: "CIE 0266 Paper 2 — Sensation vs Perception, Depth Cues & Constancy, Gestalt Laws & Illusions, Gibson Direct Theory (Gibson & Walk 1960) vs Gregory Constructivist Theory (Haber & Levin 2001), Perceptual Set & Culture (Bremner et al. 2016)",
     sections: [
       {
@@ -182,6 +194,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Topic 5: Motivation & Needs",
     strand: "Paper 2: Perception, Development & Non-Experimental",
     icon: "🔥",
+    courseYear: 11,
+    courseOrder: 6,
     curriculum: "CIE 0266 Paper 2 — Intrinsic vs Extrinsic & Positive Reinforcement (Boniecki & Moore 2003), Maslow's Hierarchy, Self-Determination Theory (Calvo et al. 2010), Drive-Reduction, Incentive & Psychodynamic Nostalgia (Merchant et al. 2013), SMART Goals",
     sections: [
       {
@@ -216,6 +230,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Topic 6: Language Development",
     strand: "Paper 2: Perception, Development & Non-Experimental",
     icon: "🗣️",
+    courseYear: 11,
+    courseOrder: 7,
     curriculum: "CIE 0266 Paper 2 — Stages of Language Acquisition & Overregularisation, Chomsky Nativist LAD (Senghas 1995), Behaviourist Learning Theory (Goldstein, King & West 2003), Piaget Cognitive Schemas (Hewitt 2022) & Bruner LASS, Animal vs Human Communication",
     sections: [
       {
@@ -250,6 +266,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Topic 7: Research Methods (Experimental, Non-Experimental & Data)",
     strand: "Paper 2: Perception, Development & Non-Experimental",
     icon: "🔬",
+    courseYear: 10,
+    courseOrder: 1,
     curriculum: "CIE 0266 Paper 1 Experimental Methods + Paper 2 Non-Experimental Methods & Data Analysis — IV/DV Operationalisation, Hypotheses, Designs, Sampling, Self-Reports, Observations, Case Studies, Correlations, Ethics, Reliability/Validity, Stats & Graphs",
     sections: [
       {
